@@ -7520,11 +7520,11 @@ a.anchor-link {
 <h1 id="RISK-Tutorial-and-Examples">RISK Tutorial and Examples<a class="anchor-link" href="#RISK-Tutorial-and-Examples">¶</a></h1><p>Welcome to the <strong>RISK</strong> tutorial notebook. This guide introduces <code>tutorial.ipynb</code>, a comprehensive walkthrough of <strong>RISK (Regional Inference of Significant Kinships)</strong> — a modular framework for biological network annotation and visualization. RISK integrates community detection algorithms, statistical overrepresentation analysis, and publication-quality plotting to support large-scale, reproducible network analysis.</p>
 <p>Whether you're new to network analysis or aiming to explore advanced workflows, this tutorial covers key functionalities, practical examples, and reproducible pipelines.</p>
 <hr/>
-<h2 id="Yeast-Protein%E2%80%93Protein-Interaction-(PPI)-Network-Demonstration">Yeast Protein–Protein Interaction (PPI) Network Demonstration<a class="anchor-link" href="#Yeast-Protein%E2%80%93Protein-Interaction-(PPI)-Network-Demonstration">¶</a></h2><p>In this example, we apply RISK to the <strong>yeast PPI network</strong> from Michaelis <em>et al</em>., 2023, comprising <strong>3,839 proteins</strong> and <strong>30,955 interactions</strong>. This network serves as a benchmark for demonstrating how RISK identifies compact functional modules and performs annotation enrichment.</p>
+<h2 id="Yeast-Protein%E2%80%93Protein-Interaction-(PPI)-Network-Demonstration">Yeast Protein–Protein Interaction (PPI) Network Demonstration<a class="anchor-link" href="#Yeast-Protein%E2%80%93Protein-Interaction-(PPI)-Network-Demonstration">¶</a></h2><p>In this example, we apply RISK to the <strong>yeast PPI network</strong> from Michaelis <em>et al</em>., 2023, comprising <strong>3,839 proteins</strong> and <strong>30,955 interactions</strong>. This network serves as a benchmark for demonstrating how RISK identifies compact functional modules and performs annotation overrepresentation.</p>
 <p>In this tutorial, we:</p>
 <ul>
 <li><strong>Cluster</strong> the network using scalable community detection algorithms (e.g., Louvain, Leiden).</li>
-<li><strong>Evaluate</strong> functional enrichment using overrepresentation tests such as hypergeometric and permutation.</li>
+<li><strong>Evaluate</strong> functional overrepresentation using tests such as hypergeometric and permutation.</li>
 <li><strong>Visualize</strong> modules with contour overlays and publication-ready network layouts.</li>
 </ul>
 <p>These steps illustrate RISK’s ability to resolve functional modules and reveal the organization of cellular processes such as ribosomal assembly, mitochondrial organization, and RNA polymerase activity.</p>
@@ -8567,7 +8567,7 @@ Number of remaining annotation terms: 1293
 </tbody>
 </table>
 <hr/>
-<h3 id="Summary-of-Statistical-Tests">Summary of Statistical Tests<a class="anchor-link" href="#Summary-of-Statistical-Tests">¶</a></h3><p>RISK implements a suite of statistical tests—ranging from fast approximations to rigorous overrepresentation analysis—to assess functional term enrichment in network neighborhoods. Each method has strengths depending on dataset size, structure, and precision requirements.</p>
+<h3 id="Summary-of-Statistical-Tests">Summary of Statistical Tests<a class="anchor-link" href="#Summary-of-Statistical-Tests">¶</a></h3><p>RISK implements a suite of statistical tests—ranging from fast approximations to rigorous overrepresentation analysis—to assess functional term overrepresentation in network neighborhoods. Each method has strengths depending on dataset size, structure, and precision requirements.</p>
 <table>
 <thead>
 <tr>
@@ -8587,7 +8587,7 @@ Number of remaining annotation terms: 1293
 <tr>
 <td>Hypergeometric</td>
 <td>Medium</td>
-<td>Standard for GO/pathway enrichment</td>
+<td>Standard for GO/pathway overrepresentation</td>
 <td>Exact test for finite populations sampled without replacement; widely used for term–to–gene membership tables.</td>
 </tr>
 <tr>
