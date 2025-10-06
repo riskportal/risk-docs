@@ -18,10 +18,10 @@ DOI: [10.5281/zenodo.17257418](https://doi.org/10.5281/zenodo.17257418)
 
 ## Yeast Protein–Protein Interaction (PPI) Network Demonstration
 
-We applied RISK to a _Saccharomyces cerevisiae_ protein–protein interaction (PPI) network (Michaelis _et al_., 2023; 3,839 proteins, 30,955 interactions). RISK identified compact, functional modules overrepresented in Gene Ontology Biological Process (GO BP) terms (Ashburner _et al_., 2000), revealing biological organization including ribosomal assembly, mitochondrial organization, and RNA polymerase activity (p < 0.0001).
+We applied RISK to a _Saccharomyces cerevisiae_ protein–protein interaction (PPI) network (Michaelis _et al_., 2023; 3,839 proteins, 30,955 interactions). RISK identified compact, functional modules overrepresented in Gene Ontology Biological Process (GO BP) terms (Ashburner _et al_., 2000), revealing biological organization including ribosomal assembly, mitochondrial organization, and RNA polymerase activity.
 
 [![RISK analysis of the yeast PPI network](https://i.imgur.com/pasrVeR.jpeg)](https://i.imgur.com/pasrVeR.jpeg)
-**RISK workflow overview and analysis of the yeast PPI network**. GO BP terms are color-coded to represent key cellular processes—including ribosomal assembly, mitochondrial organization, and RNA polymerase activity (p < 0.0001).
+**RISK workflow overview and analysis of the yeast PPI network**. Clusters are color-coded by overrepresented GO Biological Process terms (p < 0.01).
 
 ## Setting Up Python and Jupyter for RISK
 
