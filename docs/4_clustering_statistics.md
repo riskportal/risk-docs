@@ -10,12 +10,12 @@ Before applying statistical tests, RISK groups nodes into modules using communit
 
 | Algorithm         | Speed  | Primary use                                | When/Why (assumptions & notes)                                                                                                        |
 | ----------------- | ------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Louvain           | Fast   | Default, scalable to very large networks   | Greedy modularity optimization (Blondel et al., 2008); efficient for >10⁴ nodes; may produce disconnected subclusters.                |
-| Leiden            | Fast   | Improved Louvain with better resolution    | Guarantees well-connected communities; more stable than Louvain (Traag et al., 2019); slightly higher runtime.                        |
+| Louvain           | Fast   | Default, scalable to very large networks   | Greedy modularity optimization (Blondel _et al_., 2008); efficient for >10⁴ nodes; may produce disconnected subclusters.                |
+| Leiden            | Fast   | Improved Louvain with better resolution    | Guarantees well-connected communities; more stable than Louvain (Traag _et al_., 2019); slightly higher runtime.                        |
 | Markov Clustering | Medium | Detect smaller, compact complexes          | Flow-based algorithm (Van Dongen, 2008); good for protein complexes or tightly connected submodules.                                  |
 | Walktrap          | Medium | Hierarchical detection in mid-sized graphs | Random-walk based (Pons & Latapy, 2005); effective for local structure; slower on >10⁴ nodes.                                         |
 | Greedy Modularity | Fast   | Coarse partitioning                        | Optimizes modularity via agglomeration; very fast but suffers from resolution limit (Newman, 2004).                                   |
-| Label Propagation | Fast   | Quick heuristic                            | Unsupervised label spreading; no objective function; non-deterministic and unstable (Raghavan et al., 2007).                          |
+| Label Propagation | Fast   | Quick heuristic                            | Unsupervised label spreading; no objective function; non-deterministic and unstable (Raghavan _et al_., 2007).                          |
 | Spinglass         | Slow   | Small networks; theoretical interest       | Statistical mechanics approach (Reichardt & Bornholdt, 2006); finds communities by simulating spin states; computationally intensive. |
 
 ### Choosing an algorithm: quick guidance

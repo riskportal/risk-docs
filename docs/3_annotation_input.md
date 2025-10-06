@@ -4,9 +4,9 @@ Annotations provide the biological context for RISK by linking network clusters 
 
 Annotations must be provided by the user and formatted clearly to ensure compatibility with RISK loaders. RISK does not bundle annotations; users should obtain curated resources and format them as term–to–node (e.g., genes/proteins) membership tables. Common sources include:
 
-- [Gene Ontology (GO)](http://geneontology.org/docs/download-ontology/) (Ashburner *et al.*, 2000)
-- [CORUM: Comprehensive Resource of Mammalian Protein Complexes](https://mips.helmholtz-muenchen.de/corum/download) (Tsitsiridis *et al.*, 2022)
-- [KEGG: Kyoto Encyclopedia of Genes and Genomes](https://www.genome.jp/kegg/download/) (Kanehisa *et al.*, 2023)
+- [Gene Ontology (GO)](http://geneontology.org/docs/download-ontology/) (Ashburner _et al_., 2000)
+- [CORUM: Comprehensive Resource of Mammalian Protein Complexes](https://mips.helmholtz-muenchen.de/corum/download) (Tsitsiridis _et al_., 2022)
+- [KEGG: Kyoto Encyclopedia of Genes and Genomes](https://www.genome.jp/kegg/download/) (Kanehisa _et al_., 2023)
 
 These resources provide standardized annotation files (e.g., GAF, GMT, tab-delimited) that can be adapted into RISK’s required format.
 

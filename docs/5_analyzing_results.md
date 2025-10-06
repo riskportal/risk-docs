@@ -63,7 +63,7 @@ The `NetworkGraph` object exposes several mappings for cluster and node informat
 
 - `domain_id_to_node_ids_map`: Maps each domain ID to the list of node IDs belonging to that domain.
 - `domain_id_to_node_labels_map`: Maps each domain ID to the list of node labels in that domain for readable visualization.
-- `domain_id_to_domain_terms_map`: Maps each domain ID to the list of enriched/significant terms associated with that domain.
+- `domain_id_to_domain_terms_map`: Maps each domain ID to the list of overrepresented/significant terms associated with that domain.
 - `domain_id_to_domain_info_map`: Maps each domain ID to a metadata record (e.g., size, p-value, FDR, summary) about the domain.
 
 ### Node-Level
