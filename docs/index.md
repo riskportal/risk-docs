@@ -1,6 +1,8 @@
 # Welcome to RISK Documentation
 
 **RISK** (Regional Inference of Significant Kinships) is a modular, scalable tool for biological network annotation and visualization. It combines community detection, rigorous statistical testing, and high-resolution visualization to resolve functional modules and uncover biologically meaningful relationships. RISK scales efficiently to large networks, adapts across diverse data types, and produces publication-ready figures.
+<br>
+RISK is compatible with Python 3.8 or later, supports all major operating systems, and can be installed via pip. The software is open source under the GPLv3 license on [GitHub](https://github.com/riskportal/risk).
 
 ![RISK Overview](images/risk_fig1.jpeg)
 **RISK workflow overview and analysis of the _Saccharomyces cerevisiae_ protein–protein interaction (PPI) network.** RISK identifies biologically coherent modules overrepresented in Gene Ontology Biological Process (GO BP; Ashburner _et al_., 2000), highlighting cellular organization such as ribosomal assembly, mitochondrial organization, and RNA polymerase activity.
