@@ -15,7 +15,7 @@ graph,linkage_metric,sokalmichener
 graph,linkage_threshold,0.063
 graph,min_cluster_size,5
 graph,max_cluster_size,1000
-neighborhoods,distance_metric,louvain
+neighborhoods,clustering,louvain
 neighborhoods,louvain_resolution,5.0
 neighborhoods,leiden_resolution,1.0
 neighborhoods,fraction_shortest_edges,0.225
