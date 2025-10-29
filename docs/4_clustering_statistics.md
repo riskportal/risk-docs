@@ -30,7 +30,7 @@ Before applying statistical tests, RISK groups nodes into modules using communit
 
 ## Summary of Statistical Methods
 
-RISK implements a suite of statistical tests—ranging from fast approximations to rigorous overrepresentation analysis—to assess functional term overrepresentation in network neighborhoods. Each method has strengths depending on dataset size, structure, and precision requirements.
+RISK implements a suite of statistical tests—ranging from fast approximations to rigorous overrepresentation analysis—to assess functional term overrepresentation in network clusters. Each method has strengths depending on dataset size, structure, and precision requirements.
 
 | Test           | Speed  | Primary use                                | When/Why (assumptions & notes)                                                                                                   |
 | -------------- | ------ | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,7 @@ Shared parameters among statistical methods.
 
 - `network` (nx.Graph): The network graph.
 - `annotation` (dict): The annotation associated with the network.
-- `clustering` (str, list, tuple, or np.ndarray, optional): Community detection algorithm(s) used to partition the network into clusters (neighborhoods). Provide a single algorithm or a list/tuple/array to run multiple algorithms. Options include:
+- `clustering` (str, list, tuple, or np.ndarray, optional): Community detection algorithm(s) used to partition the network into clusters (clusters). Provide a single algorithm or a list/tuple/array to run multiple algorithms. Options include:
     - `'louvain'`: Applies the Louvain method for community detection. _(default)_
     - `'greedy'`: Detects communities in a graph based on the greedy optimization of modularity.
     - `'labelprop'`: Uses label propagation to find communities.
@@ -81,15 +81,15 @@ Builds an empirical null by permuting either the network structure or annotation
 
 **Additional Parameters:**
 
-- `score_metric` (str, optional): Metric used to score neighborhoods. Options include: - `'sum'`: Sums the annotation values within each neighborhood. _(default)_ - `'stdev'`: Computes the standard deviation of annotation values within each neighborhood.
+- `score_metric` (str, optional): Metric used to score clusters. Options include: - `'sum'`: Sums the annotation values within each cluster. _(default)_ - `'stdev'`: Computes the standard deviation of annotation values within each cluster.
 - `num_permutations` (int, optional): Number of permutations for significance testing. Defaults to 1000.
 - `max_workers` (int, optional): Maximum number of workers for parallel computation. Defaults to 1.
 
 **Returns:**
-`dict`: A dictionary containing the computed significance of neighborhoods within the network.
+`dict`: A dictionary containing the computed significance of clusters within the network.
 
 ```python
-neighborhoods = risk.load_neighborhoods_permutation(
+clusters = risk.load_clusters_permutation(
     network=network,
     annotation=annotation,
     clustering="louvain",
@@ -116,10 +116,10 @@ Exact test based on finite sampling without replacement.
 - Exact test; more accurate than approximations when sample is not negligible relative to the population.
 
 **Returns:**
-`dict`: A dictionary containing the computed significance of neighborhoods within the network.
+`dict`: A dictionary containing the computed significance of clusters within the network.
 
 ```python
-neighborhoods = risk.load_neighborhoods_hypergeom(
+clusters = risk.load_clusters_hypergeom(
     network=network,
     annotation=annotation,
     clustering="louvain",
@@ -143,10 +143,10 @@ Evaluates significance using contingency tables.
 - Fast and scalable but approximate; consider permutation or exact tests for sparse data.
 
 **Returns:**
-`dict`: A dictionary containing the computed significance of neighborhoods within the network.
+`dict`: A dictionary containing the computed significance of clusters within the network.
 
 ```python
-neighborhoods = risk.load_neighborhoods_chi2(
+clusters = risk.load_clusters_chi2(
     network=network,
     annotation=annotation,
     clustering="louvain",
@@ -170,10 +170,10 @@ Fast approximation to overrepresentation based on independent trials.
 - Offers speed and scalability while being less precise than exact methods.
 
 **Returns:**
-`dict`: A dictionary containing the computed significance of neighborhoods within the network.
+`dict`: A dictionary containing the computed significance of clusters within the network.
 
 ```python
-neighborhoods = risk.load_neighborhoods_binom(
+clusters = risk.load_clusters_binom(
     network=network,
     annotation=annotation,
     clustering="louvain",

@@ -10,7 +10,7 @@ The `NetworkGraph` object integrates network data, annotations, and overrepresen
 
 - `network` (nx.Graph): The network graph containing the nodes and edges to be analyzed.
 - `annotation` (dict): The annotation associated with the network, typically derived from biological or functional data.
-- `neighborhoods` (dict): The neighborhoods object, containing data from enrichment or depletion analysis.
+- `clusters` (dict): The clusters object, containing data from enrichment or depletion analysis.
 - `tail` (str, optional): Specifies the tail of the statistical test to use. Options include:
     - `'right'`: For enrichment. _(default)_
     - `'left'`: For depletion.
@@ -40,7 +40,7 @@ The `NetworkGraph` object integrates network data, annotations, and overrepresen
 graph = risk.load_graph(
     network=network,
     annotation=annotation,
-    neighborhoods=neighborhoods,
+    clusters=clusters,
     tail="right",
     pval_cutoff=0.01,
     fdr_cutoff=0.9999,
