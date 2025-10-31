@@ -4,7 +4,7 @@ repo_url: https://github.com/riskportal/risk-docs
 repo_name: risk-docs
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: docs/stylesheets
   logo: images/risk_logo.png
   favicon: images/risk_logo.ico
   features:
