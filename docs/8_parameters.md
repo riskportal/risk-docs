@@ -21,15 +21,13 @@ loaded_params = risk.params.load()
 
 Export RISK analysis parameters—from network loading to visualization—in common formats for downstream use or sharing.
 
-**Shared Parameters:**
-
-Shared parameters among export methods.
-
-- `filepath` (str): The path where the file will be saved.
-
 ### Export to CSV
 
 Exports the parameter dictionary to a `.csv` file.
+
+**Parameters:**
+
+- `filepath` (str): The path where the file will be saved.
 
 ```python
 risk.params.to_csv(filepath="./data/csv/params/michaelis_2023.csv")
@@ -39,6 +37,10 @@ risk.params.to_csv(filepath="./data/csv/params/michaelis_2023.csv")
 
 Exports the parameter dictionary to a `.json` file. The hierarchical structure is preserved.
 
+**Parameters:**
+
+- `filepath` (str): The path where the file will be saved.
+
 ```python
 risk.params.to_json(filepath="./data/json/params/michaelis_2023.json")
 ```
@@ -46,6 +48,10 @@ risk.params.to_json(filepath="./data/json/params/michaelis_2023.json")
 ### Export to Text
 
 Exports the parameter dictionary to a plain `.txt` file in human‑readable format.
+
+**Parameters:**
+
+- `filepath` (str): The path where the file will be saved.
 
 ```python
 risk.params.to_txt(filepath="./data/txt/params/michaelis_2023.txt")
