@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/riskportal/risk/6_visualization/">
+        <link rel="canonical" href="https://github.com/riskportal/risk/7_visualization/">
       
       
-        <link rel="prev" href="../5_analyzing_results/">
+        <link rel="prev" href="../6_analyzing_results/">
       
       
-        <link rel="next" href="../7_parameters/">
+        <link rel="next" href="../8_parameters/">
       
       
       <link rel="icon" href="../images/risk_logo.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>6. Visualization - RISK Documentation</title>
+        <title>7. Visualization - RISK Documentation</title>
       
     
     
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              6. Visualization
+              7. Visualization
             
           </span>
         </div>
@@ -455,12 +455,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../4_clustering_statistics/" class="md-nav__link">
+      <a href="../4_clustering/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    4. Clustering & Statistics
+    4. Clustering
     
   </span>
   
@@ -478,12 +478,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../5_analyzing_results/" class="md-nav__link">
+      <a href="../5_statistical_methods/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    5. Analyzing Results
+    5. Statistical Methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_analyzing_results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Analyzing Results
     
   </span>
   
@@ -515,7 +538,7 @@
   
   
   <span class="md-ellipsis">
-    6. Visualization
+    7. Visualization
     
   </span>
   
@@ -528,7 +551,7 @@
   
   
   <span class="md-ellipsis">
-    6. Visualization
+    7. Visualization
     
   </span>
   
@@ -719,12 +742,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../7_parameters/" class="md-nav__link">
+      <a href="../8_parameters/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    7. Analysis Parameters
+    8. Analysis Parameters
     
   </span>
   
@@ -861,7 +884,7 @@
 <li><code>subtitle_fontsize</code> (int, optional): Font size for the subtitle. Defaults to 14.</li>
 <li><code>font</code> (str, optional): Font family used for both the title and subtitle. Defaults to "DejaVu Sans".</li>
 <li><code>title_color</code> (str, list, tuple, or np.ndarray, optional): Color of the title text. Provide a single color (e.g., <code>"black"</code>, <code>(0.0, 0.0, 0.0)</code> for RGB, or <code>(0.0, 0.0, 0.0, 1.0)</code> for RGBA). Defaults to "black".</li>
-<li><code>title_color</code> (str, list, tuple, or np.ndarray, optional): Color of the subtitle text. Provide a single color (e.g., <code>"black"</code>, <code>(0.0, 0.0, 0.0)</code> for RGB, or <code>(0.0, 0.0, 0.0, 1.0)</code> for RGBA). Defaults to "black".</li>
+<li><code>subtitle_color</code> (str, list, tuple, or np.ndarray, optional): Color of the subtitle text. Provide a single color (e.g., <code>"black"</code>, <code>(0.0, 0.0, 0.0)</code> for RGB, or <code>(0.0, 0.0, 0.0, 1.0)</code> for RGBA). Defaults to "black".</li>
 <li><code>title_x</code> (float, optional): X-axis position of the title. Defaults to 0.5.</li>
 <li><code>title_y</code> (float, optional): Y-axis position of the title. Defaults to 0.975.</li>
 <li><code>title_space_offset</code> (float, optional): Fraction of figure height to leave for the space above the plot. Defaults to 0.075.</li>
@@ -916,20 +939,21 @@
 <li><code>levels</code> (int, optional): Number of contour levels. Defaults to 3.</li>
 <li><code>bandwidth</code> (float, optional): Bandwidth for KDE, controlling the smoothness of the contour. Defaults to 0.8.</li>
 <li><code>grid_size</code> (int, optional): Resolution of the grid for KDE. Higher values create finer contours. Defaults to 250.</li>
-<li><code>color</code> (str, list, tuple, or np.ndarray, optional): Color of the circle. Provide a single color (e.g., <code>"black"</code>, <code>(0.0, 0.0, 0.0)</code> for RGB, or <code>(0.0, 0.0, 0.0, 1.0)</code> for RGBA). Defaults to "black".</li>
+<li><code>color</code> (str, list, tuple, or np.ndarray, optional): Color of the contour. Provide a single color (e.g., <code>"black"</code>, <code>(0.0, 0.0, 0.0)</code> for RGB, or <code>(0.0, 0.0, 0.0, 1.0)</code> for RGBA). Defaults to "black".</li>
 <li><code>linestyle</code> (str, optional): Line style for the contour. Options include <code>"solid"</code>, <code>"dashed"</code>, <code>"dashdot"</code>, <code>"dotted"</code>, or any Matplotlib-supported linestyle. Defaults to "solid".</li>
 <li><code>linewidth</code> (float, optional): Width of the contour’s outline. Defaults to 1.5.</li>
 <li><code>outline_alpha</code> (float, None, optional): Transparency level for the contour's outline. If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to 1.0.</li>
 <li><code>fill_alpha</code> (float, None, optional): Transparency level for the contour’s fill. If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to 0.0.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">plotter</span><span class="o">.</span><span class="n">plot_contour_perimeter</span><span class="p">(</span>
+    <span class="n">scale</span><span class="o">=</span><span class="mf">1.02</span><span class="p">,</span>
     <span class="n">levels</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
     <span class="n">bandwidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
     <span class="n">grid_size</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span>
     <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
     <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;solid&quot;</span><span class="p">,</span>
     <span class="n">linewidth</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
-    <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">outline_alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
     <span class="n">fill_alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
@@ -944,7 +968,7 @@
 <li><code>'s'</code>: Square.</li>
 <li><code>'^'</code>: Triangle up.</li>
 <li><code>'v'</code>: Triangle down.</li>
-<li>Other options: <code>'p'</code>, <code>'P'</code>, <code>'h'</code>, <code>'H'</code>, <code>'8'</code>, <code>'d'</code>, <code>'D'</code>, <code>'&gt;'</code>, <code>'&lt;</code>, <code>'|'</code>, <code>'_'</code>.</li>
+<li>Other options: <code>'p'</code>, <code>'P'</code>, <code>'h'</code>, <code>'H'</code>, <code>'8'</code>, <code>'d'</code>, <code>'D'</code>, <code>'&gt;'</code>, <code>'&lt;',</code>'|'<code>,</code>'_'`.</li>
 </ul>
 </li>
 <li><code>node_edgewidth</code> (float, optional): Width of the edges around each node. Defaults to 1.0.</li>
@@ -952,15 +976,15 @@
 <li><code>node_color</code> (str, list, tuple, or np.ndarray, optional): Color of the nodes. Can be a single color (e.g., <code>"white"</code>, <code>"red"</code>, <code>(0.5, 0.5, 0.5)</code> for RGB, or <code>(0.5, 0.5, 0.5, 0.8)</code> for RGBA) or an array of such colors. Defaults to "white".</li>
 <li><code>node_edgecolor</code> (str, list, tuple, or np.ndarray, optional): Color of the edges around each node. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".</li>
 <li><code>edge_color</code> (str, list, tuple, or np.ndarray, optional): Color of the edges connecting the nodes. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".</li>
-<li><code>node_alpha</code> (float or None, optional): Alpha value (transparency) for the nodes. Range: <code>0.0</code> (fully transparent) to 1.0<code>(fully opaque). If provided, it overrides any alpha values in</code>node_color`. Defaults to 1.0.</li>
-<li><code>edge_alpha</code> (float or None, optional): Alpha value (transparency) for the edges. Range: <code>0.0</code> (fully transparent) to 1.0<code>(fully opaque). If provided, it overrides any alpha values in</code>edge_color`. Defaults to 1.0.</li>
+<li><code>node_alpha</code> (float or None, optional): Alpha value (transparency) for the nodes. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any alpha values in <code>node_color</code>. Defaults to 1.0.</li>
+<li><code>edge_alpha</code> (float or None, optional): Alpha value (transparency) for the edges. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any alpha values in <code>edge_color</code>. Defaults to 1.0.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">plotter</span><span class="o">.</span><span class="n">plot_network</span><span class="p">(</span>
-    <span class="n">node_size</span><span class="o">=</span><span class="n">node_sizes</span><span class="p">,</span>
-    <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span>
+    <span class="n">node_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
     <span class="n">node_shape</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
     <span class="n">node_edgewidth</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
     <span class="n">edge_width</span><span class="o">=</span><span class="mf">0.03</span><span class="p">,</span>
+    <span class="n">node_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
     <span class="n">node_edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
     <span class="n">edge_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
     <span class="n">node_alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
@@ -969,11 +993,11 @@
 </code></pre></div>
 <hr />
 <h2 id="get_annotated_node_sizes">get_annotated_node_sizes()<a class="headerlink" href="#get_annotated_node_sizes" title="Permanent link">&para;</a></h2>
-<p>Generate node sizes based on annotation significance.</p>
+<p>Generate node sizes based on annotation significance. Pass this to parameter <code>node_size</code> in <code>plot_network()</code>.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><code>singificant_size</code> (int, optional): Size for singificant nodes. Defaults to 50.</li>
-<li><code>nonsignificant_size</code> (int, optional): Size for non-singificant nodes. Defaults to 25.</li>
+<li><code>significant_size</code> (int, optional): Size for significant nodes. Defaults to 50.</li>
+<li><code>nonsignificant_size</code> (int, optional): Size for non-significant nodes. Defaults to 25.</li>
 </ul>
 <p><strong>Returns:</strong>
 <code>list</code>: List of node sizes corresponding to graph nodes.</p>
@@ -984,7 +1008,7 @@
 </code></pre></div>
 <hr />
 <h2 id="get_annotated_node_colors">get_annotated_node_colors()<a class="headerlink" href="#get_annotated_node_colors" title="Permanent link">&para;</a></h2>
-<p>Generate node colors based on annotation significance and optional blending.</p>
+<p>Generate node colors based on annotation significance and optional blending. Pass this to parameter <code>node_color</code> in <code>plot_network()</code>.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>cmap</code> (str, optional): The colormap to use for node colors. Defaults to "gist_rainbow".</li>
@@ -994,9 +1018,9 @@
 <li><code>min_scale</code> (float, optional): Minimum scale for color intensity. Defaults to 0.8.</li>
 <li><code>max_scale</code> (float, optional): Maximum scale for color intensity. Defaults to 1.0.</li>
 <li><code>scale_factor</code> (float, optional): Factor for adjusting the color scaling intensity. Defaults to 1.0.</li>
-<li><code>alpha</code> (float, None, optional): Alpha value for singificant nodes. If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to 1.0.</li>
-<li><code>nonsignificant_color</code> (str, list, tuple, or np.ndarray, optional): Color for non-singificant nodes. Can be a single color (e.g., <code>"white"</code>, <code>(0.5, 0.5, 0.5)</code> for RGB, or <code>(0.5, 0.5, 0.5, 0.8)</code> for RGBA) or an array of such colors. Defaults to "white".</li>
-<li><code>nonsignificant_alpha</code> (float, None, optional): Alpha value for non-singificant nodes. If provided, it overrides any existing alpha values found in <code>nonsignificant_color</code>. Defaults to 1.0.</li>
+<li><code>alpha</code> (float, None, optional): Alpha value for significant nodes. If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to 1.0.</li>
+<li><code>nonsignificant_color</code> (str, list, tuple, or np.ndarray, optional): Color for non-significant nodes. Can be a single color (e.g., <code>"white"</code>, <code>(0.5, 0.5, 0.5)</code> for RGB, or <code>(0.5, 0.5, 0.5, 0.8)</code> for RGBA) or an array of such colors. Defaults to "white".</li>
+<li><code>nonsignificant_alpha</code> (float, None, optional): Alpha value for non-significant nodes. If provided, it overrides any existing alpha values found in <code>nonsignificant_color</code>. Defaults to 1.0.</li>
 <li><code>ids_to_colors</code> (dict, None, optional): Mapping of domain IDs to specific colors. Defaults to None.</li>
 <li><code>random_seed</code> (int, optional): Seed for random number generation. Defaults to 888.</li>
 </ul>
@@ -1064,7 +1088,7 @@
 <li><code>bandwidth</code> (float, optional): Bandwidth for KDE, controlling the smoothness of the contour. Defaults to 0.8.</li>
 <li><code>grid_size</code> (int, optional): Resolution of the grid for KDE. Higher values create finer contours. Defaults to 250.</li>
 <li><code>color</code> (str, list, tuple, or np.ndarray, optional): Color of the contours. Can be a string (e.g., <code>"white"</code>), an RGB/RGBA value, or an array of such values. Defaults to "white".</li>
-<li><code>linestyle</code> (str, optional): Line style for the contours. Options include <code>'solid'</code>, <code>'dashed'</code>, <code>'dashdot'</code>, `'dotted'. Defaults to "solid".</li>
+<li><code>linestyle</code> (str, optional): Line style for the contours. Options include <code>'solid'</code>, <code>'dashed'</code>, <code>'dashdot'</code>, <code>'dotted'</code>. Defaults to "solid".</li>
 <li><code>linewidth</code> (float, optional): Line width for the contours. Defaults to 1.5.</li>
 <li><code>alpha</code> (float, None, optional): Transparency level of the contour lines. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to 1.0.</li>
 <li><code>fill_alpha</code> (float, None, optional): Transparency level of the contour fill. If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to None.</li>
@@ -1073,17 +1097,7 @@
     <span class="n">levels</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
     <span class="n">bandwidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
     <span class="n">grid_size</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="n">plotter</span><span class="o">.</span><span class="n">get_annotated_contour_colors</span><span class="p">(</span>
-        <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;gist_rainbow&quot;</span><span class="p">,</span>
-        <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">blend_colors</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-        <span class="n">blend_gamma</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span>
-        <span class="n">min_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-        <span class="n">max_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-        <span class="n">scale_factor</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
-        <span class="n">ids_to_colors</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">random_seed</span><span class="o">=</span><span class="mi">887</span><span class="p">,</span>
-    <span class="p">),</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
     <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;solid&quot;</span><span class="p">,</span>
     <span class="n">linewidth</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
     <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
@@ -1092,7 +1106,7 @@
 </code></pre></div>
 <hr />
 <h2 id="get_annotated_contour_colors">get_annotated_contour_colors()<a class="headerlink" href="#get_annotated_contour_colors" title="Permanent link">&para;</a></h2>
-<p>Generate colors for domain contours based on annotation significance.</p>
+<p>Generate colors for domain contours based on annotation significance. Pass this to parameter <code>color</code> in <code>plot_contours()</code>.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>cmap</code> (str, optional): The colormap to use for contour colors. Defaults to "gist_rainbow".</li>
@@ -1186,17 +1200,7 @@
     <span class="n">fontalpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
     <span class="n">arrow_linewidth</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
     <span class="n">arrow_style</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">,</span>
-    <span class="n">arrow_color</span><span class="o">=</span><span class="n">plotter</span><span class="o">.</span><span class="n">get_annotated_label_colors</span><span class="p">(</span>
-        <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;gist_rainbow&quot;</span><span class="p">,</span>
-        <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">blend_colors</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-        <span class="n">blend_gamma</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span>
-        <span class="n">min_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-        <span class="n">max_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-        <span class="n">scale_factor</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
-        <span class="n">ids_to_colors</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">random_seed</span><span class="o">=</span><span class="mi">887</span><span class="p">,</span>
-    <span class="p">),</span>
+    <span class="n">arrow_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
     <span class="n">arrow_alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
     <span class="n">arrow_base_shrink</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span>
     <span class="n">arrow_tip_shrink</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
@@ -1213,7 +1217,7 @@
 </code></pre></div>
 <hr />
 <h2 id="get_annotated_label_colors">get_annotated_label_colors()<a class="headerlink" href="#get_annotated_label_colors" title="Permanent link">&para;</a></h2>
-<p>Generate colors for labels based on annotation significance.</p>
+<p>Generate colors for labels based on annotation significance. Pass this to parameters <code>fontcolor</code> or <code>arrow_color</code> in <code>plot_labels()</code>.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>cmap</code> (str, optional): The colormap to use for label colors. Defaults to "gist_rainbow".</li>
@@ -1313,7 +1317,7 @@
 <p><img alt="Annotated Yeast PPI Network" src="../images/go_bp_annotated.png" /></p>
 <hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Permanent link">&para;</a></h2>
-<p><a href="../7_parameters/">Overview of <code>risk.params</code></a></p>
+<p><a href="../8_parameters/">Overview of <code>risk.params</code></a></p>
 
 
 

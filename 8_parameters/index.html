@@ -8,10 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://github.com/riskportal/risk/7_parameters/">
+        <link rel="canonical" href="https://github.com/riskportal/risk/8_parameters/">
       
       
-        <link rel="prev" href="../6_visualization/">
+        <link rel="prev" href="../7_visualization/">
       
       
         <link rel="next" href="../tutorial.html">
@@ -22,7 +22,7 @@
     
     
       
-        <title>7. Analysis Parameters - RISK Documentation</title>
+        <title>8. Analysis Parameters - RISK Documentation</title>
       
     
     
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7. Analysis Parameters
+              8. Analysis Parameters
             
           </span>
         </div>
@@ -455,12 +455,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../4_clustering_statistics/" class="md-nav__link">
+      <a href="../4_clustering/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    4. Clustering & Statistics
+    4. Clustering
     
   </span>
   
@@ -478,12 +478,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../5_analyzing_results/" class="md-nav__link">
+      <a href="../5_statistical_methods/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    5. Analyzing Results
+    5. Statistical Methods
     
   </span>
   
@@ -501,12 +501,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../6_visualization/" class="md-nav__link">
+      <a href="../6_analyzing_results/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    6. Visualization
+    6. Analyzing Results
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Visualization
     
   </span>
   
@@ -538,7 +561,7 @@
   
   
   <span class="md-ellipsis">
-    7. Analysis Parameters
+    8. Analysis Parameters
     
   </span>
   
@@ -551,7 +574,7 @@
   
   
   <span class="md-ellipsis">
-    7. Analysis Parameters
+    8. Analysis Parameters
     
   </span>
   
@@ -737,21 +760,28 @@
 <hr />
 <h2 id="exporting-parameters">Exporting Parameters<a class="headerlink" href="#exporting-parameters" title="Permanent link">&para;</a></h2>
 <p>Export RISK analysis parameters—from network loading to visualization—in common formats for downstream use or sharing.</p>
-<p><strong>Shared Parameters:</strong></p>
-<p>Shared parameters among export methods.</p>
+<h3 id="export-to-csv">Export to CSV<a class="headerlink" href="#export-to-csv" title="Permanent link">&para;</a></h3>
+<p>Exports the parameter dictionary to a <code>.csv</code> file.</p>
+<p><strong>Parameters:</strong></p>
 <ul>
 <li><code>filepath</code> (str): The path where the file will be saved.</li>
 </ul>
-<h3 id="export-to-csv">Export to CSV<a class="headerlink" href="#export-to-csv" title="Permanent link">&para;</a></h3>
-<p>Exports the parameter dictionary to a <code>.csv</code> file.</p>
 <div class="highlight"><pre><span></span><code><span class="n">risk</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s2">&quot;./data/csv/params/michaelis_2023.csv&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="export-to-json">Export to JSON<a class="headerlink" href="#export-to-json" title="Permanent link">&para;</a></h3>
 <p>Exports the parameter dictionary to a <code>.json</code> file. The hierarchical structure is preserved.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>filepath</code> (str): The path where the file will be saved.</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="n">risk</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s2">&quot;./data/json/params/michaelis_2023.json&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="export-to-text">Export to Text<a class="headerlink" href="#export-to-text" title="Permanent link">&para;</a></h3>
 <p>Exports the parameter dictionary to a plain <code>.txt</code> file in human‑readable format.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>filepath</code> (str): The path where the file will be saved.</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="n">risk</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">to_txt</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s2">&quot;./data/txt/params/michaelis_2023.txt&quot;</span><span class="p">)</span>
 </code></pre></div>
 <hr />

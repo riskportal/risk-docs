@@ -14,7 +14,7 @@
         <link rel="prev" href="../2_network_input/">
       
       
-        <link rel="next" href="../4_clustering_statistics/">
+        <link rel="next" href="../4_clustering/">
       
       
       <link rel="icon" href="../images/risk_logo.ico">
@@ -491,15 +491,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#shared-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shared Parameters
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#json-annotation" class="md-nav__link">
     <span class="md-ellipsis">
       JSON Annotation
@@ -569,12 +560,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../4_clustering_statistics/" class="md-nav__link">
+      <a href="../4_clustering/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    4. Clustering & Statistics
+    4. Clustering
     
   </span>
   
@@ -592,12 +583,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../5_analyzing_results/" class="md-nav__link">
+      <a href="../5_statistical_methods/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    5. Analyzing Results
+    5. Statistical Methods
     
   </span>
   
@@ -615,12 +606,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../6_visualization/" class="md-nav__link">
+      <a href="../6_analyzing_results/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    6. Visualization
+    6. Analyzing Results
     
   </span>
   
@@ -638,12 +629,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../7_parameters/" class="md-nav__link">
+      <a href="../7_visualization/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    7. Analysis Parameters
+    7. Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8_parameters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. Analysis Parameters
     
   </span>
   
@@ -812,19 +826,15 @@ For example:</p>
 </tr>
 </tbody>
 </table>
-<h2 id="shared-parameters">Shared Parameters<a class="headerlink" href="#shared-parameters" title="Permanent link">&para;</a></h2>
-<p>Shared parameters among annotation loaders.</p>
-<ul>
-<li><code>network</code> (nx.Graph): The network to which the annotation is related.</li>
-<li><code>min_nodes_per_term</code> (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.</li>
-<li><code>max_nodes_per_term</code> (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.</li>
-</ul>
 <hr />
 <h2 id="json-annotation">JSON Annotation<a class="headerlink" href="#json-annotation" title="Permanent link">&para;</a></h2>
 <p>Load annotation data from a JSON file and associate terms with network nodes.</p>
-<p><strong>Additional Parameters:</strong></p>
+<p><strong>Parameters:</strong></p>
 <ul>
+<li><code>network</code> (nx.Graph): The network to which the annotation is related.</li>
 <li><code>filepath</code> (str): Path to the JSON annotation file.</li>
+<li><code>min_nodes_per_term</code> (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.</li>
+<li><code>max_nodes_per_term</code> (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.</li>
 </ul>
 <p><strong>Returns:</strong>
 <code>dict</code>: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.</p>
@@ -838,12 +848,15 @@ For example:</p>
 <hr />
 <h2 id="csv-annotation">CSV Annotation<a class="headerlink" href="#csv-annotation" title="Permanent link">&para;</a></h2>
 <p>Load annotation data from a CSV file, specifying columns and delimiter for nodes.</p>
-<p><strong>Additional Parameters:</strong></p>
+<p><strong>Parameters:</strong></p>
 <ul>
+<li><code>network</code> (nx.Graph): The network to which the annotation is related.</li>
 <li><code>filepath</code> (str): Path to the CSV annotation file.</li>
 <li><code>label_colname</code> (str): Name of the column containing the annotation term (e.g., GO term).</li>
 <li><code>nodes_colname</code> (str): Name of the column containing the nodes associated with each label.</li>
 <li><code>nodes_delimiter</code> (str, optional): Delimiter used to separate multiple nodes within the nodes column. Defaults to ';'.</li>
+<li><code>min_nodes_per_term</code> (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.</li>
+<li><code>max_nodes_per_term</code> (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.</li>
 </ul>
 <p><strong>Returns:</strong>
 <code>dict</code>: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.</p>
@@ -860,12 +873,15 @@ For example:</p>
 <hr />
 <h2 id="tsv-annotation">TSV Annotation<a class="headerlink" href="#tsv-annotation" title="Permanent link">&para;</a></h2>
 <p>Load annotation data from a tab-delimited file, similar to CSV but with tabs as separators.</p>
-<p><strong>Additional Parameters:</strong></p>
+<p><strong>Parameters:</strong></p>
 <ul>
+<li><code>network</code> (nx.Graph): The network to which the annotation is related.</li>
 <li><code>filepath</code> (str): Path to the TSV annotation file.</li>
 <li><code>label_colname</code> (str): Name of the column containing the annotation term (e.g., GO term).</li>
 <li><code>nodes_colname</code> (str): Name of the column containing the nodes associated with each label.</li>
 <li><code>nodes_delimiter</code> (str, optional): Delimiter used to separate multiple nodes within the nodes column. Defaults to ';'.</li>
+<li><code>min_nodes_per_term</code> (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.</li>
+<li><code>max_nodes_per_term</code> (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.</li>
 </ul>
 <p><strong>Returns:</strong>
 <code>dict</code>: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.</p>
@@ -882,13 +898,16 @@ For example:</p>
 <hr />
 <h2 id="excel-annotation">Excel Annotation<a class="headerlink" href="#excel-annotation" title="Permanent link">&para;</a></h2>
 <p>Load annotation data from an Excel workbook, with support for selecting specific sheets.</p>
-<p><strong>Additional Parameters:</strong></p>
+<p><strong>Parameters:</strong></p>
 <ul>
+<li><code>network</code> (nx.Graph): The network to which the annotation is related.</li>
 <li><code>filepath</code> (str): Path to the Excel annotation file.</li>
 <li><code>label_colname</code> (str): Name of the column containing the annotation term (e.g., GO term).</li>
 <li><code>nodes_colname</code> (str): Name of the column containing the nodes associated with each label.</li>
 <li><code>sheet_name</code> (str, optional): The name of the Excel sheet to load. Defaults to 'Sheet1'.</li>
 <li><code>nodes_delimiter</code> (str, optional): Delimiter used to separate multiple nodes within the nodes column. Defaults to ';'.</li>
+<li><code>min_nodes_per_term</code> (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.</li>
+<li><code>max_nodes_per_term</code> (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.</li>
 </ul>
 <p><strong>Returns:</strong>
 <code>dict</code>: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.</p>
@@ -906,9 +925,12 @@ For example:</p>
 <hr />
 <h2 id="dictionary-based-annotation">Dictionary-Based Annotation<a class="headerlink" href="#dictionary-based-annotation" title="Permanent link">&para;</a></h2>
 <p>Load annotation data already in memory as a Python dictionary.</p>
-<p><strong>Additional Parameters:</strong></p>
+<p><strong>Parameters:</strong></p>
 <ul>
+<li><code>network</code> (nx.Graph): The network to which the annotation is related.</li>
 <li><code>content</code> (dict): The annotation dictionary to load.</li>
+<li><code>min_nodes_per_term</code> (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.</li>
+<li><code>max_nodes_per_term</code> (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.</li>
 </ul>
 <p><strong>Returns:</strong>
 <code>dict</code>: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.</p>
@@ -926,7 +948,7 @@ For example:</p>
 </code></pre></div>
 <hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Permanent link">&para;</a></h2>
-<p><a href="../4_clustering_statistics/">Clustering Algorithms and Statistical Methods</a></p>
+<p><a href="../4_clustering/">Clustering Algorithms</a></p>
 
 
 

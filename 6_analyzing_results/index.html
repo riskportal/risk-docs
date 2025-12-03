@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/riskportal/risk/5_analyzing_results/">
+        <link rel="canonical" href="https://github.com/riskportal/risk/6_analyzing_results/">
       
       
-        <link rel="prev" href="../4_clustering_statistics/">
+        <link rel="prev" href="../5_statistical_methods/">
       
       
-        <link rel="next" href="../6_visualization/">
+        <link rel="next" href="../7_visualization/">
       
       
       <link rel="icon" href="../images/risk_logo.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>5. Analyzing Results - RISK Documentation</title>
+        <title>6. Analyzing Results - RISK Documentation</title>
       
     
     
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5. Analyzing Results
+              6. Analyzing Results
             
           </span>
         </div>
@@ -455,12 +455,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../4_clustering_statistics/" class="md-nav__link">
+      <a href="../4_clustering/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    4. Clustering & Statistics
+    4. Clustering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_statistical_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. Statistical Methods
     
   </span>
   
@@ -492,7 +515,7 @@
   
   
   <span class="md-ellipsis">
-    5. Analyzing Results
+    6. Analyzing Results
     
   </span>
   
@@ -505,7 +528,7 @@
   
   
   <span class="md-ellipsis">
-    5. Analyzing Results
+    6. Analyzing Results
     
   </span>
   
@@ -627,12 +650,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../6_visualization/" class="md-nav__link">
+      <a href="../7_visualization/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    6. Visualization
+    7. Visualization
     
   </span>
   
@@ -650,12 +673,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../7_parameters/" class="md-nav__link">
+      <a href="../8_parameters/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    7. Analysis Parameters
+    8. Analysis Parameters
     
   </span>
   
@@ -766,7 +789,7 @@
 <ul>
 <li><code>network</code> (nx.Graph): The network graph containing the nodes and edges to be analyzed.</li>
 <li><code>annotation</code> (dict): The annotation associated with the network, typically derived from biological or functional data.</li>
-<li><code>neighborhoods</code> (dict): The neighborhoods object, containing data from enrichment or depletion analysis.</li>
+<li><code>stats_results</code> (dict): Statistical output from <code>risk.run_permutation</code>, <code>risk.run_hypergeom</code>, <code>risk.run_chi2</code>, or <code>risk.run_binom</code>. Must contain <code>"depletion_pvals"</code> and <code>"enrichment_pvals"</code>.</li>
 <li><code>tail</code> (str, optional): Specifies the tail of the statistical test to use. Options include:<ul>
 <li><code>'right'</code>: For enrichment. <em>(default)</em></li>
 <li><code>'left'</code>: For depletion.</li>
@@ -775,20 +798,20 @@
 </li>
 <li><code>pval_cutoff</code> (float, optional): Cutoff value for p-values to determine significance. Range: Any value between 0 and 1. Defaults to 0.01.</li>
 <li><code>fdr_cutoff</code> (float, optional): Cutoff value for FDR-corrected p-values. Range: Any value between 0 and 1. Defaults to 0.9999.</li>
-<li><code>impute_depth</code> (int, optional): Depth for imputing missing values. Defaults to 1.</li>
+<li><code>impute_depth</code> (int, optional): Depth for imputing missing values. Defaults to 0.</li>
 <li><code>prune_threshold</code> (float, optional): Threshold for pruning weak edges from the network graph. Range: Any value between 0 and 1. Defaults to 0.0.</li>
-<li><code>linkage_criterion</code> (str, optional): Criterion for clustering. Defaults to 'distance'. Options include:<ul>
+<li><code>linkage_criterion</code> (str, optional): Criterion for clustering. Defaults to <code>'distance'</code>. Options include:<ul>
 <li><code>'distance'</code>: Clusters are formed based on distance.</li>
 <li><code>'maxclust'</code>: Clusters are formed based on the maximum number of clusters.</li>
 <li><code>'off'</code>: Disables clustering; terms remain separate.</li>
 </ul>
 </li>
-<li><code>linkage_method</code> (str, optional): Method used for hierarchical clustering. Defaults to 'average'. Options include:<ul>
+<li><code>linkage_method</code> (str, optional): Method used for hierarchical clustering. Defaults to <code>'average'</code>. Options include:<ul>
 <li><code>'auto'</code>: Automatically determines the optimal method using the silhouette score.</li>
 <li>Other options: <code>'single'</code>, <code>'complete'</code>, <code>'average'</code>, <code>'weighted'</code>, <code>'centroid'</code>, <code>'median'</code>, <code>'ward'</code>.</li>
 </ul>
 </li>
-<li><code>linkage_metric</code> (str, optional): Distance metric used for clustering. Defaults to 'yule'. Options include:<ul>
+<li><code>linkage_metric</code> (str, optional): Distance metric used for clustering. Defaults to <code>'yule'</code>. Options include:<ul>
 <li><code>'auto'</code>: Automatically determines the optimal metric using the silhouette score.</li>
 <li>Other options: <code>'braycurtis'</code>, <code>'canberra'</code>, <code>'chebyshev'</code>, <code>'cityblock'</code>, <code>'correlation'</code>, <code>'cosine'</code>, <code>'dice'</code>, <code>'euclidean'</code>, <code>'hamming'</code>, <code>'jaccard'</code>, <code>'jensenshannon'</code>, <code>'kulczynski1'</code>, <code>'mahalanobis'</code>, <code>'matching'</code>, <code>'minkowski'</code>, <code>'rogerstanimoto'</code>, <code>'russellrao'</code>, <code>'seuclidean'</code>, <code>'sokalmichener'</code>, <code>'sokalsneath'</code>, <code>'sqeuclidean'</code>, <code>'yule'</code>.</li>
 </ul>
@@ -802,18 +825,18 @@
 <div class="highlight"><pre><span></span><code><span class="n">graph</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_graph</span><span class="p">(</span>
     <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
     <span class="n">annotation</span><span class="o">=</span><span class="n">annotation</span><span class="p">,</span>
-    <span class="n">neighborhoods</span><span class="o">=</span><span class="n">neighborhoods</span><span class="p">,</span>
+    <span class="n">stats_results</span><span class="o">=</span><span class="n">stats_permutation</span><span class="p">,</span>
     <span class="n">tail</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">,</span>
     <span class="n">pval_cutoff</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
     <span class="n">fdr_cutoff</span><span class="o">=</span><span class="mf">0.9999</span><span class="p">,</span>
-    <span class="n">impute_depth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">impute_depth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
     <span class="n">prune_threshold</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
     <span class="n">linkage_criterion</span><span class="o">=</span><span class="s2">&quot;distance&quot;</span><span class="p">,</span>
     <span class="n">linkage_method</span><span class="o">=</span><span class="s2">&quot;average&quot;</span><span class="p">,</span>
     <span class="n">linkage_metric</span><span class="o">=</span><span class="s2">&quot;yule&quot;</span><span class="p">,</span>
     <span class="n">linkage_threshold</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
     <span class="n">min_cluster_size</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-    <span class="n">max_cluster_size</span><span class="o">=</span><span class="mi">1000</span>
+    <span class="n">max_cluster_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <h2 id="key-attributes">Key Attributes<a class="headerlink" href="#key-attributes" title="Permanent link">&para;</a></h2>
@@ -856,7 +879,7 @@
 </code></pre></div>
 <hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Permanent link">&para;</a></h2>
-<p><a href="../6_visualization/">Visualizing Networks in RISK</a></p>
+<p><a href="../7_visualization/">Visualizing Networks in RISK</a></p>
 
 
 

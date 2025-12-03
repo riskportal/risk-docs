@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/riskportal/risk/2_network_input/">
+        <link rel="canonical" href="https://github.com/riskportal/risk/4_clustering/">
       
       
-        <link rel="prev" href="../1_installation/">
+        <link rel="prev" href="../3_annotation_input/">
       
       
-        <link rel="next" href="../3_annotation_input/">
+        <link rel="next" href="../5_statistical_methods/">
       
       
       <link rel="icon" href="../images/risk_logo.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>2. Network Input - RISK Documentation</title>
+        <title>4. Clustering - RISK Documentation</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loading-networks-into-risk" class="md-skip">
+        <a href="#clustering-algorithms" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. Network Input
+              4. Clustering
             
           </span>
         </div>
@@ -406,32 +406,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    2. Network Input
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2_network_input/" class="md-nav__link">
         
   
   
@@ -442,80 +420,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#supported-input-formats" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported Input Formats
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cytoscape-cys-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cytoscape .cys Files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cytoscape-json-cyjs-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cytoscape JSON (.cyjs) Files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gpickle-gpickle-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      GPickle (.gpickle) Files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#networkx-graphs" class="md-nav__link">
-    <span class="md-ellipsis">
-      NetworkX Graphs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-step" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Step
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -548,10 +452,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../4_clustering/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    4. Clustering
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -562,6 +488,122 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithm Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-an-algorithm-quick-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing an algorithm: quick guidance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#louvain-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Louvain Clustering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leiden-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leiden Clustering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greedy-modularity-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greedy Modularity Clustering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#label-propagation-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Label Propagation Clustering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markov-clustering-mcl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markov Clustering (MCL)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#walktrap-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Walktrap Clustering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spinglass-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spinglass Clustering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Step
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -751,131 +793,221 @@
   
 
 
-<h1 id="loading-networks-into-risk">Loading Networks into RISK<a class="headerlink" href="#loading-networks-into-risk" title="Permanent link">&para;</a></h1>
-<p>Networks form the foundation of any RISK analysis, representing nodes (e.g., genes, proteins, papers) and the edges, or relationships, connecting them.</p>
-<p>RISK provides flexible loading functions compatible with multiple formats—including Cytoscape session files, Cytoscape JSON exports, GPickle files, and in-memory NetworkX graphs. These loaders standardize input into NetworkX graph objects ready for downstream analysis, with options for preprocessing such as spherical projection, surface depth adjustment, and node filtering.</p>
+<h1 id="clustering-algorithms">Clustering Algorithms<a class="headerlink" href="#clustering-algorithms" title="Permanent link">&para;</a></h1>
+<p>Clustering algorithms detect structured regions of varying size and compactness. The choice of algorithm depends on network scale, density, and biological context, influencing the resolution and stability of the resulting modules. Every clustering function in RISK accepts a <code>fraction_shortest_edges</code> argument—a rank-based fraction (0, 1] of the shortest edges retained before the algorithm runs—and returns a sparse cluster-assignment matrix (<code>csr_matrix</code>) that can be reused across multiple statistical tests.</p>
 <hr />
-<h2 id="supported-input-formats">Supported Input Formats<a class="headerlink" href="#supported-input-formats" title="Permanent link">&para;</a></h2>
+<h2 id="algorithm-overview">Algorithm Overview<a class="headerlink" href="#algorithm-overview" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Format</th>
-<th>Method</th>
-<th>Description</th>
+<th>Algorithm</th>
+<th>Speed</th>
+<th>Primary use</th>
+<th>When/Why (assumptions &amp; notes)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>.cys</code></td>
-<td><code>load_network_cytoscape()</code></td>
-<td>Load from Cytoscape session files; supports source/target labels and optional view selection.</td>
+<td>Louvain</td>
+<td>Fast</td>
+<td>Default, scalable to very large networks</td>
+<td>Greedy modularity optimization (Blondel <em>et al</em>., 2008); efficient for &gt;10⁴ nodes; may produce disconnected subclusters.</td>
 </tr>
 <tr>
-<td><code>.cyjs</code></td>
-<td><code>load_network_cyjs()</code></td>
-<td>Import Cytoscape JSON format; specify source and target labels for nodes and edges.</td>
+<td>Leiden</td>
+<td>Fast</td>
+<td>Improved Louvain with better resolution</td>
+<td>Guarantees well-connected communities; more stable than Louvain (Traag <em>et al</em>., 2019); slightly higher runtime.</td>
 </tr>
 <tr>
-<td><code>.gpickle</code></td>
-<td><code>load_network_gpickle()</code></td>
-<td>Reload serialized NetworkX graphs; preserves full network structure.</td>
+<td>Markov Clustering</td>
+<td>Medium</td>
+<td>Detect smaller, compact complexes</td>
+<td>Flow-based algorithm (Van Dongen, 2008); good for protein complexes or tightly connected submodules.</td>
 </tr>
 <tr>
-<td><code>NetworkX</code></td>
-<td><code>load_network_networkx()</code></td>
-<td>Convert an existing NetworkX graph object into a RISK-compatible format.</td>
+<td>Walktrap</td>
+<td>Medium</td>
+<td>Hierarchical detection in mid-sized graphs</td>
+<td>Random-walk based (Pons &amp; Latapy, 2005); effective for local structure; slower on &gt;10⁴ nodes.</td>
+</tr>
+<tr>
+<td>Greedy Modularity</td>
+<td>Fast</td>
+<td>Coarse partitioning</td>
+<td>Optimizes modularity via agglomeration; very fast but suffers from resolution limit (Newman, 2004).</td>
+</tr>
+<tr>
+<td>Label Propagation</td>
+<td>Fast</td>
+<td>Quick heuristic</td>
+<td>Unsupervised label spreading; no objective function; non-deterministic and unstable (Raghavan <em>et al</em>., 2007).</td>
+</tr>
+<tr>
+<td>Spinglass</td>
+<td>Slow</td>
+<td>Small networks; theoretical interest</td>
+<td>Statistical mechanics approach (Reichardt &amp; Bornholdt, 2006); finds communities by simulating spin states; computationally intensive.</td>
 </tr>
 </tbody>
 </table>
+<h3 id="choosing-an-algorithm-quick-guidance">Choosing an algorithm: quick guidance<a class="headerlink" href="#choosing-an-algorithm-quick-guidance" title="Permanent link">&para;</a></h3>
+<ul>
+<li>For large networks (&gt;10⁴ nodes): <strong>Louvain</strong> or <strong>Leiden</strong> (fast, scalable).</li>
+<li>For small, compact complexes: <strong>Markov Clustering</strong> (protein complexes, submodules).</li>
+<li>For hierarchical/local structure: <strong>Walktrap</strong> (medium size).</li>
+<li>For exploratory speed: <strong>Greedy</strong> or <strong>Label Propagation</strong> (but less precise).</li>
+<li>For research/theory on small graphs: <strong>Spinglass</strong> (rarely used in practice).</li>
+</ul>
 <hr />
-<h2 id="cytoscape-cys-files">Cytoscape <code>.cys</code> Files<a class="headerlink" href="#cytoscape-cys-files" title="Permanent link">&para;</a></h2>
-<p>Load Cytoscape session files exported from the desktop app.</p>
+<h2 id="louvain-clustering">Louvain Clustering<a class="headerlink" href="#louvain-clustering" title="Permanent link">&para;</a></h2>
+<p>Greedy modularity optimization that scales well to large graphs and serves as the default starting point.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Large networks where speed and scalability are essential.</li>
+<li>Baseline clustering for downstream statistical comparisons.</li>
+</ul>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><code>filepath</code> (str): Path to the Cytoscape file.</li>
-<li><code>source_label</code> (str, optional): Source node label. Defaults to "source".</li>
-<li><code>target_label</code> (str, optional): Target node label. Defaults to "target".</li>
-<li><code>view_name</code> (str, optional): Specific view name to load. Defaults to "".</li>
-<li><code>compute_sphere</code> (bool, optional): Whether to map nodes from a 2D plane onto a 3D spherical surface using a spherical projection. Defaults to True.</li>
-<li><code>surface_depth</code> (float, optional): Adjusts the depth of nodes relative to the spherical surface, enhancing visualization of clustering. Defaults to 0.0.</li>
-<li><code>min_edges_per_node</code> (int, optional): Minimum number of edges per node. Values &gt;0 prune nodes with fewer edges. Defaults to 0.</li>
+<li><code>network</code> (nx.Graph): The network to which the clustering is applied.</li>
+<li><code>fraction_shortest_edges</code> (float): Rank-based edge filtering (0, 1]; defaults to <code>0.5</code>.</li>
+<li><code>resolution</code> (float): Modularity resolution; lower values yield larger clusters. Defaults to <code>0.1</code>.</li>
+<li><code>random_seed</code> (int): Seed for reproducibility. Defaults to <code>888</code>.</li>
 </ul>
 <p><strong>Returns:</strong>
-<code>nx.Graph</code>: The loaded and processed network as a NetworkX graph.</p>
-<div class="highlight"><pre><span></span><code><span class="n">network</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_network_cytoscape</span><span class="p">(</span>
-    <span class="n">filepath</span><span class="o">=</span><span class="s2">&quot;./data/cytoscape/michaelis_2023.cys&quot;</span><span class="p">,</span>
-    <span class="n">source_label</span><span class="o">=</span><span class="s2">&quot;source&quot;</span><span class="p">,</span>
-    <span class="n">target_label</span><span class="o">=</span><span class="s2">&quot;target&quot;</span><span class="p">,</span>
-    <span class="n">view_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="n">compute_sphere</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">surface_depth</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
-    <span class="n">min_edges_per_node</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-<span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="cytoscape-json-cyjs-files">Cytoscape JSON (<code>.cyjs</code>) Files<a class="headerlink" href="#cytoscape-json-cyjs-files" title="Permanent link">&para;</a></h2>
-<p>Load JSON exports from Cytoscape Web or JavaScript pipelines.</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><code>filepath</code> (str): Path to the Cytoscape JSON file.</li>
-<li><code>source_label</code> (str, optional): Source node label. Defaults to "source".</li>
-<li><code>target_label</code> (str, optional): Target node label. Defaults to "target".</li>
-<li><code>compute_sphere</code> (bool, optional): Whether to map nodes from a 2D plane onto a 3D spherical surface using a spherical projection. Defaults to True.</li>
-<li><code>surface_depth</code> (float, optional): Adjusts the depth of nodes relative to the spherical surface, enhancing visualization of clustering. Defaults to 0.0.</li>
-<li><code>min_edges_per_node</code> (int, optional): Minimum number of edges per node. Values &gt;0 prune nodes with fewer edges. Defaults to 0.</li>
-</ul>
-<p><strong>Returns:</strong>
-<code>nx.Graph</code>: The loaded and processed network as a NetworkX graph.</p>
-<div class="highlight"><pre><span></span><code><span class="n">network</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_network_cyjs</span><span class="p">(</span>
-    <span class="n">filepath</span><span class="o">=</span><span class="s2">&quot;./data/cyjs/michaelis_2023.cyjs&quot;</span><span class="p">,</span>
-    <span class="n">source_label</span><span class="o">=</span><span class="s2">&quot;source&quot;</span><span class="p">,</span>
-    <span class="n">target_label</span><span class="o">=</span><span class="s2">&quot;target&quot;</span><span class="p">,</span>
-    <span class="n">compute_sphere</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">surface_depth</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="n">min_edges_per_node</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-<span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="gpickle-gpickle-files">GPickle (<code>.gpickle</code>) Files<a class="headerlink" href="#gpickle-gpickle-files" title="Permanent link">&para;</a></h2>
-<p>Fast, Python-native serialization of NetworkX graphs preserving all attributes. Recommended for reproducibility and performance.</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><code>filepath</code> (str): Path to the GPickle file.</li>
-<li><code>compute_sphere</code> (bool, optional): Whether to map nodes from a 2D plane onto a 3D spherical surface using a spherical projection. Defaults to True.</li>
-<li><code>surface_depth</code> (float, optional): Adjusts the depth of nodes relative to the spherical surface, enhancing visualization of clustering. Defaults to 0.0.</li>
-<li><code>min_edges_per_node</code> (int, optional): Minimum number of edges per node. Values &gt;0 prune nodes with fewer edges. Defaults to 0.</li>
-</ul>
-<p><strong>Returns:</strong>
-<code>nx.Graph</code>: The loaded and processed network as a NetworkX graph.</p>
-<div class="highlight"><pre><span></span><code><span class="n">network</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_network_gpickle</span><span class="p">(</span>
-    <span class="n">filepath</span><span class="o">=</span><span class="s2">&quot;./data/gpickle/michaelis_2023.gpickle&quot;</span><span class="p">,</span>
-    <span class="n">compute_sphere</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">surface_depth</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="n">min_edges_per_node</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-<span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="networkx-graphs">NetworkX Graphs<a class="headerlink" href="#networkx-graphs" title="Permanent link">&para;</a></h2>
-<p>Load from an in-memory <code>networkx.Graph</code>. Integrates seamlessly when the graph is already loaded.</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><code>network</code> (nx.Graph): A NetworkX graph object.</li>
-<li><code>compute_sphere</code> (bool, optional): Whether to map nodes from a 2D plane onto a 3D spherical surface using a spherical projection. Defaults to True.</li>
-<li><code>surface_depth</code> (float, optional): Adjusts the depth of nodes relative to the spherical surface, enhancing visualization of clustering. Defaults to 0.0.</li>
-<li><code>min_edges_per_node</code> (int, optional): Minimum number of edges per node. Values &gt;0 prune nodes with fewer edges. Defaults to 0.</li>
-</ul>
-<p><strong>Returns:</strong>
-<code>nx.Graph</code>: The loaded and processed network as a NetworkX graph.</p>
-<div class="highlight"><pre><span></span><code><span class="n">network</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_network_networkx</span><span class="p">(</span>
+<code>csr_matrix</code>: Sparse cluster-assignment matrix.</p>
+<div class="highlight"><pre><span></span><code><span class="n">clusters_louvain</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">cluster_louvain</span><span class="p">(</span>
     <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
-    <span class="n">compute_sphere</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">surface_depth</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="n">min_edges_per_node</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span>
+    <span class="n">resolution</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+    <span class="n">random_seed</span><span class="o">=</span><span class="mi">888</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="leiden-clustering">Leiden Clustering<a class="headerlink" href="#leiden-clustering" title="Permanent link">&para;</a></h2>
+<p>Connectivity-refined variant of Louvain that produces better separated clusters while remaining fast.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>You need Louvain-like speed but improved connectivity guarantees.</li>
+<li>Stability between repeated runs is important.</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>network</code> (nx.Graph): The network to which the clustering is applied.</li>
+<li><code>fraction_shortest_edges</code> (float): Edge filtering fraction. Defaults to <code>0.5</code>.</li>
+<li><code>resolution</code> (float): Resolution parameter; defaults to <code>1.0</code>.</li>
+<li><code>random_seed</code> (int): Seed for reproducibility. Defaults to <code>888</code>.</li>
+</ul>
+<p><strong>Returns:</strong>
+<code>csr_matrix</code>: Sparse cluster-assignment matrix.</p>
+<div class="highlight"><pre><span></span><code><span class="n">clusters_leiden</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">cluster_leiden</span><span class="p">(</span>
+    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span>
+    <span class="n">resolution</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">random_seed</span><span class="o">=</span><span class="mi">888</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="greedy-modularity-clustering">Greedy Modularity Clustering<a class="headerlink" href="#greedy-modularity-clustering" title="Permanent link">&para;</a></h2>
+<p>Agglomerative optimization that quickly produces coarse partitions—useful for exploratory analysis or as a lightweight baseline.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Rapid, coarse-grained partitions are sufficient.</li>
+<li>You want to benchmark other algorithms against a simple baseline.</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>network</code> (nx.Graph): The network to which the clustering is applied.</li>
+<li><code>fraction_shortest_edges</code> (float): Edge filtering fraction. Defaults to <code>0.5</code>.</li>
+</ul>
+<p><strong>Returns:</strong>
+<code>csr_matrix</code>: Sparse cluster-assignment matrix.</p>
+<div class="highlight"><pre><span></span><code><span class="n">clusters_greedy</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">cluster_greedy</span><span class="p">(</span>
+    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="label-propagation-clustering">Label Propagation Clustering<a class="headerlink" href="#label-propagation-clustering" title="Permanent link">&para;</a></h2>
+<p>Heuristic label spreading approach that offers a non-parametric, fast partitioning of the network.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>You need a parameter-free, extremely fast method.</li>
+<li>Exploratory analysis where minor instability is acceptable.</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>network</code> (nx.Graph): The network to which the clustering is applied.</li>
+<li><code>fraction_shortest_edges</code> (float): Edge filtering fraction. Defaults to <code>0.5</code>.</li>
+</ul>
+<p><strong>Returns:</strong>
+<code>csr_matrix</code>: Sparse cluster-assignment matrix.</p>
+<div class="highlight"><pre><span></span><code><span class="n">clusters_labelprop</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">cluster_labelprop</span><span class="p">(</span>
+    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="markov-clustering-mcl">Markov Clustering (MCL)<a class="headerlink" href="#markov-clustering-mcl" title="Permanent link">&para;</a></h2>
+<p>Flow-based clustering that captures compact complexes by simulating random walks with expansion and inflation steps.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Detecting tight-knit protein complexes or submodules.</li>
+<li>Medium-sized networks where higher resolution structure is needed.</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>network</code> (nx.Graph): The network to which the clustering is applied.</li>
+<li><code>fraction_shortest_edges</code> (float): Edge filtering fraction. Defaults to <code>0.5</code>.</li>
+</ul>
+<p><strong>Returns:</strong>
+<code>csr_matrix</code>: Sparse cluster-assignment matrix.</p>
+<div class="highlight"><pre><span></span><code><span class="n">clusters_markov</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">cluster_markov</span><span class="p">(</span>
+    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="walktrap-clustering">Walktrap Clustering<a class="headerlink" href="#walktrap-clustering" title="Permanent link">&para;</a></h2>
+<p>Hierarchical clustering that groups vertices visited together during short random walks.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Mid-sized graphs where local community structure is important.</li>
+<li>Scenarios where a dendrogram-like hierarchy is desirable.</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>network</code> (nx.Graph): The network to which the clustering is applied.</li>
+<li><code>fraction_shortest_edges</code> (float): Edge filtering fraction. Defaults to <code>0.5</code>.</li>
+</ul>
+<p><strong>Returns:</strong>
+<code>csr_matrix</code>: Sparse cluster-assignment matrix.</p>
+<div class="highlight"><pre><span></span><code><span class="n">clusters_walktrap</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">cluster_walktrap</span><span class="p">(</span>
+    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="spinglass-clustering">Spinglass Clustering<a class="headerlink" href="#spinglass-clustering" title="Permanent link">&para;</a></h2>
+<p>Simulated annealing approach inspired by statistical mechanics—slower but effective for small graphs where fine-grained clusters matter.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Research settings that explore objective functions from statistical physics.</li>
+<li>Small networks where runtime is less critical.</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>network</code> (nx.Graph): The network to which the clustering is applied.</li>
+<li><code>fraction_shortest_edges</code> (float): Edge filtering fraction. Defaults to <code>0.5</code>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">clusters_spinglass</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">cluster_spinglass</span><span class="p">(</span>
+    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Permanent link">&para;</a></h2>
-<p><a href="../3_annotation_input/">Loading Annotations into RISK</a></p>
+<p><a href="../5_statistical_methods/">Statistical Methods</a></p>
 
 
 

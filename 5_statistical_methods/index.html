@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/riskportal/risk/4_clustering_statistics/">
+        <link rel="canonical" href="https://github.com/riskportal/risk/5_statistical_methods/">
       
       
-        <link rel="prev" href="../3_annotation_input/">
+        <link rel="prev" href="../4_clustering/">
       
       
-        <link rel="next" href="../5_analyzing_results/">
+        <link rel="next" href="../6_analyzing_results/">
       
       
       <link rel="icon" href="../images/risk_logo.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>4. Clustering & Statistics - RISK Documentation</title>
+        <title>5. Statistical Methods - RISK Documentation</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#clustering-algorithms-and-statistical-methods" class="md-skip">
+        <a href="#statistical-methods" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. Clustering & Statistics
+              5. Statistical Methods
             
           </span>
         </div>
@@ -452,6 +452,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_clustering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Clustering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -469,7 +492,7 @@
   
   
   <span class="md-ellipsis">
-    4. Clustering & Statistics
+    5. Statistical Methods
     
   </span>
   
@@ -482,7 +505,7 @@
   
   
   <span class="md-ellipsis">
-    4. Clustering & Statistics
+    5. Statistical Methods
     
   </span>
   
@@ -505,30 +528,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#summary-of-clustering-algorithms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary of Clustering Algorithms
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Summary of Clustering Algorithms">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#choosing-an-algorithm-quick-guidance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Choosing an algorithm: quick guidance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#summary-of-statistical-methods" class="md-nav__link">
     <span class="md-ellipsis">
       Summary of Statistical Methods
@@ -549,15 +548,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shared-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shared Parameters
-    </span>
-  </a>
   
 </li>
       
@@ -622,12 +612,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../5_analyzing_results/" class="md-nav__link">
+      <a href="../6_analyzing_results/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    5. Analyzing Results
+    6. Analyzing Results
     
   </span>
   
@@ -645,12 +635,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../6_visualization/" class="md-nav__link">
+      <a href="../7_visualization/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    6. Visualization
+    7. Visualization
     
   </span>
   
@@ -668,12 +658,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../7_parameters/" class="md-nav__link">
+      <a href="../8_parameters/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    7. Analysis Parameters
+    8. Analysis Parameters
     
   </span>
   
@@ -776,76 +766,10 @@
   
 
 
-<h1 id="clustering-algorithms-and-statistical-methods">Clustering Algorithms and Statistical Methods<a class="headerlink" href="#clustering-algorithms-and-statistical-methods" title="Permanent link">&para;</a></h1>
-<p>Clustering algorithms detect structured regions of varying size and compactness, while statistical methods evaluate overrepresentation of biological terms within these regions. The choice of algorithm or test depends on network scale, density, and biological context, influencing the resolution, granularity, and rigor of the resulting modules and overrepresentation results.</p>
-<hr />
-<h2 id="summary-of-clustering-algorithms">Summary of Clustering Algorithms<a class="headerlink" href="#summary-of-clustering-algorithms" title="Permanent link">&para;</a></h2>
-<p>Before applying statistical tests, RISK groups nodes into modules using community detection. Each algorithm has strengths for different network sizes and contexts.</p>
-<table>
-<thead>
-<tr>
-<th>Algorithm</th>
-<th>Speed</th>
-<th>Primary use</th>
-<th>When/Why (assumptions &amp; notes)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Louvain</td>
-<td>Fast</td>
-<td>Default, scalable to very large networks</td>
-<td>Greedy modularity optimization (Blondel <em>et al</em>., 2008); efficient for &gt;10⁴ nodes; may produce disconnected subclusters.</td>
-</tr>
-<tr>
-<td>Leiden</td>
-<td>Fast</td>
-<td>Improved Louvain with better resolution</td>
-<td>Guarantees well-connected communities; more stable than Louvain (Traag <em>et al</em>., 2019); slightly higher runtime.</td>
-</tr>
-<tr>
-<td>Markov Clustering</td>
-<td>Medium</td>
-<td>Detect smaller, compact complexes</td>
-<td>Flow-based algorithm (Van Dongen, 2008); good for protein complexes or tightly connected submodules.</td>
-</tr>
-<tr>
-<td>Walktrap</td>
-<td>Medium</td>
-<td>Hierarchical detection in mid-sized graphs</td>
-<td>Random-walk based (Pons &amp; Latapy, 2005); effective for local structure; slower on &gt;10⁴ nodes.</td>
-</tr>
-<tr>
-<td>Greedy Modularity</td>
-<td>Fast</td>
-<td>Coarse partitioning</td>
-<td>Optimizes modularity via agglomeration; very fast but suffers from resolution limit (Newman, 2004).</td>
-</tr>
-<tr>
-<td>Label Propagation</td>
-<td>Fast</td>
-<td>Quick heuristic</td>
-<td>Unsupervised label spreading; no objective function; non-deterministic and unstable (Raghavan <em>et al</em>., 2007).</td>
-</tr>
-<tr>
-<td>Spinglass</td>
-<td>Slow</td>
-<td>Small networks; theoretical interest</td>
-<td>Statistical mechanics approach (Reichardt &amp; Bornholdt, 2006); finds communities by simulating spin states; computationally intensive.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="choosing-an-algorithm-quick-guidance">Choosing an algorithm: quick guidance<a class="headerlink" href="#choosing-an-algorithm-quick-guidance" title="Permanent link">&para;</a></h3>
-<ul>
-<li>For large networks (&gt;10⁴ nodes): <strong>Louvain</strong> or <strong>Leiden</strong> (fast, scalable).</li>
-<li>For small, compact complexes: <strong>Markov Clustering</strong> (protein complexes, submodules).</li>
-<li>For hierarchical/local structure: <strong>Walktrap</strong> (medium size).</li>
-<li>For exploratory speed: <strong>Greedy</strong> or <strong>Label Propagation</strong> (but less precise).</li>
-<li>For research/theory on small graphs: <strong>Spinglass</strong> (rarely used in practice).</li>
-</ul>
+<h1 id="statistical-methods">Statistical Methods<a class="headerlink" href="#statistical-methods" title="Permanent link">&para;</a></h1>
+<p>Once clusters are defined, statistical tests quantify the enrichment or depletion of annotation terms within those modules. Each test returns a dictionary with <code>"depletion_pvals"</code> and <code>"enrichment_pvals"</code> matrices aligned to the cluster matrix supplied as input.</p>
 <hr />
 <h2 id="summary-of-statistical-methods">Summary of Statistical Methods<a class="headerlink" href="#summary-of-statistical-methods" title="Permanent link">&para;</a></h2>
-<p>RISK implements a suite of statistical tests—ranging from fast approximations to rigorous overrepresentation analysis—to assess functional term overrepresentation in network neighborhoods. Each method has strengths depending on dataset size, structure, and precision requirements.</p>
 <table>
 <thead>
 <tr>
@@ -858,7 +782,7 @@
 <tbody>
 <tr>
 <td>Permutation</td>
-<td>Medium</td>
+<td>Slow</td>
 <td>Most rigorous; non-parametric</td>
 <td>Distribution-free empirical null (permute network or labels); preferred when assumptions are unclear; computationally intensive.</td>
 </tr>
@@ -888,59 +812,34 @@
 <li>For large samples with many categories and sufficient counts: <strong>Chi-squared</strong> offers a fast approximate test.</li>
 <li>For speed and scalability with large populations and small samples: use <strong>Binomial</strong> as a practical approximation.</li>
 </ul>
-<h2 id="shared-parameters">Shared Parameters<a class="headerlink" href="#shared-parameters" title="Permanent link">&para;</a></h2>
-<p>Shared parameters among statistical methods.</p>
-<ul>
-<li><code>network</code> (nx.Graph): The network graph.</li>
-<li><code>annotation</code> (dict): The annotation associated with the network.</li>
-<li><code>distance_metric</code> (str, list, tuple, or np.ndarray, optional): Method(s) used to compute distances for community detection. You can specify a single method or a list/tuple/array of methods to apply multiple community detection algorithms. Options include:<ul>
-<li><code>'louvain'</code>: Applies the Louvain method for community detection. <em>(default)</em></li>
-<li><code>'greedy_modularity'</code>: Detects communities in a graph based on the greedy optimization of modularity.</li>
-<li><code>'label_propagation'</code>: Uses label propagation to find communities.</li>
-<li><code>'leiden'</code>: Applies the Leiden method for community detection.</li>
-<li><code>'markov_clustering'</code>: Implements the Markov Clustering Algorithm.</li>
-<li><code>'walktrap'</code>: Detects communities via random walks.</li>
-<li><code>'spinglass'</code>: Community detection based on the spinglass model.</li>
-</ul>
-</li>
-<li><code>louvain_resolution</code> (float, optional): Resolution parameter for the Louvain method. Only applies if <code>'louvain'</code> is one of the distance metrics. Defaults to 0.1.</li>
-<li><code>leiden_resolution</code> (float, optional): Resolution parameter for the Leiden method. Only applies if <code>'leiden'</code> is one of the distance metrics. Defaults to 1.0.</li>
-<li><code>fraction_shortest_edges</code> (float, list, tuple, or np.ndarray, optional): Shortest edge rank fraction threshold(s) for creating subgraphs. Can be a single float for one threshold or a list/tuple of floats corresponding to multiple thresholds. Defaults to 0.5.</li>
-<li><code>null_distribution</code> (str, optional): Defines the type of null distribution to use for comparison. Options include:<ul>
-<li><code>'network'</code>: Randomly permuted network structure. <em>(default)</em></li>
-<li><code>'annotation'</code>: Randomly permuted annotations.</li>
-</ul>
-</li>
-<li><code>random_seed</code> (int, optional): Seed for random number generation in permutation test. Defaults to 888.</li>
-</ul>
 <hr />
 <h2 id="permutation-test">Permutation Test<a class="headerlink" href="#permutation-test" title="Permanent link">&para;</a></h2>
 <p>Builds an empirical null by permuting either the network structure or annotation labels.</p>
 <p><strong>When to use:</strong></p>
 <ul>
-<li>Non-parametric and distribution-free; ideal when analytical assumptions (independence, variance, distribution) are doubtful.</li>
-<li>Supports flexible nulls (permute network topology or term labels) to match study design.</li>
-<li>Most rigorous option but computationally intensive; prefer for smaller networks or final confirmation analyses.</li>
+<li>Most rigorous option when assumptions about the data distribution are unclear.</li>
+<li>Generates an empirical null distribution by repeatedly permuting the network or annotations.</li>
+<li>Computationally intensive but unbiased.</li>
 </ul>
-<p><strong>Additional Parameters:</strong></p>
+<p><strong>Parameters:</strong></p>
 <ul>
-<li><code>score_metric</code> (str, optional): Metric used to score neighborhoods. Options include: - <code>'sum'</code>: Sums the annotation values within each neighborhood. <em>(default)</em> - <code>'stdev'</code>: Computes the standard deviation of annotation values within each neighborhood.</li>
-<li><code>num_permutations</code> (int, optional): Number of permutations for significance testing. Defaults to 1000.</li>
-<li><code>max_workers</code> (int, optional): Maximum number of workers for parallel computation. Defaults to 1.</li>
+<li><code>annotation</code> (dict): The annotation dictionary.</li>
+<li><code>clusters</code> (csr_matrix): The cluster-assignment matrix.</li>
+<li><code>score_metric</code> (str, optional): Metric used to score clusters (<code>"sum"</code> or <code>"stdev"</code>). Defaults to <code>"sum"</code>.</li>
+<li><code>null_distribution</code> (str, optional): Permute <code>"network"</code> or <code>"annotation"</code>. Defaults to <code>"network"</code>.</li>
+<li><code>num_permutations</code> (int, optional): Number of permutations to run. Defaults to <code>1000</code>.</li>
+<li><code>max_workers</code> (int, optional): Maximum worker processes for multiprocessing. Defaults to <code>1</code>.</li>
 </ul>
 <p><strong>Returns:</strong>
-<code>dict</code>: A dictionary containing the computed significance of neighborhoods within the network.</p>
-<div class="highlight"><pre><span></span><code><span class="n">neighborhoods</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_neighborhoods_permutation</span><span class="p">(</span>
-    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+<code>dict</code>: A dictionary with <code>"depletion_pvals"</code> and <code>"enrichment_pvals"</code> matrices.</p>
+<div class="highlight"><pre><span></span><code><span class="n">stats_permutation</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">run_permutation</span><span class="p">(</span>
     <span class="n">annotation</span><span class="o">=</span><span class="n">annotation</span><span class="p">,</span>
-    <span class="n">distance_metric</span><span class="o">=</span><span class="s2">&quot;louvain&quot;</span><span class="p">,</span>
-    <span class="n">louvain_resolution</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
-    <span class="n">score_metric</span><span class="o">=</span><span class="s2">&quot;sum&quot;</span><span class="p">,</span>
+    <span class="n">clusters</span><span class="o">=</span><span class="n">clusters_louvain</span><span class="p">,</span>
+    <span class="n">score_metric</span><span class="o">=</span><span class="s2">&quot;stdev&quot;</span><span class="p">,</span>
     <span class="n">null_distribution</span><span class="o">=</span><span class="s2">&quot;network&quot;</span><span class="p">,</span>
-    <span class="n">num_permutations</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+    <span class="n">num_permutations</span><span class="o">=</span><span class="mi">1_000</span><span class="p">,</span>
     <span class="n">random_seed</span><span class="o">=</span><span class="mi">888</span><span class="p">,</span>
-    <span class="n">max_workers</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">max_workers</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <hr />
@@ -948,20 +847,21 @@
 <p>Exact test based on finite sampling without replacement.</p>
 <p><strong>When to use:</strong></p>
 <ul>
-<li>Standard for GO/pathway overrepresentation with term–to–gene membership tables.</li>
-<li>Appropriate for finite populations sampled without replacement (e.g., selected cluster vs whole network).</li>
-<li>Exact test; more accurate than approximations when sample is not negligible relative to the population.</li>
+<li>Canonical method for GO/pathway overrepresentation.</li>
+<li>Exact and statistically interpretable for moderate-sized networks.</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>annotation</code> (dict): Annotation dictionary containing ordered nodes and annotation matrix.</li>
+<li><code>clusters</code> (csr_matrix): Cluster-assignment matrix produced by a <code>cluster_*</code> method.</li>
+<li><code>null_distribution</code> (str, optional): Permute <code>"network"</code> or <code>"annotation"</code>. Defaults to <code>"network"</code>.</li>
 </ul>
 <p><strong>Returns:</strong>
-<code>dict</code>: A dictionary containing the computed significance of neighborhoods within the network.</p>
-<div class="highlight"><pre><span></span><code><span class="n">neighborhoods</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_neighborhoods_hypergeom</span><span class="p">(</span>
-    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+<code>dict</code>: A dictionary with <code>"depletion_pvals"</code> and <code>"enrichment_pvals"</code> matrices.</p>
+<div class="highlight"><pre><span></span><code><span class="n">stats_hypergeom</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">run_hypergeom</span><span class="p">(</span>
     <span class="n">annotation</span><span class="o">=</span><span class="n">annotation</span><span class="p">,</span>
-    <span class="n">distance_metric</span><span class="o">=</span><span class="s2">&quot;louvain&quot;</span><span class="p">,</span>
-    <span class="n">louvain_resolution</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+    <span class="n">clusters</span><span class="o">=</span><span class="n">clusters_louvain</span><span class="p">,</span>
     <span class="n">null_distribution</span><span class="o">=</span><span class="s2">&quot;network&quot;</span><span class="p">,</span>
-    <span class="n">random_seed</span><span class="o">=</span><span class="mi">888</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <hr />
@@ -973,16 +873,18 @@
 <li>Rule of thumb: expected counts per cell should be ≥ 5; avoid with sparse tables.</li>
 <li>Fast and scalable but approximate; consider permutation or exact tests for sparse data.</li>
 </ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>annotation</code> (dict): Annotation dictionary containing ordered nodes and annotation matrix.</li>
+<li><code>clusters</code> (csr_matrix): Cluster-assignment matrix produced by a <code>cluster_*</code> method.</li>
+<li><code>null_distribution</code> (str, optional): Permute <code>"network"</code> or <code>"annotation"</code>. Defaults to <code>"network"</code>.</li>
+</ul>
 <p><strong>Returns:</strong>
-<code>dict</code>: A dictionary containing the computed significance of neighborhoods within the network.</p>
-<div class="highlight"><pre><span></span><code><span class="n">neighborhoods</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_neighborhoods_chi2</span><span class="p">(</span>
-    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+<code>dict</code>: A dictionary with <code>"depletion_pvals"</code> and <code>"enrichment_pvals"</code> matrices.</p>
+<div class="highlight"><pre><span></span><code><span class="n">stats_chi2</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">run_chi2</span><span class="p">(</span>
     <span class="n">annotation</span><span class="o">=</span><span class="n">annotation</span><span class="p">,</span>
-    <span class="n">distance_metric</span><span class="o">=</span><span class="s2">&quot;louvain&quot;</span><span class="p">,</span>
-    <span class="n">louvain_resolution</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+    <span class="n">clusters</span><span class="o">=</span><span class="n">clusters_louvain</span><span class="p">,</span>
     <span class="n">null_distribution</span><span class="o">=</span><span class="s2">&quot;network&quot;</span><span class="p">,</span>
-    <span class="n">random_seed</span><span class="o">=</span><span class="mi">888</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <hr />
@@ -992,23 +894,24 @@
 <ul>
 <li>Provides a scalable approximation to the hypergeometric test, assuming independent trials or sampling with replacement.</li>
 <li>Useful for very large populations with small samples where exact tests are computationally costly.</li>
-<li>Offers speed and scalability while being less precise than exact methods.</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>annotation</code> (dict): Annotation dictionary containing ordered nodes and annotation matrix.</li>
+<li><code>clusters</code> (csr_matrix): Cluster-assignment matrix produced by a <code>cluster_*</code> method.</li>
+<li><code>null_distribution</code> (str, optional): Permute <code>"network"</code> or <code>"annotation"</code>. Defaults to <code>"network"</code>.</li>
 </ul>
 <p><strong>Returns:</strong>
-<code>dict</code>: A dictionary containing the computed significance of neighborhoods within the network.</p>
-<div class="highlight"><pre><span></span><code><span class="n">neighborhoods</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_neighborhoods_binom</span><span class="p">(</span>
-    <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
+<code>dict</code>: A dictionary with <code>"depletion_pvals"</code> and <code>"enrichment_pvals"</code> matrices.</p>
+<div class="highlight"><pre><span></span><code><span class="n">stats_binom</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">run_binom</span><span class="p">(</span>
     <span class="n">annotation</span><span class="o">=</span><span class="n">annotation</span><span class="p">,</span>
-    <span class="n">distance_metric</span><span class="o">=</span><span class="s2">&quot;louvain&quot;</span><span class="p">,</span>
-    <span class="n">louvain_resolution</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="n">fraction_shortest_edges</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+    <span class="n">clusters</span><span class="o">=</span><span class="n">clusters_louvain</span><span class="p">,</span>
     <span class="n">null_distribution</span><span class="o">=</span><span class="s2">&quot;network&quot;</span><span class="p">,</span>
-    <span class="n">random_seed</span><span class="o">=</span><span class="mi">888</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Permanent link">&para;</a></h2>
-<p><a href="../5_analyzing_results/">Building and Analyzing Networks</a></p>
+<p><a href="../6_analyzing_results/">Building and Analyzing Networks</a></p>
 
 
 
