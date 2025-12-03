@@ -43,7 +43,7 @@ Add a title and optional subtitle overlay.
 - `subtitle_fontsize` (int, optional): Font size for the subtitle. Defaults to 14.
 - `font` (str, optional): Font family used for both the title and subtitle. Defaults to "DejaVu Sans".
 - `title_color` (str, list, tuple, or np.ndarray, optional): Color of the title text. Provide a single color (e.g., `"black"`, `(0.0, 0.0, 0.0)` for RGB, or `(0.0, 0.0, 0.0, 1.0)` for RGBA). Defaults to "black".
-- `title_color` (str, list, tuple, or np.ndarray, optional): Color of the subtitle text. Provide a single color (e.g., `"black"`, `(0.0, 0.0, 0.0)` for RGB, or `(0.0, 0.0, 0.0, 1.0)` for RGBA). Defaults to "black".
+- `subtitle_color` (str, list, tuple, or np.ndarray, optional): Color of the subtitle text. Provide a single color (e.g., `"black"`, `(0.0, 0.0, 0.0)` for RGB, or `(0.0, 0.0, 0.0, 1.0)` for RGBA). Defaults to "black".
 - `title_x` (float, optional): X-axis position of the title. Defaults to 0.5.
 - `title_y` (float, optional): Y-axis position of the title. Defaults to 0.975.
 - `title_space_offset` (float, optional): Fraction of figure height to leave for the space above the plot. Defaults to 0.075.
@@ -109,7 +109,7 @@ Draw a contour boundary around the network layout.
 - `levels` (int, optional): Number of contour levels. Defaults to 3.
 - `bandwidth` (float, optional): Bandwidth for KDE, controlling the smoothness of the contour. Defaults to 0.8.
 - `grid_size` (int, optional): Resolution of the grid for KDE. Higher values create finer contours. Defaults to 250.
-- `color` (str, list, tuple, or np.ndarray, optional): Color of the circle. Provide a single color (e.g., `"black"`, `(0.0, 0.0, 0.0)` for RGB, or `(0.0, 0.0, 0.0, 1.0)` for RGBA). Defaults to "black".
+- `color` (str, list, tuple, or np.ndarray, optional): Color of the contour. Provide a single color (e.g., `"black"`, `(0.0, 0.0, 0.0)` for RGB, or `(0.0, 0.0, 0.0, 1.0)` for RGBA). Defaults to "black".
 - `linestyle` (str, optional): Line style for the contour. Options include `"solid"`, `"dashed"`, `"dashdot"`, `"dotted"`, or any Matplotlib-supported linestyle. Defaults to "solid".
 - `linewidth` (float, optional): Width of the contour’s outline. Defaults to 1.5.
 - `outline_alpha` (float, None, optional): Transparency level for the contour's outline. If provided, it overrides any existing alpha values found in `color`. Defaults to 1.0.
@@ -117,13 +117,14 @@ Draw a contour boundary around the network layout.
 
 ```python
 plotter.plot_contour_perimeter(
+    scale=1.02,
     levels=5,
     bandwidth=0.8,
     grid_size=250,
     color="white",
     linestyle="solid",
     linewidth=2.0,
-    alpha=1.0,
+    outline_alpha=1.0,
     fill_alpha=0.2,
 )
 ```
@@ -142,22 +143,22 @@ Render nodes and edges with styles derived from significance-aware helpers.
     - `'s'`: Square.
     - `'^'`: Triangle up.
     - `'v'`: Triangle down.
-    - Other options: `'p'`, `'P'`, `'h'`, `'H'`, `'8'`, `'d'`, `'D'`, `'>'`, `'<`, `'|'`, `'_'`.
+    - Other options: `'p'`, `'P'`, `'h'`, `'H'`, `'8'`, `'d'`, `'D'`, `'>'`, `'<', `'|'`, `'_'`.
 - `node_edgewidth` (float, optional): Width of the edges around each node. Defaults to 1.0.
 - `edge_width` (float, optional): Width of the edges in the plot. Defaults to 1.0.
 - `node_color` (str, list, tuple, or np.ndarray, optional): Color of the nodes. Can be a single color (e.g., `"white"`, `"red"`, `(0.5, 0.5, 0.5)` for RGB, or `(0.5, 0.5, 0.5, 0.8)` for RGBA) or an array of such colors. Defaults to "white".
 - `node_edgecolor` (str, list, tuple, or np.ndarray, optional): Color of the edges around each node. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
 - `edge_color` (str, list, tuple, or np.ndarray, optional): Color of the edges connecting the nodes. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
-- `node_alpha` (float or None, optional): Alpha value (transparency) for the nodes. Range: `0.0` (fully transparent) to 1.0`(fully opaque). If provided, it overrides any alpha values in`node_color`. Defaults to 1.0.
-- `edge_alpha` (float or None, optional): Alpha value (transparency) for the edges. Range: `0.0` (fully transparent) to 1.0`(fully opaque). If provided, it overrides any alpha values in`edge_color`. Defaults to 1.0.
+- `node_alpha` (float or None, optional): Alpha value (transparency) for the nodes. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `node_color`. Defaults to 1.0.
+- `edge_alpha` (float or None, optional): Alpha value (transparency) for the edges. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `edge_color`. Defaults to 1.0.
 
 ```python
 plotter.plot_network(
-    node_size=node_sizes,
-    node_color=node_colors,
+    node_size=100,
     node_shape="o",
     node_edgewidth=1.0,
     edge_width=0.03,
+    node_color="white",
     node_edgecolor="black",
     edge_color="white",
     node_alpha=1.0,
@@ -169,12 +170,12 @@ plotter.plot_network(
 
 ## get_annotated_node_sizes()
 
-Generate node sizes based on annotation significance.
+Generate node sizes based on annotation significance. Pass this to parameter `node_size` in `plot_network()`.
 
 **Parameters:**
 
-- `singificant_size` (int, optional): Size for singificant nodes. Defaults to 50.
-- `nonsignificant_size` (int, optional): Size for non-singificant nodes. Defaults to 25.
+- `significant_size` (int, optional): Size for significant nodes. Defaults to 50.
+- `nonsignificant_size` (int, optional): Size for non-significant nodes. Defaults to 25.
 
 **Returns:**
 `list`: List of node sizes corresponding to graph nodes.
@@ -190,7 +191,7 @@ node_sizes = plotter.get_annotated_node_sizes(
 
 ## get_annotated_node_colors()
 
-Generate node colors based on annotation significance and optional blending.
+Generate node colors based on annotation significance and optional blending. Pass this to parameter `node_color` in `plot_network()`.
 
 **Parameters:**
 
@@ -201,9 +202,9 @@ Generate node colors based on annotation significance and optional blending.
 - `min_scale` (float, optional): Minimum scale for color intensity. Defaults to 0.8.
 - `max_scale` (float, optional): Maximum scale for color intensity. Defaults to 1.0.
 - `scale_factor` (float, optional): Factor for adjusting the color scaling intensity. Defaults to 1.0.
-- `alpha` (float, None, optional): Alpha value for singificant nodes. If provided, it overrides any existing alpha values found in `color`. Defaults to 1.0.
-- `nonsignificant_color` (str, list, tuple, or np.ndarray, optional): Color for non-singificant nodes. Can be a single color (e.g., `"white"`, `(0.5, 0.5, 0.5)` for RGB, or `(0.5, 0.5, 0.5, 0.8)` for RGBA) or an array of such colors. Defaults to "white".
-- `nonsignificant_alpha` (float, None, optional): Alpha value for non-singificant nodes. If provided, it overrides any existing alpha values found in `nonsignificant_color`. Defaults to 1.0.
+- `alpha` (float, None, optional): Alpha value for significant nodes. If provided, it overrides any existing alpha values found in `color`. Defaults to 1.0.
+- `nonsignificant_color` (str, list, tuple, or np.ndarray, optional): Color for non-significant nodes. Can be a single color (e.g., `"white"`, `(0.5, 0.5, 0.5)` for RGB, or `(0.5, 0.5, 0.5, 0.8)` for RGBA) or an array of such colors. Defaults to "white".
+- `nonsignificant_alpha` (float, None, optional): Alpha value for non-significant nodes. If provided, it overrides any existing alpha values found in `nonsignificant_color`. Defaults to 1.0.
 - `ids_to_colors` (dict, None, optional): Mapping of domain IDs to specific colors. Defaults to None.
 - `random_seed` (int, optional): Seed for random number generation. Defaults to 888.
 
@@ -280,7 +281,7 @@ Draw contours for domains (e.g., GO term regions).
 - `bandwidth` (float, optional): Bandwidth for KDE, controlling the smoothness of the contour. Defaults to 0.8.
 - `grid_size` (int, optional): Resolution of the grid for KDE. Higher values create finer contours. Defaults to 250.
 - `color` (str, list, tuple, or np.ndarray, optional): Color of the contours. Can be a string (e.g., `"white"`), an RGB/RGBA value, or an array of such values. Defaults to "white".
-- `linestyle` (str, optional): Line style for the contours. Options include `'solid'`, `'dashed'`, `'dashdot'`, `'dotted'. Defaults to "solid".
+- `linestyle` (str, optional): Line style for the contours. Options include `'solid'`, `'dashed'`, `'dashdot'`, `'dotted'`. Defaults to "solid".
 - `linewidth` (float, optional): Line width for the contours. Defaults to 1.5.
 - `alpha` (float, None, optional): Transparency level of the contour lines. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any existing alpha values found in `color`. Defaults to 1.0.
 - `fill_alpha` (float, None, optional): Transparency level of the contour fill. If provided, it overrides any existing alpha values found in `color`. Defaults to None.
@@ -290,17 +291,7 @@ plotter.plot_contours(
     levels=5,
     bandwidth=0.8,
     grid_size=250,
-    color=plotter.get_annotated_contour_colors(
-        cmap="gist_rainbow",
-        color=None,
-        blend_colors=False,
-        blend_gamma=2.2,
-        min_scale=1.0,
-        max_scale=1.0,
-        scale_factor=0.5,
-        ids_to_colors=None,
-        random_seed=887,
-    ),
+    color="white",
     linestyle="solid",
     linewidth=2.0,
     alpha=1.0,
@@ -312,7 +303,7 @@ plotter.plot_contours(
 
 ## get_annotated_contour_colors()
 
-Generate colors for domain contours based on annotation significance.
+Generate colors for domain contours based on annotation significance. Pass this to parameter `color` in `plot_contours()`.
 
 **Parameters:**
 
@@ -419,17 +410,7 @@ plotter.plot_labels(
     fontalpha=1.0,
     arrow_linewidth=2.0,
     arrow_style="-",
-    arrow_color=plotter.get_annotated_label_colors(
-        cmap="gist_rainbow",
-        color=None,
-        blend_colors=False,
-        blend_gamma=2.2,
-        min_scale=1.0,
-        max_scale=1.0,
-        scale_factor=0.5,
-        ids_to_colors=None,
-        random_seed=887,
-    ),
+    arrow_color="white",
     arrow_alpha=1.0,
     arrow_base_shrink=10.0,
     arrow_tip_shrink=0.0,
@@ -449,7 +430,7 @@ plotter.plot_labels(
 
 ## get_annotated_label_colors()
 
-Generate colors for labels based on annotation significance.
+Generate colors for labels based on annotation significance. Pass this to parameters `fontcolor` or `arrow_color` in `plot_labels()`.
 
 **Parameters:**
 
@@ -568,4 +549,4 @@ plotter.show()
 
 ## Next Step
 
-[Overview of `risk.params`](7_parameters.md)
+[Overview of `risk.params`](8_parameters.md)

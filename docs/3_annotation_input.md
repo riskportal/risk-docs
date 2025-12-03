@@ -45,23 +45,18 @@ _Node IDs must match the network’s node labels; unmapped IDs are ignored. Term
 | `.xlsx`/`.xls` | `load_annotation_excel()` | Import from a specified Excel sheet.                 |
 | `dict`         | `load_annotation_dict()`  | Load annotations from a Python dictionary in memory. |
 
-## Shared Parameters
-
-Shared parameters among annotation loaders.
-
-- `network` (nx.Graph): The network to which the annotation is related.
-- `min_nodes_per_term` (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.
-- `max_nodes_per_term` (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.
-
 ---
 
 ## JSON Annotation
 
 Load annotation data from a JSON file and associate terms with network nodes.
 
-**Additional Parameters:**
+**Parameters:**
 
+- `network` (nx.Graph): The network to which the annotation is related.
 - `filepath` (str): Path to the JSON annotation file.
+- `min_nodes_per_term` (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.
+- `max_nodes_per_term` (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.
 
 **Returns:**
 `dict`: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.
@@ -81,12 +76,15 @@ annotation = risk.load_annotation_json(
 
 Load annotation data from a CSV file, specifying columns and delimiter for nodes.
 
-**Additional Parameters:**
+**Parameters:**
 
+- `network` (nx.Graph): The network to which the annotation is related.
 - `filepath` (str): Path to the CSV annotation file.
 - `label_colname` (str): Name of the column containing the annotation term (e.g., GO term).
 - `nodes_colname` (str): Name of the column containing the nodes associated with each label.
 - `nodes_delimiter` (str, optional): Delimiter used to separate multiple nodes within the nodes column. Defaults to ';'.
+- `min_nodes_per_term` (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.
+- `max_nodes_per_term` (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.
 
 **Returns:**
 `dict`: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.
@@ -109,12 +107,15 @@ annotation = risk.load_annotation_csv(
 
 Load annotation data from a tab-delimited file, similar to CSV but with tabs as separators.
 
-**Additional Parameters:**
+**Parameters:**
 
+- `network` (nx.Graph): The network to which the annotation is related.
 - `filepath` (str): Path to the TSV annotation file.
 - `label_colname` (str): Name of the column containing the annotation term (e.g., GO term).
 - `nodes_colname` (str): Name of the column containing the nodes associated with each label.
 - `nodes_delimiter` (str, optional): Delimiter used to separate multiple nodes within the nodes column. Defaults to ';'.
+- `min_nodes_per_term` (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.
+- `max_nodes_per_term` (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.
 
 **Returns:**
 `dict`: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.
@@ -137,13 +138,16 @@ annotation = risk.load_annotation_tsv(
 
 Load annotation data from an Excel workbook, with support for selecting specific sheets.
 
-**Additional Parameters:**
+**Parameters:**
 
+- `network` (nx.Graph): The network to which the annotation is related.
 - `filepath` (str): Path to the Excel annotation file.
 - `label_colname` (str): Name of the column containing the annotation term (e.g., GO term).
 - `nodes_colname` (str): Name of the column containing the nodes associated with each label.
 - `sheet_name` (str, optional): The name of the Excel sheet to load. Defaults to 'Sheet1'.
 - `nodes_delimiter` (str, optional): Delimiter used to separate multiple nodes within the nodes column. Defaults to ';'.
+- `min_nodes_per_term` (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.
+- `max_nodes_per_term` (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.
 
 **Returns:**
 `dict`: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.
@@ -167,9 +171,12 @@ annotation = risk.load_annotation_excel(
 
 Load annotation data already in memory as a Python dictionary.
 
-**Additional Parameters:**
+**Parameters:**
 
+- `network` (nx.Graph): The network to which the annotation is related.
 - `content` (dict): The annotation dictionary to load.
+- `min_nodes_per_term` (int, optional): The minimum number of network nodes required for each annotation term to be included. Defaults to 1.
+- `max_nodes_per_term` (int, optional): The maximum number of network nodes required for each annotation term to be included. Defaults to 10_000.
 
 **Returns:**
 `dict`: A dictionary containing ordered nodes, ordered annotations, and the annotation matrix.
@@ -192,4 +199,4 @@ annotation = risk.load_annotation_dict(
 
 ## Next Step
 
-[Clustering Algorithms and Statistical Methods](4_clustering_statistics.md)
+[Clustering Algorithms](4_clustering.md)

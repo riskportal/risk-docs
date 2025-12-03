@@ -24,10 +24,11 @@ Interactive tutorials:
 
 - [2. Network Input](2_network_input.md)
 - [3. Annotation Input](3_annotation_input.md)
-- [4. Clustering & Statistics](4_clustering_statistics.md)
-- [5. Analyzing Results](5_analyzing_results.md)
-- [6. Visualization](6_visualization.md)
-- [7. Analysis Parameters](7_parameters.md)
+- [4. Clustering](4_clustering.md)
+- [5. Statistical Methods](5_statistical_methods.md)
+- [6. Analyzing Results](6_analyzing_results.md)
+- [7. Visualization](7_visualization.md)
+- [8. Analysis Parameters](8_parameters.md)
 
 ---
 
