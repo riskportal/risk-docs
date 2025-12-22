@@ -802,7 +802,6 @@
 <li><code>prune_threshold</code> (float, optional): Threshold for pruning weak edges from the network graph. Range: Any value between 0 and 1. Defaults to 0.0.</li>
 <li><code>linkage_criterion</code> (str, optional): Criterion for clustering. Defaults to <code>'distance'</code>. Options include:<ul>
 <li><code>'distance'</code>: Clusters are formed based on distance.</li>
-<li><code>'maxclust'</code>: Clusters are formed based on the maximum number of clusters.</li>
 <li><code>'off'</code>: Disables clustering; terms remain separate.</li>
 </ul>
 </li>
@@ -845,6 +844,10 @@
 <ul>
 <li><code>domain_id_to_node_ids_map</code>: Maps each domain ID to the list of node IDs belonging to that domain.</li>
 <li><code>domain_id_to_node_labels_map</code>: Maps each domain ID to the list of node labels in that domain for readable visualization.</li>
+<li><code>domain_id_to_enriched_node_labels_map</code>: Maps each domain ID to the list of node labels that are significantly enriched for that domain.<ul>
+<li>Unlike <code>domain_id_to_node_labels_map</code>, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute underlies blended node coloring and pleiotropic interpretation.</li>
+</ul>
+</li>
 <li><code>domain_id_to_domain_terms_map</code>: Maps each domain ID to the list of overrepresented/significant terms associated with that domain.</li>
 <li><code>domain_id_to_domain_info_map</code>: Maps each domain ID to a metadata record (e.g., size, p-value, FDR, summary) about the domain.</li>
 </ul>
