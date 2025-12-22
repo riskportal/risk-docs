@@ -106,6 +106,13 @@ network = risk.load_network_gpickle(
 
 Load from an in-memory `networkx.Graph`. Integrates seamlessly when the graph is already loaded.
 
+### Node Attributes
+
+RISK expects basic spatial and labeling information to be present on each node.
+
+- **Node position** must be provided either as separate numeric attributes `x` and `y`, or as a single `pos = (x, y)` tuple. These are used for layout initialization and visualization.
+- **Node labels** used for annotation mapping, enrichment, and reporting are taken from the node attribute `label` if present. If `label` is not provided, the node identifier itself is used as the label.
+
 **Parameters:**
 
 - `network` (nx.Graph): A NetworkX graph object.

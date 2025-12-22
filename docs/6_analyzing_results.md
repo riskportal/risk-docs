@@ -21,7 +21,6 @@ The `NetworkGraph` object integrates network data, annotations, and overrepresen
 - `prune_threshold` (float, optional): Threshold for pruning weak edges from the network graph. Range: Any value between 0 and 1. Defaults to 0.0.
 - `linkage_criterion` (str, optional): Criterion for clustering. Defaults to `'distance'`. Options include:
     - `'distance'`: Clusters are formed based on distance.
-    - `'maxclust'`: Clusters are formed based on the maximum number of clusters.
     - `'off'`: Disables clustering; terms remain separate.
 - `linkage_method` (str, optional): Method used for hierarchical clustering. Defaults to `'average'`. Options include:
     - `'auto'`: Automatically determines the optimal method using the silhouette score.
@@ -63,6 +62,8 @@ The `NetworkGraph` object exposes several mappings for cluster and node informat
 
 - `domain_id_to_node_ids_map`: Maps each domain ID to the list of node IDs belonging to that domain.
 - `domain_id_to_node_labels_map`: Maps each domain ID to the list of node labels in that domain for readable visualization.
+- `domain_id_to_enriched_node_labels_map`: Maps each domain ID to the list of node labels that are significantly enriched for that domain.
+    - Unlike `domain_id_to_node_labels_map`, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute underlies blended node coloring and pleiotropic interpretation.
 - `domain_id_to_domain_terms_map`: Maps each domain ID to the list of overrepresented/significant terms associated with that domain.
 - `domain_id_to_domain_info_map`: Maps each domain ID to a metadata record (e.g., size, p-value, FDR, summary) about the domain.
 

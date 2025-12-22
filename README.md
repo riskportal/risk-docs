@@ -13,9 +13,10 @@
 
 For a full description of RISK and its applications, see:
 <br>
-**Horecka and Röst (2025)**, _"RISK: a next-generation tool for biological network annotation and visualization"_.
-<br>
-DOI: [10.5281/zenodo.17257418](https://doi.org/10.5281/zenodo.17257418)
+**Horecka, I. and Röst, H. (2025)**.
+_RISK: a next-generation tool for biological network annotation and visualization_.
+**Bioinformatics**.
+https://doi.org/10.1093/bioinformatics/btaf669
 
 ## Yeast Protein–Protein Interaction (PPI) Network Demonstration
 
@@ -136,11 +137,18 @@ jupyter notebook
 
 ## Citation
 
-If you use RISK in your research, please cite the following:
+### Primary citation (paper)
 
-**Horecka and Röst (2025)**, _"RISK: a next-generation tool for biological network annotation and visualization"_.
-<br>
-DOI: [10.5281/zenodo.17257418](https://doi.org/10.5281/zenodo.17257418)
+**Horecka, I. and Röst, H. (2025)**
+_RISK: a next-generation tool for biological network annotation and visualization_.
+**Bioinformatics**.
+https://doi.org/10.1093/bioinformatics/btaf669
+
+### Software archive (used for publication figures)
+
+RISK software archive corresponding to the published manuscript.
+Zenodo.
+https://doi.org/10.5281/zenodo.17257418
 
 ## License
 
