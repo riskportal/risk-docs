@@ -501,21 +501,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="NetworkX Graphs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#node-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Node Attributes
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -872,12 +857,6 @@
 <hr />
 <h2 id="networkx-graphs">NetworkX Graphs<a class="headerlink" href="#networkx-graphs" title="Permanent link">&para;</a></h2>
 <p>Load from an in-memory <code>networkx.Graph</code>. Integrates seamlessly when the graph is already loaded.</p>
-<h3 id="node-attributes">Node Attributes<a class="headerlink" href="#node-attributes" title="Permanent link">&para;</a></h3>
-<p>RISK expects basic spatial and labeling information to be present on each node.</p>
-<ul>
-<li><strong>Node position</strong> must be provided either as separate numeric attributes <code>x</code> and <code>y</code>, or as a single <code>pos = (x, y)</code> tuple. These are used for layout initialization and visualization.</li>
-<li><strong>Node labels</strong> used for annotation mapping, enrichment, and reporting are taken from the node attribute <code>label</code> if present. If <code>label</code> is not provided, the node identifier itself is used as the label.</li>
-</ul>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>network</code> (nx.Graph): A NetworkX graph object.</li>
