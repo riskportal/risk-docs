@@ -13,7 +13,7 @@
 
 For a full description of RISK and its applications, see:
 <br>
-**Horecka, I. and Röst, H. (2025)**.
+**Horecka, I. and Röst, H. (2026)**.
 _RISK: a next-generation tool for biological network annotation and visualization_.
 **Bioinformatics**.
 https://doi.org/10.1093/bioinformatics/btaf669
@@ -139,7 +139,7 @@ jupyter notebook
 
 ### Primary citation
 
-**Horecka, I. and Röst, H. (2025)**
+**Horecka, I. and Röst, H. (2026)**
 _RISK: a next-generation tool for biological network annotation and visualization_.
 **Bioinformatics**.
 https://doi.org/10.1093/bioinformatics/btaf669
