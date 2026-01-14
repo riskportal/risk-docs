@@ -3,11 +3,11 @@ annotation,filetype,JSON
 annotation,filepath,./data/json/annotation/go_biological_process.json
 annotation,min_nodes_per_term,5
 annotation,max_nodes_per_term,75
-datetime,,2026-01-14 11:35:48
+datetime,,2026-01-14 12:34:18
 graph,tail,right
 graph,pval_cutoff,0.05
 graph,fdr_cutoff,1.0
-graph,prune_threshold,0.125
+graph,display_prune_threshold,0.125
 graph,linkage_criterion,distance
 graph,linkage_method,single
 graph,linkage_metric,sokalmichener
