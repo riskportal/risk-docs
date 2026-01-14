@@ -5,12 +5,11 @@
         "min_nodes_per_term": 5,
         "max_nodes_per_term": 75
     },
-    "datetime": "2025-10-31 17:42:42",
+    "datetime": "2026-01-14 11:35:48",
     "graph": {
         "tail": "right",
         "pval_cutoff": 0.05,
         "fdr_cutoff": 1.0,
-        "impute_depth": 0,
         "prune_threshold": 0.125,
         "linkage_criterion": "distance",
         "linkage_method": "single",
