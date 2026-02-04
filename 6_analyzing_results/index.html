@@ -906,7 +906,7 @@
 </ul>
 </li>
 <li><code>pval_cutoff</code> (float, optional): Cutoff value for p-values to determine significance. Range: Any value between 0 and 1. Defaults to 0.01.</li>
-<li><code>fdr_cutoff</code> (float, optional): Cutoff value for FDR-corrected p-values. Range: Any value between 0 and 1. Defaults to 0.9999. FDR (Benjamini–Hochberg) is computed per cluster across terms during graph construction.</li>
+<li><code>fdr_cutoff</code> (float, optional): Cutoff value for FDR-corrected p-values. FDR (Benjamini–Hochberg) is computed per cluster across terms. Range: Any value between 0 and 1. Defaults to 0.9999.</li>
 <li><code>display_prune_threshold</code> (float, optional): Display-only pruning based on spatial layout distance that suppresses spatially diffuse or isolated regions in plots. Runs after enrichment and clustering on plotting matrices only, does not use enrichment strength or statistical significance or affect clustering, enrichment, or statistical testing, and defaults to 0.0. Range: Any value between 0 and 1.</li>
 <li><code>linkage_criterion</code> (str, optional): Criterion for clustering. Defaults to <code>'distance'</code>. Options include:<ul>
 <li><code>'distance'</code>: Clusters are formed based on distance.</li>
