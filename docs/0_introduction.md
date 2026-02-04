@@ -1,6 +1,6 @@
 # Introduction to RISK
 
-RISK (Regional Inference of Significant Kinships) is a next-generation tool for biological network annotation and visualization. It integrates community detection algorithms, statistically rigorous overrepresentation analysis, and high-resolution visualization to uncover structured relationships in complex networks.
+Regional Inference of Significant Kinships (RISK) is a next-generation tool for biological network annotation and visualization. It integrates community detection algorithms, statistically rigorous overrepresentation analysis, and high-resolution visualization to uncover structured relationships in complex networks.
 
 RISK is designed to:
 
