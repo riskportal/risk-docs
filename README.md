@@ -12,7 +12,9 @@ This repository offers a detailed guide to using **Regional Inference of Signifi
 - **Source Code**: [github.com/riskportal/risk](https://github.com/riskportal/risk)
 
 For a full description of RISK and its applications, see:
+
 <br>
+
 **Horecka, I. and Röst, H. (2026)**.
 _RISK: a next-generation tool for biological network annotation and visualization_.
 **Bioinformatics**.
