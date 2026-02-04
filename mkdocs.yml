@@ -1,7 +1,8 @@
 site_name: RISK Documentation
-site_url: https://github.com/riskportal/risk
-repo_url: https://github.com/riskportal/risk-docs
-repo_name: risk-docs
+site_description: RISK - Regional Inference of Significant Kinships
+site_url: https://riskportal.github.io/risk-docs
+repo_name: risk
+repo_url: https://github.com/riskportal/risk
 theme:
   name: material
   custom_dir: docs/stylesheets
@@ -27,6 +28,7 @@ markdown_extensions:
       permalink: true
   - admonition
   - codehilite
+  - tables
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.details
