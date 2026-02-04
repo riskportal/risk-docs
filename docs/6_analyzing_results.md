@@ -16,7 +16,7 @@ The `NetworkGraph` object integrates network data, annotations, and overrepresen
     - `'left'`: For depletion.
     - `'both'`: For two-tailed analysis.
 - `pval_cutoff` (float, optional): Cutoff value for p-values to determine significance. Range: Any value between 0 and 1. Defaults to 0.01.
-- `fdr_cutoff` (float, optional): Cutoff value for FDR-corrected p-values. Range: Any value between 0 and 1. Defaults to 0.9999.
+- `fdr_cutoff` (float, optional): Cutoff value for FDR-corrected p-values. Range: Any value between 0 and 1. Defaults to 0.9999. FDR (Benjamini–Hochberg) is computed per cluster across terms during graph construction.
 - `display_prune_threshold` (float, optional): Display-only pruning based on spatial layout distance that suppresses spatially diffuse or isolated regions in plots. Runs after enrichment and clustering on plotting matrices only, does not use enrichment strength or statistical significance or affect clustering, enrichment, or statistical testing, and defaults to 0.0. Range: Any value between 0 and 1.
 - `linkage_criterion` (str, optional): Criterion for clustering. Defaults to `'distance'`. Options include:
     - `'distance'`: Clusters are formed based on distance.
