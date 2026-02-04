@@ -31,6 +31,8 @@ The `NetworkGraph` object integrates network data, annotations, and overrepresen
 - `min_cluster_size` (int, optional): Minimum size of clusters to be formed. Defaults to 5.
 - `max_cluster_size` (int, optional): Maximum size of clusters to be formed. Defaults to 1000.
 
+Linkage runs after clustering and enrichment, grouping enriched terms into domains for labeling and presentation. It does not change clustering, enrichment, or statistical inference. Domain grouping is optional. Set `linkage_criterion="off"` to disable it. Disabling yields raw, ungrouped enriched terms. The grouping is heuristic and can over-merge; turn it off for fine-grained resolution.
+
 **Returns:**
 `NetworkGraph`: A `NetworkGraph` object representing the processed network, ready for analysis and visualization.
 
