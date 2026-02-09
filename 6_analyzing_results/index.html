@@ -927,7 +927,7 @@
 <li><code>min_cluster_size</code> (int, optional): Minimum size of clusters to be formed. Defaults to 5.</li>
 <li><code>max_cluster_size</code> (int, optional): Maximum size of clusters to be formed. Defaults to 1000.</li>
 </ul>
-<p>Linkage runs after clustering and enrichment, grouping enriched terms into domains for labeling and presentation. It does not change clustering, enrichment, or statistical inference. Domain grouping is optional. Set <code>linkage_criterion="off"</code> to disable it. Disabling yields raw, ungrouped enriched terms. The grouping is heuristic and can over-merge; turn it off for fine-grained resolution.</p>
+<p>Linkage runs after clustering and enrichment, grouping enriched terms into domains for labeling and presentation. It does not change clustering, enrichment, or statistical inference. Domain grouping is optional. Set <code>linkage_criterion="off"</code> to disable it. Disabling yields raw, ungrouped enriched terms.</p>
 <p><strong>Returns:</strong>
 <code>NetworkGraph</code>: A <code>NetworkGraph</code> object representing the processed network, ready for analysis and visualization.</p>
 <div class="highlight"><pre><span></span><code><span class="n">graph</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_graph</span><span class="p">(</span>
