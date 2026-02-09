@@ -12,13 +12,12 @@ This repository offers a detailed guide to using **Regional Inference of Signifi
 - **Source Code**: [github.com/riskportal/risk](https://github.com/riskportal/risk)
 
 For a full description of RISK and its applications, see:
-
 <br>
-
-**Horecka, I. and Röst, H. (2026)**.
-_RISK: a next-generation tool for biological network annotation and visualization_.
-**Bioinformatics**.
-https://doi.org/10.1093/bioinformatics/btaf669
+Horecka, I., and Röst, H. (2026)
+<br>
+_RISK: a next-generation tool for biological network annotation and visualization_
+<br>
+Bioinformatics. https://doi.org/10.1093/bioinformatics/btaf669
 
 ## Yeast Protein–Protein Interaction (PPI) Network Demonstration
 
@@ -141,16 +140,17 @@ jupyter notebook
 
 ### Primary citation
 
-**Horecka, I. and Röst, H. (2026)**
-_RISK: a next-generation tool for biological network annotation and visualization_.
-**Bioinformatics**.
-https://doi.org/10.1093/bioinformatics/btaf669
+Horecka, I., and Röst, H. (2026)
+<br>
+_RISK: a next-generation tool for biological network annotation and visualization_
+<br>
+Bioinformatics. https://doi.org/10.1093/bioinformatics/btaf669
 
 ### Software archive
 
-RISK software archive corresponding to the published manuscript.
-Zenodo.
-https://doi.org/10.5281/zenodo.17257418
+RISK software for the published manuscript.
+<br>
+Zenodo. https://doi.org/10.5281/zenodo.17257418
 
 ## License
 
