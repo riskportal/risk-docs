@@ -30,6 +30,16 @@ Interactive tutorials:
 - [7. Visualization](7_visualization.md)
 - [8. Analysis Parameters](8_parameters.md)
 
+## Citation
+
+For a full description of RISK and its applications, see:
+
+Horecka, I., and Röst, H. (2026)
+<br>
+_RISK: a next-generation tool for biological network annotation and visualization_
+<br>
+_Bioinformatics_. https://doi.org/10.1093/bioinformatics/btaf669
+
 ---
 
 For interactive examples, use [tutorial.zip](tutorial.zip) in Jupyter or view the [static HTML version](tutorial.html).

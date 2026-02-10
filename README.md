@@ -17,7 +17,7 @@ Horecka, I., and Röst, H. (2026)
 <br>
 _RISK: a next-generation tool for biological network annotation and visualization_
 <br>
-Bioinformatics. https://doi.org/10.1093/bioinformatics/btaf669
+_Bioinformatics_. https://doi.org/10.1093/bioinformatics/btaf669
 
 ## Yeast Protein–Protein Interaction (PPI) Network Demonstration
 
@@ -144,7 +144,7 @@ Horecka, I., and Röst, H. (2026)
 <br>
 _RISK: a next-generation tool for biological network annotation and visualization_
 <br>
-Bioinformatics. https://doi.org/10.1093/bioinformatics/btaf669
+_Bioinformatics_. https://doi.org/10.1093/bioinformatics/btaf669
 
 ### Software archive
 
