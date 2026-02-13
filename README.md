@@ -22,7 +22,7 @@ _Bioinformatics_. https://doi.org/10.1093/bioinformatics/btaf669
 
 We applied RISK to a _Saccharomyces cerevisiae_ protein–protein interaction (PPI) network (Michaelis _et al_., 2023; 3,839 proteins, 30,955 interactions). RISK identified compact, functional modules overrepresented in Gene Ontology Biological Process (GO BP) terms (Ashburner _et al_., 2000), revealing biological organization including ribosomal assembly, mitochondrial organization, and RNA polymerase activity.
 
-[![RISK analysis of the yeast PPI network](https://i.imgur.com/TSxaxHl.jpeg)](https://i.imgur.com/TSxaxHl.jpeg)
+![Figure 1](assets/figure_1.jpg)
 **RISK workflow overview and analysis of the yeast PPI network**. Clusters are color-coded by overrepresented GO Biological Process terms (p < 0.01).
 
 ## Setting Up Python and Jupyter for RISK
