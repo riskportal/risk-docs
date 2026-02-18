@@ -131,43 +131,6 @@ plotter.plot_contour_perimeter(
 
 ---
 
-## plot_network()
-
-Render nodes and edges with styles derived from significance-aware helpers.
-
-**Parameters:**
-
-- `node_size` (int or np.ndarray, optional): Size of the nodes. Can be a single integer or an array of sizes. Defaults to 50.
-- `node_shape` (str, optional): Shape of the nodes. Options include:
-    - `'o'`: Circle. _(default)_
-    - `'s'`: Square.
-    - `'^'`: Triangle up.
-    - `'v'`: Triangle down.
-    - Other options: `'p'`, `'P'`, `'h'`, `'H'`, `'8'`, `'d'`, `'D'`, `'>'`, `'<', `'|'`, `'_'`.
-- `node_edgewidth` (float, optional): Width of the edges around each node. Defaults to 1.0.
-- `edge_width` (float, optional): Width of the edges in the plot. Defaults to 1.0.
-- `node_color` (str, list, tuple, or np.ndarray, optional): Color of the nodes. Can be a single color (e.g., `"white"`, `"red"`, `(0.5, 0.5, 0.5)` for RGB, or `(0.5, 0.5, 0.5, 0.8)` for RGBA) or an array of such colors. Defaults to "white".
-- `node_edgecolor` (str, list, tuple, or np.ndarray, optional): Color of the edges around each node. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
-- `edge_color` (str, list, tuple, or np.ndarray, optional): Color of the edges connecting the nodes. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
-- `node_alpha` (float or None, optional): Alpha value (transparency) for the nodes. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `node_color`. Defaults to 1.0.
-- `edge_alpha` (float or None, optional): Alpha value (transparency) for the edges. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `edge_color`. Defaults to 1.0.
-
-```python
-plotter.plot_network(
-    node_size=100,
-    node_shape="o",
-    node_edgewidth=1.0,
-    edge_width=0.03,
-    node_color="white",
-    node_edgecolor="black",
-    edge_color="white",
-    node_alpha=1.0,
-    edge_alpha=1.0,
-)
-```
-
----
-
 ## get_annotated_node_sizes()
 
 Generate node sizes based on annotation significance. Pass this to parameter `node_size` in `plot_network()`.
@@ -225,6 +188,43 @@ node_colors = plotter.get_annotated_node_colors(
     nonsignificant_alpha=0.75,
     ids_to_colors=None,
     random_seed=887,
+)
+```
+
+---
+
+## plot_network()
+
+Render nodes and edges with styles derived from significance-aware helpers.
+
+**Parameters:**
+
+- `node_size` (int or np.ndarray, optional): Size of the nodes. Can be a single integer or an array of sizes. Defaults to 50.
+- `node_shape` (str, optional): Shape of the nodes. Options include:
+    - `'o'`: Circle. _(default)_
+    - `'s'`: Square.
+    - `'^'`: Triangle up.
+    - `'v'`: Triangle down.
+    - Other options: `'p'`, `'P'`, `'h'`, `'H'`, `'8'`, `'d'`, `'D'`, `'>'`, `'<', `'|'`, `'_'`.
+- `node_edgewidth` (float, optional): Width of the edges around each node. Defaults to 1.0.
+- `edge_width` (float, optional): Width of the edges in the plot. Defaults to 1.0.
+- `node_color` (str, list, tuple, or np.ndarray, optional): Color of the nodes. Can be a single color (e.g., `"white"`, `"red"`, `(0.5, 0.5, 0.5)` for RGB, or `(0.5, 0.5, 0.5, 0.8)` for RGBA) or an array of such colors. Defaults to "white".
+- `node_edgecolor` (str, list, tuple, or np.ndarray, optional): Color of the edges around each node. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
+- `edge_color` (str, list, tuple, or np.ndarray, optional): Color of the edges connecting the nodes. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
+- `node_alpha` (float or None, optional): Alpha value (transparency) for the nodes. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `node_color`. Defaults to 1.0.
+- `edge_alpha` (float or None, optional): Alpha value (transparency) for the edges. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `edge_color`. Defaults to 1.0.
+
+```python
+plotter.plot_network(
+    node_size=100,
+    node_shape="o",
+    node_edgewidth=1.0,
+    edge_width=0.03,
+    node_color="white",
+    node_edgecolor="black",
+    edge_color="white",
+    node_alpha=1.0,
+    edge_alpha=1.0,
 )
 ```
 
