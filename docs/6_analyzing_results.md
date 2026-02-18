@@ -1,10 +1,10 @@
 # Building and Analyzing Results
 
-The `NetworkGraph` object integrates network data, annotations, and overrepresentation results into a unified structure, supporting clustering, domain-level significance, and downstream visualization.
+The `Graph` object integrates network data, annotations, and overrepresentation results into a unified structure, supporting clustering, domain-level significance, and downstream visualization.
 
 ---
 
-## Create a `NetworkGraph`
+## Create a `Graph`
 
 **Parameters:**
 
@@ -34,7 +34,7 @@ The `NetworkGraph` object integrates network data, annotations, and overrepresen
 Linkage runs after clustering and enrichment, grouping enriched terms into domains for labeling and presentation. It does not change clustering, enrichment, or statistical inference. Domain grouping is optional. Set `linkage_criterion="off"` to disable it. Disabling yields raw, ungrouped enriched terms.
 
 **Returns:**
-`NetworkGraph`: A `NetworkGraph` object representing the processed network, ready for analysis and visualization.
+`Graph`: A `Graph` object representing the processed network, ready for analysis and visualization.
 
 ```python
 graph = risk.load_graph(
@@ -116,7 +116,7 @@ domain_1_labels = graph.pop(1)
 
 ## Key Attributes
 
-The `NetworkGraph` object exposes several mappings for cluster and node information:
+The `Graph` object exposes several mappings for cluster and node information:
 
 ### Domain-Level
 
