@@ -54,30 +54,6 @@ graph = risk.load_graph(
 )
 ```
 
-## Key Attributes
-
-The `NetworkGraph` object exposes several mappings for cluster and node information:
-
-### Domain-Level
-
-- `domain_id_to_node_ids_map`: Maps each domain ID to the list of node IDs belonging to that domain.
-- `domain_id_to_node_labels_map`: Maps each domain ID to the list of node labels in that domain for readable visualization.
-- `domain_id_to_enriched_node_labels_map`: Maps each domain ID to the list of node labels that are significantly enriched for that domain.
-    - Unlike `domain_id_to_node_labels_map`, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute underlies blended node coloring and pleiotropic interpretation.
-- `domain_id_to_domain_terms_map`: Maps each domain ID to the list of overrepresented/significant terms associated with that domain.
-- `domain_id_to_domain_info_map`: Maps each domain ID to a metadata record (e.g., size, p-value, FDR, summary) about the domain.
-
-### Node-Level
-
-- `node_id_to_node_label_map`: Maps each internal node ID to its display label.
-- `node_label_to_node_id_map`: Maps each display label back to its internal node ID.
-- `node_label_to_significance_map`: Maps each node label to its significance score from the analysis.
-- `node_significance_sums`: Array of aggregate significance values per node, used for sizing, coloring, or ranking.
-
-These attributes enable visualization, labeling, and export functionalities.
-
----
-
 ## Summarize results
 
 Inspect matched members, counts, and significance in a DataFrame.
@@ -86,6 +62,33 @@ Inspect matched members, counts, and significance in a DataFrame.
 summary_df = graph.summary.load()
 summary_df.head()
 ```
+
+### Notes
+
+- Raw columns are linkage-independent. Domain columns depend on linkage.
+
+### Column definitions
+
+| Column | How it's calculated |
+| --- | --- |
+| Domain ID | Domain assignment from domain-conditioned results. Defaults to -1 when no domain row is retained for that annotation. |
+| Annotation | Annotation label from the input annotation list. |
+| Matched Members | All network member labels matched to that annotation. Empty when no domain row is retained. |
+| Matched Count | Number of labels in `Matched Members` (`0` if empty). Cast to integer in final output. |
+| Raw Enrichment P-value | Smallest enrichment p-value for that annotation across the full network. |
+| Raw Enrichment Q-value | Smallest enrichment q-value (Benjamini-Hochberg corrected) for that annotation across the full network. |
+| Raw Depletion P-value | Smallest depletion p-value for that annotation across the full network. |
+| Raw Depletion Q-value | Smallest depletion q-value (Benjamini-Hochberg corrected) for that annotation across the full network. |
+| Domain Enrichment P-value | Smallest enrichment p-value for that annotation within the assigned domain. |
+| Domain Enrichment Q-value | Smallest enrichment q-value (Benjamini-Hochberg corrected) for that annotation within the assigned domain. |
+| Domain Depletion P-value | Smallest depletion p-value for that annotation within the assigned domain. |
+| Domain Depletion Q-value | Smallest depletion q-value (Benjamini-Hochberg corrected) for that annotation within the assigned domain. |
+
+### Why do I see Domain ID = -1?
+
+Domain ID = -1 means the annotation had no retained domain assignment after merge. It does not mean raw statistics are missing.
+
+Raw columns are computed independently from full p-value/q-value matrices and can still be informative even when Domain ID = -1.
 
 ### Export Summary
 
@@ -110,6 +113,28 @@ Remove a domain (in-place) and retrieve its node labels:
 ```python
 domain_1_labels = graph.pop(1)
 ```
+
+## Key Attributes
+
+The `NetworkGraph` object exposes several mappings for cluster and node information:
+
+### Domain-Level
+
+- `domain_id_to_node_ids_map`: Maps each domain ID to the list of node IDs belonging to that domain.
+- `domain_id_to_node_labels_map`: Maps each domain ID to the list of node labels in that domain for readable visualization.
+- `domain_id_to_enriched_node_labels_map`: Maps each domain ID to the list of node labels that are significantly enriched for that domain.
+    - Unlike `domain_id_to_node_labels_map`, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute underlies blended node coloring and pleiotropic interpretation.
+- `domain_id_to_domain_terms_map`: Maps each domain ID to the list of overrepresented/significant terms associated with that domain.
+- `domain_id_to_domain_info_map`: Maps each domain ID to a metadata record (e.g., size, p-value, FDR, summary) about the domain.
+
+### Node-Level
+
+- `node_id_to_node_label_map`: Maps each internal node ID to its display label.
+- `node_label_to_node_id_map`: Maps each display label back to its internal node ID.
+- `node_label_to_significance_map`: Maps each node label to its significance score from the analysis.
+- `node_significance_sums`: Array of aggregate significance values per node, used for sizing, coloring, or ranking.
+
+These attributes enable visualization, labeling, and export functionalities.
 
 ---
 
