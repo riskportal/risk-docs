@@ -16,7 +16,7 @@
         <link rel="prev" href="../6_analyzing_results/">
       
       
-        <link rel="next" href="../8_parameters/">
+        <link rel="next" href="../8_figure_gallery/">
       
       
         
@@ -646,10 +646,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-a-networkplotter" class="md-nav__link">
+  <a href="#create-a-plotter" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create a NetworkPlotter
+        Create a Plotter
       
     </span>
   </a>
@@ -690,17 +690,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#plot_network" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        plot_network()
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#get_annotated_node_sizes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -716,6 +705,17 @@
     <span class="md-ellipsis">
       
         get_annotated_node_colors()
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plot_network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_network()
       
     </span>
   </a>
@@ -848,6 +848,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../8_figure_gallery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Figure Gallery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../8_parameters/" class="md-nav__link">
         
   
@@ -855,7 +883,7 @@
   <span class="md-ellipsis">
     
   
-    8. Analysis Parameters
+    9. Analysis Parameters
   
 
     
@@ -978,20 +1006,20 @@
 
 
 <h1 id="visualizing-networks-in-risk">Visualizing Networks in RISK<a class="headerlink" href="#visualizing-networks-in-risk" title="Permanent link">&para;</a></h1>
-<p>Visualization highlights clusters within the network to make modular structure and functional associations easier to interpret. RISK provides a flexible and powerful plotting interface via the <code>NetworkPlotter</code> object. This enables generation of publication-ready figures with detailed domain annotations, significance-driven coloring, contours, and rich label customization.</p>
+<p>Visualization highlights clusters within the network to make modular structure and functional associations easier to interpret. RISK provides a flexible and powerful plotting interface via the <code>Plotter</code> object. This enables generation of publication-ready figures with detailed domain annotations, significance-driven coloring, contours, and rich label customization.</p>
 <hr />
-<h2 id="create-a-networkplotter">Create a <code>NetworkPlotter</code><a class="headerlink" href="#create-a-networkplotter" title="Permanent link">&para;</a></h2>
-<p>Load your <code>NetworkGraph</code> object into a <code>NetworkPlotter</code>.</p>
+<h2 id="create-a-plotter">Create a <code>Plotter</code><a class="headerlink" href="#create-a-plotter" title="Permanent link">&para;</a></h2>
+<p>Load your <code>Graph</code> object into a <code>Plotter</code>.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><code>graph</code> (NetworkGraph): The <code>NetworkGraph</code> object containing the network structure to be visualized.</li>
+<li><code>graph</code> (Graph): The <code>Graph</code> object containing the network structure to be visualized.</li>
 <li><code>figsize</code> (tuple, optional): Size of the figure, specified as a tuple <code>(width, height)</code> in inches. Defaults to (10, 10).</li>
 <li><code>background_color</code> (str, list, tuple, or np.ndarray, optional): Background color of the plot. Provide a single color (e.g., <code>'white'</code>, <code>(1.0, 1.0, 1.0)</code> for RGB, or <code>(1.0, 1.0, 1.0, 1.0)</code> for RGBA). Defaults to 'white'.</li>
 <li><code>background_alpha</code> (float, None, optional): Transparency level of the background color. If provided, it overrides any existing alpha values found in <code>background_color</code>. Defaults to 1.0.</li>
 <li><code>pad</code> (float, optional): Padding value to adjust the axis limits around the network plot. Defaults to 0.3.</li>
 </ul>
 <p><strong>Returns:</strong>
-<code>NetworkPlotter</code>: An instance of the plotter initialized with the provided graph and settings.</p>
+<code>Plotter</code>: An instance of the plotter initialized with the provided graph and settings.</p>
 <div class="highlight"><pre><span></span><code><span class="n">plotter</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_plotter</span><span class="p">(</span>
     <span class="n">graph</span><span class="o">=</span><span class="n">graph</span><span class="p">,</span>
     <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
@@ -1011,7 +1039,7 @@
 <li><code>subtitle_fontsize</code> (int, optional): Font size for the subtitle. Defaults to 14.</li>
 <li><code>font</code> (str, optional): Font family used for both the title and subtitle. Defaults to "DejaVu Sans".</li>
 <li><code>title_color</code> (str, list, tuple, or np.ndarray, optional): Color of the title text. Provide a single color (e.g., <code>"black"</code>, <code>(0.0, 0.0, 0.0)</code> for RGB, or <code>(0.0, 0.0, 0.0, 1.0)</code> for RGBA). Defaults to "black".</li>
-<li><code>subtitle_color</code> (str, list, tuple, or np.ndarray, optional): Color of the subtitle text. Provide a single color (e.g., <code>"black"</code>, <code>(0.0, 0.0, 0.0)</code> for RGB, or <code>(0.0, 0.0, 0.0, 1.0)</code> for RGBA). Defaults to "black".</li>
+<li><code>subtitle_color</code> (str, list, tuple, or np.ndarray, optional): Color of the subtitle text. Provide a single color (e.g., <code>"gray"</code>, <code>(0.5, 0.5, 0.5)</code> for RGB, or <code>(0.5, 0.5, 0.5, 1.0)</code> for RGBA). Defaults to "gray".</li>
 <li><code>title_x</code> (float, optional): X-axis position of the title. Defaults to 0.5.</li>
 <li><code>title_y</code> (float, optional): Y-axis position of the title. Defaults to 0.975.</li>
 <li><code>title_space_offset</code> (float, optional): Fraction of figure height to leave for the space above the plot. Defaults to 0.075.</li>
@@ -1022,7 +1050,7 @@
     <span class="n">subtitle</span><span class="o">=</span><span class="s2">&quot;Michaelis et al., 2023&quot;</span><span class="p">,</span>
     <span class="n">title_fontsize</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
     <span class="n">subtitle_fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
-    <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="s2">&quot;DejaVu Sans&quot;</span><span class="p">,</span>
     <span class="n">title_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
     <span class="n">subtitle_color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span>
     <span class="n">title_x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
@@ -1085,40 +1113,6 @@
 <span class="p">)</span>
 </code></pre></div>
 <hr />
-<h2 id="plot_network">plot_network()<a class="headerlink" href="#plot_network" title="Permanent link">&para;</a></h2>
-<p>Render nodes and edges with styles derived from significance-aware helpers.</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><code>node_size</code> (int or np.ndarray, optional): Size of the nodes. Can be a single integer or an array of sizes. Defaults to 50.</li>
-<li><code>node_shape</code> (str, optional): Shape of the nodes. Options include:<ul>
-<li><code>'o'</code>: Circle. <em>(default)</em></li>
-<li><code>'s'</code>: Square.</li>
-<li><code>'^'</code>: Triangle up.</li>
-<li><code>'v'</code>: Triangle down.</li>
-<li>Other options: <code>'p'</code>, <code>'P'</code>, <code>'h'</code>, <code>'H'</code>, <code>'8'</code>, <code>'d'</code>, <code>'D'</code>, <code>'&gt;'</code>, <code>'&lt;',</code>'|'<code>,</code>'_'`.</li>
-</ul>
-</li>
-<li><code>node_edgewidth</code> (float, optional): Width of the edges around each node. Defaults to 1.0.</li>
-<li><code>edge_width</code> (float, optional): Width of the edges in the plot. Defaults to 1.0.</li>
-<li><code>node_color</code> (str, list, tuple, or np.ndarray, optional): Color of the nodes. Can be a single color (e.g., <code>"white"</code>, <code>"red"</code>, <code>(0.5, 0.5, 0.5)</code> for RGB, or <code>(0.5, 0.5, 0.5, 0.8)</code> for RGBA) or an array of such colors. Defaults to "white".</li>
-<li><code>node_edgecolor</code> (str, list, tuple, or np.ndarray, optional): Color of the edges around each node. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".</li>
-<li><code>edge_color</code> (str, list, tuple, or np.ndarray, optional): Color of the edges connecting the nodes. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".</li>
-<li><code>node_alpha</code> (float or None, optional): Alpha value (transparency) for the nodes. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any alpha values in <code>node_color</code>. Defaults to 1.0.</li>
-<li><code>edge_alpha</code> (float or None, optional): Alpha value (transparency) for the edges. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any alpha values in <code>edge_color</code>. Defaults to 1.0.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="n">plotter</span><span class="o">.</span><span class="n">plot_network</span><span class="p">(</span>
-    <span class="n">node_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
-    <span class="n">node_shape</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
-    <span class="n">node_edgewidth</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-    <span class="n">edge_width</span><span class="o">=</span><span class="mf">0.03</span><span class="p">,</span>
-    <span class="n">node_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
-    <span class="n">node_edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
-    <span class="n">edge_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
-    <span class="n">node_alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-    <span class="n">edge_alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-<span class="p">)</span>
-</code></pre></div>
-<hr />
 <h2 id="get_annotated_node_sizes">get_annotated_node_sizes()<a class="headerlink" href="#get_annotated_node_sizes" title="Permanent link">&para;</a></h2>
 <p>Generate node sizes based on annotation significance. Pass this to parameter <code>node_size</code> in <code>plot_network()</code>.</p>
 <p><strong>Parameters:</strong></p>
@@ -1166,6 +1160,40 @@
     <span class="n">nonsignificant_alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span>
     <span class="n">ids_to_colors</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">random_seed</span><span class="o">=</span><span class="mi">887</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="plot_network">plot_network()<a class="headerlink" href="#plot_network" title="Permanent link">&para;</a></h2>
+<p>Render nodes and edges with styles derived from significance-aware helpers.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>node_size</code> (int or np.ndarray, optional): Size of the nodes. Can be a single integer or an array of sizes. Defaults to 50.</li>
+<li><code>node_shape</code> (str, optional): Shape of the nodes. Options include:<ul>
+<li><code>'o'</code>: Circle. <em>(default)</em></li>
+<li><code>'s'</code>: Square.</li>
+<li><code>'^'</code>: Triangle up.</li>
+<li><code>'v'</code>: Triangle down.</li>
+<li>Other options: <code>'p'</code>, <code>'P'</code>, <code>'h'</code>, <code>'H'</code>, <code>'8'</code>, <code>'d'</code>, <code>'D'</code>, <code>'&gt;'</code>, <code>'&lt;',</code>'|'<code>,</code>'_'`.</li>
+</ul>
+</li>
+<li><code>node_edgewidth</code> (float, optional): Width of the edges around each node. Defaults to 1.0.</li>
+<li><code>edge_width</code> (float, optional): Width of the edges in the plot. Defaults to 1.0.</li>
+<li><code>node_color</code> (str, list, tuple, or np.ndarray, optional): Color of the nodes. Can be a single color (e.g., <code>"white"</code>, <code>"red"</code>, <code>(0.5, 0.5, 0.5)</code> for RGB, or <code>(0.5, 0.5, 0.5, 0.8)</code> for RGBA) or an array of such colors. Defaults to "white".</li>
+<li><code>node_edgecolor</code> (str, list, tuple, or np.ndarray, optional): Color of the edges around each node. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".</li>
+<li><code>edge_color</code> (str, list, tuple, or np.ndarray, optional): Color of the edges connecting the nodes. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".</li>
+<li><code>node_alpha</code> (float or None, optional): Alpha value (transparency) for the nodes. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any alpha values in <code>node_color</code>. Defaults to 1.0.</li>
+<li><code>edge_alpha</code> (float or None, optional): Alpha value (transparency) for the edges. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any alpha values in <code>edge_color</code>. Defaults to 1.0.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">plotter</span><span class="o">.</span><span class="n">plot_network</span><span class="p">(</span>
+    <span class="n">node_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">node_shape</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
+    <span class="n">node_edgewidth</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">edge_width</span><span class="o">=</span><span class="mf">0.03</span><span class="p">,</span>
+    <span class="n">node_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+    <span class="n">node_edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
+    <span class="n">edge_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+    <span class="n">node_alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">edge_alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <hr />
@@ -1320,7 +1348,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">plotter</span><span class="o">.</span><span class="n">plot_labels</span><span class="p">(</span>
     <span class="n">scale</span><span class="o">=</span><span class="mf">1.1</span><span class="p">,</span>
     <span class="n">offset</span><span class="o">=</span><span class="mf">0.12</span><span class="p">,</span>
-    <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="s2">&quot;DejaVu Sans&quot;</span><span class="p">,</span>
     <span class="n">fontcase</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;lower&quot;</span><span class="p">},</span>
     <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
     <span class="n">fontcolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
@@ -1406,7 +1434,7 @@
     <span class="n">radial_position</span><span class="o">=</span><span class="mi">73</span><span class="p">,</span>
     <span class="n">scale</span><span class="o">=</span><span class="mf">1.6</span><span class="p">,</span>
     <span class="n">offset</span><span class="o">=</span><span class="mf">0.12</span><span class="p">,</span>
-    <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="s2">&quot;DejaVu Sans&quot;</span><span class="p">,</span>
     <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
     <span class="n">fontcolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
     <span class="n">fontalpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
@@ -1444,7 +1472,7 @@
 <p><img alt="Annotated Yeast PPI Network" src="../images/go_bp_annotated.png" /></p>
 <hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Permanent link">&para;</a></h2>
-<p><a href="../8_parameters/">Overview of <code>risk.params</code></a></p>
+<p><a href="../8_figure_gallery/">Figure Gallery</a></p>
 
 
 

@@ -618,10 +618,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-a-networkgraph" class="md-nav__link">
+  <a href="#create-a-graph" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create a NetworkGraph
+        Create a Graph
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summarize-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summarize results
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summarize results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Column definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-do-i-see-domain-id-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why do I see Domain ID = -1?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clean-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clean domains
       
     </span>
   </a>
@@ -664,45 +736,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summarize-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summarize results
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Summarize results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#export-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Export Summary
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clean-domains" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Clean domains
-      
-    </span>
-  </a>
   
 </li>
       
@@ -761,6 +794,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../8_figure_gallery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Figure Gallery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../8_parameters/" class="md-nav__link">
         
   
@@ -768,7 +829,7 @@
   <span class="md-ellipsis">
     
   
-    8. Analysis Parameters
+    9. Analysis Parameters
   
 
     
@@ -891,9 +952,9 @@
 
 
 <h1 id="building-and-analyzing-results">Building and Analyzing Results<a class="headerlink" href="#building-and-analyzing-results" title="Permanent link">&para;</a></h1>
-<p>The <code>NetworkGraph</code> object integrates network data, annotations, and overrepresentation results into a unified structure, supporting clustering, domain-level significance, and downstream visualization.</p>
+<p>The <code>Graph</code> object integrates network data, annotations, and overrepresentation results into a unified structure, supporting clustering, domain-level significance, and downstream visualization.</p>
 <hr />
-<h2 id="create-a-networkgraph">Create a <code>NetworkGraph</code><a class="headerlink" href="#create-a-networkgraph" title="Permanent link">&para;</a></h2>
+<h2 id="create-a-graph">Create a <code>Graph</code><a class="headerlink" href="#create-a-graph" title="Permanent link">&para;</a></h2>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>network</code> (nx.Graph): The network graph containing the nodes and edges to be analyzed.</li>
@@ -929,7 +990,7 @@
 </ul>
 <p>Linkage runs after clustering and enrichment, grouping enriched terms into domains for labeling and presentation. It does not change clustering, enrichment, or statistical inference. Domain grouping is optional. Set <code>linkage_criterion="off"</code> to disable it. Disabling yields raw, ungrouped enriched terms.</p>
 <p><strong>Returns:</strong>
-<code>NetworkGraph</code>: A <code>NetworkGraph</code> object representing the processed network, ready for analysis and visualization.</p>
+<code>Graph</code>: A <code>Graph</code> object representing the processed network, ready for analysis and visualization.</p>
 <div class="highlight"><pre><span></span><code><span class="n">graph</span> <span class="o">=</span> <span class="n">risk</span><span class="o">.</span><span class="n">load_graph</span><span class="p">(</span>
     <span class="n">network</span><span class="o">=</span><span class="n">network</span><span class="p">,</span>
     <span class="n">annotation</span><span class="o">=</span><span class="n">annotation</span><span class="p">,</span>
@@ -946,8 +1007,94 @@
     <span class="n">max_cluster_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
+<h2 id="summarize-results">Summarize results<a class="headerlink" href="#summarize-results" title="Permanent link">&para;</a></h2>
+<p>Inspect matched members, counts, and significance in a DataFrame.</p>
+<div class="highlight"><pre><span></span><code><span class="n">summary_df</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="n">summary_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Raw columns are linkage-independent. Domain columns depend on linkage.</li>
+</ul>
+<h3 id="column-definitions">Column definitions<a class="headerlink" href="#column-definitions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>How it's calculated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Domain ID</td>
+<td>Domain assignment from domain-conditioned results. Defaults to -1 when no domain row is retained for that annotation.</td>
+</tr>
+<tr>
+<td>Annotation</td>
+<td>Annotation label from the input annotation list.</td>
+</tr>
+<tr>
+<td>Matched Members</td>
+<td>All network member labels matched to that annotation. Empty when no domain row is retained.</td>
+</tr>
+<tr>
+<td>Matched Count</td>
+<td>Number of labels in <code>Matched Members</code> (<code>0</code> if empty). Cast to integer in final output.</td>
+</tr>
+<tr>
+<td>Raw Enrichment P-value</td>
+<td>Smallest enrichment p-value for that annotation across the full network.</td>
+</tr>
+<tr>
+<td>Raw Enrichment Q-value</td>
+<td>Smallest enrichment q-value (Benjamini-Hochberg corrected) for that annotation across the full network.</td>
+</tr>
+<tr>
+<td>Raw Depletion P-value</td>
+<td>Smallest depletion p-value for that annotation across the full network.</td>
+</tr>
+<tr>
+<td>Raw Depletion Q-value</td>
+<td>Smallest depletion q-value (Benjamini-Hochberg corrected) for that annotation across the full network.</td>
+</tr>
+<tr>
+<td>Domain Enrichment P-value</td>
+<td>Smallest enrichment p-value for that annotation within the assigned domain.</td>
+</tr>
+<tr>
+<td>Domain Enrichment Q-value</td>
+<td>Smallest enrichment q-value (Benjamini-Hochberg corrected) for that annotation within the assigned domain.</td>
+</tr>
+<tr>
+<td>Domain Depletion P-value</td>
+<td>Smallest depletion p-value for that annotation within the assigned domain.</td>
+</tr>
+<tr>
+<td>Domain Depletion Q-value</td>
+<td>Smallest depletion q-value (Benjamini-Hochberg corrected) for that annotation within the assigned domain.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-do-i-see-domain-id-1">Why do I see Domain ID = -1?<a class="headerlink" href="#why-do-i-see-domain-id-1" title="Permanent link">&para;</a></h3>
+<p>Domain ID = -1 means the annotation had no retained domain assignment after merge. It does not mean raw statistics are missing.</p>
+<p>Raw columns are computed independently from full p-value/q-value matrices and can still be informative even when Domain ID = -1.</p>
+<h3 id="export-summary">Export Summary<a class="headerlink" href="#export-summary" title="Permanent link">&para;</a></h3>
+<p>Export the processed summary table in common formats for downstream use or sharing.</p>
+<p><strong>Shared Parameters:</strong></p>
+<p>Shared parameters among export methods.</p>
+<ul>
+<li><code>filepath</code> (str): The path where the file will be saved.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">graph</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;./data/csv/summary/michaelis_2023.csv&quot;</span><span class="p">)</span>
+<span class="n">graph</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="s2">&quot;./data/json/summary/michaelis_2023.json&quot;</span><span class="p">)</span>
+<span class="n">graph</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">to_txt</span><span class="p">(</span><span class="s2">&quot;./data/txt/summary/michaelis_2023.txt&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="clean-domains">Clean domains<a class="headerlink" href="#clean-domains" title="Permanent link">&para;</a></h2>
+<p>Remove a domain (in-place) and retrieve its node labels:</p>
+<div class="highlight"><pre><span></span><code><span class="n">domain_1_labels</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="key-attributes">Key Attributes<a class="headerlink" href="#key-attributes" title="Permanent link">&para;</a></h2>
-<p>The <code>NetworkGraph</code> object exposes several mappings for cluster and node information:</p>
+<p>The <code>Graph</code> object exposes several mappings for cluster and node information:</p>
 <h3 id="domain-level">Domain-Level<a class="headerlink" href="#domain-level" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>domain_id_to_node_ids_map</code>: Maps each domain ID to the list of node IDs belonging to that domain.</li>
@@ -967,27 +1114,6 @@
 <li><code>node_significance_sums</code>: Array of aggregate significance values per node, used for sizing, coloring, or ranking.</li>
 </ul>
 <p>These attributes enable visualization, labeling, and export functionalities.</p>
-<hr />
-<h2 id="summarize-results">Summarize results<a class="headerlink" href="#summarize-results" title="Permanent link">&para;</a></h2>
-<p>Inspect matched members, counts, and significance in a DataFrame.</p>
-<div class="highlight"><pre><span></span><code><span class="n">summary_df</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
-<span class="n">summary_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</code></pre></div>
-<h3 id="export-summary">Export Summary<a class="headerlink" href="#export-summary" title="Permanent link">&para;</a></h3>
-<p>Export the processed summary table in common formats for downstream use or sharing.</p>
-<p><strong>Shared Parameters:</strong></p>
-<p>Shared parameters among export methods.</p>
-<ul>
-<li><code>filepath</code> (str): The path where the file will be saved.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="n">graph</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;./data/csv/summary/michaelis_2023.csv&quot;</span><span class="p">)</span>
-<span class="n">graph</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="s2">&quot;./data/json/summary/michaelis_2023.json&quot;</span><span class="p">)</span>
-<span class="n">graph</span><span class="o">.</span><span class="n">summary</span><span class="o">.</span><span class="n">to_txt</span><span class="p">(</span><span class="s2">&quot;./data/txt/summary/michaelis_2023.txt&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="clean-domains">Clean domains<a class="headerlink" href="#clean-domains" title="Permanent link">&para;</a></h2>
-<p>Remove a domain (in-place) and retrieve its node labels:</p>
-<div class="highlight"><pre><span></span><code><span class="n">domain_1_labels</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
 <hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Permanent link">&para;</a></h2>
 <p><a href="../7_visualization/">Visualizing Networks in RISK</a></p>
