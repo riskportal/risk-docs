@@ -1,9 +1,9 @@
 parent_key,child_key,value
-annotation,filetype,JSON
-annotation,filepath,./data/json/annotation/go_biological_process.json
+annotation,filetype,Dictionary
+annotation,filepath,In-memory dictionary
 annotation,min_nodes_per_term,5
 annotation,max_nodes_per_term,75
-datetime,,2026-01-14 12:34:18
+datetime,,2026-02-18 12:10:35
 graph,tail,right
 graph,pval_cutoff,0.05
 graph,fdr_cutoff,1.0
@@ -46,6 +46,9 @@ plotter,perimeter_linewidth,1.5
 plotter,perimeter_color,white
 plotter,perimeter_outline_alpha,1.0
 plotter,perimeter_fill_alpha,0.0
+plotter,perimeter_levels,3
+plotter,perimeter_bandwidth,0.6
+plotter,perimeter_grid_size,250
 plotter,network_node_size,custom
 plotter,network_node_shape,o
 plotter,network_node_edgewidth,1.0

@@ -1,23 +1,23 @@
 # Visualizing Networks in RISK
 
-Visualization highlights clusters within the network to make modular structure and functional associations easier to interpret. RISK provides a flexible and powerful plotting interface via the `NetworkPlotter` object. This enables generation of publication-ready figures with detailed domain annotations, significance-driven coloring, contours, and rich label customization.
+Visualization highlights clusters within the network to make modular structure and functional associations easier to interpret. RISK provides a flexible and powerful plotting interface via the `Plotter` object. This enables generation of publication-ready figures with detailed domain annotations, significance-driven coloring, contours, and rich label customization.
 
 ---
 
-## Create a `NetworkPlotter`
+## Create a `Plotter`
 
-Load your `NetworkGraph` object into a `NetworkPlotter`.
+Load your `Graph` object into a `Plotter`.
 
 **Parameters:**
 
-- `graph` (NetworkGraph): The `NetworkGraph` object containing the network structure to be visualized.
+- `graph` (Graph): The `Graph` object containing the network structure to be visualized.
 - `figsize` (tuple, optional): Size of the figure, specified as a tuple `(width, height)` in inches. Defaults to (10, 10).
 - `background_color` (str, list, tuple, or np.ndarray, optional): Background color of the plot. Provide a single color (e.g., `'white'`, `(1.0, 1.0, 1.0)` for RGB, or `(1.0, 1.0, 1.0, 1.0)` for RGBA). Defaults to 'white'.
 - `background_alpha` (float, None, optional): Transparency level of the background color. If provided, it overrides any existing alpha values found in `background_color`. Defaults to 1.0.
 - `pad` (float, optional): Padding value to adjust the axis limits around the network plot. Defaults to 0.3.
 
 **Returns:**
-`NetworkPlotter`: An instance of the plotter initialized with the provided graph and settings.
+`Plotter`: An instance of the plotter initialized with the provided graph and settings.
 
 ```python
 plotter = risk.load_plotter(
@@ -43,7 +43,7 @@ Add a title and optional subtitle overlay.
 - `subtitle_fontsize` (int, optional): Font size for the subtitle. Defaults to 14.
 - `font` (str, optional): Font family used for both the title and subtitle. Defaults to "DejaVu Sans".
 - `title_color` (str, list, tuple, or np.ndarray, optional): Color of the title text. Provide a single color (e.g., `"black"`, `(0.0, 0.0, 0.0)` for RGB, or `(0.0, 0.0, 0.0, 1.0)` for RGBA). Defaults to "black".
-- `subtitle_color` (str, list, tuple, or np.ndarray, optional): Color of the subtitle text. Provide a single color (e.g., `"black"`, `(0.0, 0.0, 0.0)` for RGB, or `(0.0, 0.0, 0.0, 1.0)` for RGBA). Defaults to "black".
+- `subtitle_color` (str, list, tuple, or np.ndarray, optional): Color of the subtitle text. Provide a single color (e.g., `"gray"`, `(0.5, 0.5, 0.5)` for RGB, or `(0.5, 0.5, 0.5, 1.0)` for RGBA). Defaults to "gray".
 - `title_x` (float, optional): X-axis position of the title. Defaults to 0.5.
 - `title_y` (float, optional): Y-axis position of the title. Defaults to 0.975.
 - `title_space_offset` (float, optional): Fraction of figure height to leave for the space above the plot. Defaults to 0.075.
@@ -55,7 +55,7 @@ plotter.plot_title(
     subtitle="Michaelis et al., 2023",
     title_fontsize=24,
     subtitle_fontsize=18,
-    font="Arial",
+    font="DejaVu Sans",
     title_color="white",
     subtitle_color="lightblue",
     title_x=0.5,
@@ -131,43 +131,6 @@ plotter.plot_contour_perimeter(
 
 ---
 
-## plot_network()
-
-Render nodes and edges with styles derived from significance-aware helpers.
-
-**Parameters:**
-
-- `node_size` (int or np.ndarray, optional): Size of the nodes. Can be a single integer or an array of sizes. Defaults to 50.
-- `node_shape` (str, optional): Shape of the nodes. Options include:
-    - `'o'`: Circle. _(default)_
-    - `'s'`: Square.
-    - `'^'`: Triangle up.
-    - `'v'`: Triangle down.
-    - Other options: `'p'`, `'P'`, `'h'`, `'H'`, `'8'`, `'d'`, `'D'`, `'>'`, `'<', `'|'`, `'_'`.
-- `node_edgewidth` (float, optional): Width of the edges around each node. Defaults to 1.0.
-- `edge_width` (float, optional): Width of the edges in the plot. Defaults to 1.0.
-- `node_color` (str, list, tuple, or np.ndarray, optional): Color of the nodes. Can be a single color (e.g., `"white"`, `"red"`, `(0.5, 0.5, 0.5)` for RGB, or `(0.5, 0.5, 0.5, 0.8)` for RGBA) or an array of such colors. Defaults to "white".
-- `node_edgecolor` (str, list, tuple, or np.ndarray, optional): Color of the edges around each node. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
-- `edge_color` (str, list, tuple, or np.ndarray, optional): Color of the edges connecting the nodes. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
-- `node_alpha` (float or None, optional): Alpha value (transparency) for the nodes. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `node_color`. Defaults to 1.0.
-- `edge_alpha` (float or None, optional): Alpha value (transparency) for the edges. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `edge_color`. Defaults to 1.0.
-
-```python
-plotter.plot_network(
-    node_size=100,
-    node_shape="o",
-    node_edgewidth=1.0,
-    edge_width=0.03,
-    node_color="white",
-    node_edgecolor="black",
-    edge_color="white",
-    node_alpha=1.0,
-    edge_alpha=1.0,
-)
-```
-
----
-
 ## get_annotated_node_sizes()
 
 Generate node sizes based on annotation significance. Pass this to parameter `node_size` in `plot_network()`.
@@ -225,6 +188,43 @@ node_colors = plotter.get_annotated_node_colors(
     nonsignificant_alpha=0.75,
     ids_to_colors=None,
     random_seed=887,
+)
+```
+
+---
+
+## plot_network()
+
+Render nodes and edges with styles derived from significance-aware helpers.
+
+**Parameters:**
+
+- `node_size` (int or np.ndarray, optional): Size of the nodes. Can be a single integer or an array of sizes. Defaults to 50.
+- `node_shape` (str, optional): Shape of the nodes. Options include:
+    - `'o'`: Circle. _(default)_
+    - `'s'`: Square.
+    - `'^'`: Triangle up.
+    - `'v'`: Triangle down.
+    - Other options: `'p'`, `'P'`, `'h'`, `'H'`, `'8'`, `'d'`, `'D'`, `'>'`, `'<', `'|'`, `'_'`.
+- `node_edgewidth` (float, optional): Width of the edges around each node. Defaults to 1.0.
+- `edge_width` (float, optional): Width of the edges in the plot. Defaults to 1.0.
+- `node_color` (str, list, tuple, or np.ndarray, optional): Color of the nodes. Can be a single color (e.g., `"white"`, `"red"`, `(0.5, 0.5, 0.5)` for RGB, or `(0.5, 0.5, 0.5, 0.8)` for RGBA) or an array of such colors. Defaults to "white".
+- `node_edgecolor` (str, list, tuple, or np.ndarray, optional): Color of the edges around each node. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
+- `edge_color` (str, list, tuple, or np.ndarray, optional): Color of the edges connecting the nodes. Can be a single color, a string of colors, or an array of string or RGB/RGBA colors. Defaults to "black".
+- `node_alpha` (float or None, optional): Alpha value (transparency) for the nodes. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `node_color`. Defaults to 1.0.
+- `edge_alpha` (float or None, optional): Alpha value (transparency) for the edges. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any alpha values in `edge_color`. Defaults to 1.0.
+
+```python
+plotter.plot_network(
+    node_size=100,
+    node_shape="o",
+    node_edgewidth=1.0,
+    edge_width=0.03,
+    node_color="white",
+    node_edgecolor="black",
+    edge_color="white",
+    node_alpha=1.0,
+    edge_alpha=1.0,
 )
 ```
 
@@ -403,7 +403,7 @@ Annotate selected nodes or domains with styled text and arrows.
 plotter.plot_labels(
     scale=1.1,
     offset=0.12,
-    font="Arial",
+    font="DejaVu Sans",
     fontcase={"title": "lower"},
     fontsize=15,
     fontcolor="white",
@@ -496,7 +496,7 @@ plotter.plot_sublabel(
     radial_position=73,
     scale=1.6,
     offset=0.12,
-    font="Arial",
+    font="DejaVu Sans",
     fontsize=15,
     fontcolor="white",
     fontalpha=1.0,
@@ -549,4 +549,4 @@ plotter.show()
 
 ## Next Step
 
-[Overview of `risk.params`](8_parameters.md)
+[Figure Gallery](8_figure_gallery.md)

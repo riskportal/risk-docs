@@ -1,11 +1,11 @@
 {
     "annotation": {
-        "filetype": "JSON",
-        "filepath": "./data/json/annotation/go_biological_process.json",
+        "filetype": "Dictionary",
+        "filepath": "In-memory dictionary",
         "min_nodes_per_term": 5,
         "max_nodes_per_term": 75
     },
-    "datetime": "2026-01-14 12:34:18",
+    "datetime": "2026-02-18 12:10:35",
     "graph": {
         "tail": "right",
         "pval_cutoff": 0.05,
@@ -58,6 +58,9 @@
         "perimeter_color": "white",
         "perimeter_outline_alpha": 1.0,
         "perimeter_fill_alpha": 0.0,
+        "perimeter_levels": 3,
+        "perimeter_bandwidth": 0.6,
+        "perimeter_grid_size": 250,
         "network_node_size": "custom",
         "network_node_shape": "o",
         "network_node_edgewidth": 1.0,
