@@ -51,7 +51,7 @@ Horecka, I., and Röst, H. (2026)
 <br>
 _RISK: a next-generation tool for biological network annotation and visualization_
 <br>
-_Bioinformatics_. https://doi.org/10.1093/bioinformatics/btaf669
+_Bioinformatics_. [https://doi.org/10.1093/bioinformatics/btaf669](https://doi.org/10.1093/bioinformatics/btaf669)
 
 **Human HuRI brain cerebellum**
 <br>
@@ -59,7 +59,7 @@ Luck, K., Kim, DK., Lambourne, L. et al. (2020)
 <br>
 _A reference map of the human binary protein interactome_
 <br>
-_Nature_ 580, 402-408. https://doi.org/10.1038/s41586-020-2188-x
+_Nature_ 580, 402-408. [https://doi.org/10.1038/s41586-020-2188-x](https://doi.org/10.1038/s41586-020-2188-x)
 <br>
 Note: Panel generated with RISK from a HuRI-derived brain cerebellum PPI network dataset; not reproduced from a figure in Luck _et al_. (2020).
 
