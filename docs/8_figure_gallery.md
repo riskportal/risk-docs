@@ -25,11 +25,11 @@ Browse selected RISK figures across yeast, physics, and HuRI analyses.
   </div>
   <div class="aux-gallery-item">
     <div class="aux-gallery-caption">
-      <strong>Supplementary Figure S7.</strong> Physics citation network.
+      <strong>Supplementary Figure S7.</strong> High-energy physics citation network.
       <span class="aux-gallery-meta">Annotation source: Research subfields</span>
     </div>
     <a class="aux-gallery-link" href="../images/gallery/physics_supp_fig_7.png" target="_blank" rel="noopener">
-      <img src="../images/gallery/physics_supp_fig_7.png" alt="Physics citation supplementary figure 7" />
+      <img src="../images/gallery/physics_supp_fig_7.png" alt="High-energy physics citation supplementary figure 7" />
     </a>
   </div>
   <div class="aux-gallery-item">
