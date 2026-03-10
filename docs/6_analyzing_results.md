@@ -66,6 +66,7 @@ summary_df.head()
 ### Notes
 
 - Raw columns are linkage-independent. Domain columns depend on linkage.
+- `graph.summary.load()` caches the computed summary table for faster repeated access; cache is automatically invalidated when domains are modified via `graph.pop(...)`.
 
 ### Column definitions
 
@@ -122,7 +123,7 @@ The `Graph` object exposes several mappings for cluster and node information:
 
 - `domain_id_to_node_ids_map`: Maps each domain ID to the list of node IDs belonging to that domain.
 - `domain_id_to_node_labels_map`: Maps each domain ID to the list of node labels in that domain for readable visualization.
-- `domain_id_to_enriched_node_labels_map`: Maps each domain ID to the list of node labels that are significantly enriched for that domain.
+- `domain_id_to_enriched_node_labels_map`: Maps each domain ID to node labels with non-zero domain signal (enrichment or depletion) for that domain.
     - Unlike `domain_id_to_node_labels_map`, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute underlies blended node coloring and pleiotropic interpretation.
 - `domain_id_to_domain_terms_map`: Maps each domain ID to the list of overrepresented/significant terms associated with that domain.
 - `domain_id_to_domain_info_map`: Maps each domain ID to a metadata record (e.g., size, p-value, FDR, summary) about the domain.
