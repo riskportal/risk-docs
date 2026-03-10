@@ -897,6 +897,7 @@
 <h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Raw columns are linkage-independent. Domain columns depend on linkage.</li>
+<li><code>graph.summary.load()</code> caches the computed summary table for faster repeated access; cache is automatically invalidated when domains are modified via <code>graph.pop(...)</code>.</li>
 </ul>
 <h3 id="column-definitions">Column definitions<a class="headerlink" href="#column-definitions" title="Permanent link">&para;</a></h3>
 <table>
@@ -981,7 +982,7 @@
 <ul>
 <li><code>domain_id_to_node_ids_map</code>: Maps each domain ID to the list of node IDs belonging to that domain.</li>
 <li><code>domain_id_to_node_labels_map</code>: Maps each domain ID to the list of node labels in that domain for readable visualization.</li>
-<li><code>domain_id_to_enriched_node_labels_map</code>: Maps each domain ID to the list of node labels that are significantly enriched for that domain.<ul>
+<li><code>domain_id_to_enriched_node_labels_map</code>: Maps each domain ID to node labels with non-zero domain signal (enrichment or depletion) for that domain.<ul>
 <li>Unlike <code>domain_id_to_node_labels_map</code>, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute underlies blended node coloring and pleiotropic interpretation.</li>
 </ul>
 </li>
