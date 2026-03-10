@@ -38,6 +38,7 @@ Builds an empirical null by permuting either the network structure or annotation
 - `score_metric` (str, optional): Metric used to score clusters (`"sum"` or `"stdev"`). Defaults to `"sum"`.
 - `null_distribution` (str, optional): Permute `"network"` or `"annotation"`. Defaults to `"network"`.
 - `num_permutations` (int, optional): Number of permutations to run. Defaults to `1000`.
+- `random_seed` (int, optional): Seed for random number generation. Defaults to `888`.
 - `max_workers` (int, optional): Maximum worker processes for multiprocessing. Defaults to `1`.
 
 **Returns:**
