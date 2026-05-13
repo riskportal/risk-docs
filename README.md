@@ -7,7 +7,7 @@
 This repository offers a detailed guide to using **Regional Inference of Significant Kinships** (**RISK**), a next-generation tool for biological network annotation and visualization. It walks users through core features and practical workflows for network analysis.
 
 - **Full Documentation**: [riskportal.github.io/risk-docs](https://riskportal.github.io/risk-docs)
-- **Figure Gallery**: [riskportal.github.io/risk-docs/8_figure_gallery](https://riskportal.github.io/risk-docs/8_figure_gallery/)
+- **Figure Gallery**: [riskportal.github.io/risk-docs/figure-gallery](https://riskportal.github.io/risk-docs/figure-gallery/)
 - **Try in Browser (Binder)**: [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart.ipynb)
 - **Source Code**: [github.com/riskportal/risk](https://github.com/riskportal/risk)
 
