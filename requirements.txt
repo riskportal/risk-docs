@@ -1,5 +1,6 @@
 matplotlib
 mkdocs-material
+mkdocs-redirects
 networkx
 pandas
 risk-network
