@@ -549,4 +549,4 @@ plotter.show()
 
 ## Next Step
 
-[Figure Gallery](8_figure_gallery.md)
+[Figure Gallery](figure-gallery.md)
