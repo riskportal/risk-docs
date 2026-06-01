@@ -17,6 +17,7 @@ Begin here for setup and core concepts:
 Interactive tutorials:
 
 - <a href="https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart.ipynb" target="_blank" rel="noopener">Launch Quickstart in Binder</a> (no installation required)
+- <a href="https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart_advanced.ipynb" target="_blank" rel="noopener">Launch Quickstart (Advanced) in Binder</a> (no installation required)
 - [Full Tutorial (HTML)](tutorial.html)
 - [Download Tutorial + Data (ZIP)](tutorial.zip)
 

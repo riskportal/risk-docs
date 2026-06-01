@@ -9,6 +9,7 @@ This repository offers a detailed guide to using **Regional Inference of Signifi
 - **Full Documentation**: [riskportal.github.io/risk-docs](https://riskportal.github.io/risk-docs)
 - **Figure Gallery**: [riskportal.github.io/risk-docs/figure-gallery](https://riskportal.github.io/risk-docs/figure-gallery/)
 - **Try in Browser (Binder)**: [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart.ipynb)
+- **Advanced Quickstart (Binder)**: [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart_advanced.ipynb)
 - **Source Code**: [github.com/riskportal/risk](https://github.com/riskportal/risk)
 
 For a full description of RISK and its applications, see:

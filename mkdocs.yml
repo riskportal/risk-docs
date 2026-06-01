@@ -52,6 +52,7 @@ nav:
   - Full Tutorial (HTML): tutorial.html
   - Download Tutorial Notebook & Data: tutorial.zip
   - Interactive Quickstart (Binder): https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart.ipynb
+  - Interactive Quickstart Advanced (Binder): https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart_advanced.ipynb
 plugins:
   - search
   - redirects:
