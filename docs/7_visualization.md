@@ -281,6 +281,7 @@ Draw contours for domains (e.g., GO term regions).
 - `bandwidth` (float, optional): Bandwidth for KDE, controlling the smoothness of the contour. Defaults to 0.8.
 - `grid_size` (int, optional): Resolution of the grid for KDE. Higher values create finer contours. Defaults to 250.
 - `color` (str, list, tuple, or np.ndarray, optional): Color of the contours. Can be a string (e.g., `"white"`), an RGB/RGBA value, or an array of such values. Defaults to "white".
+- `edge_color` (str, list, tuple, np.ndarray, or None, optional): Color for the contour outlines. When provided, overrides the fill color for the outline. Defaults to None.
 - `linestyle` (str, optional): Line style for the contours. Options include `'solid'`, `'dashed'`, `'dashdot'`, `'dotted'`. Defaults to "solid".
 - `linewidth` (float, optional): Line width for the contours. Defaults to 1.5.
 - `alpha` (float, None, optional): Transparency level of the contour lines. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any existing alpha values found in `color`. Defaults to 1.0.
@@ -347,9 +348,10 @@ Draw a contour around a subset of nodes.
 - `bandwidth` (float, optional): Bandwidth for KDE, controlling the smoothness of the contour. Defaults to 0.8.
 - `grid_size` (int, optional): Resolution of the grid for KDE. Higher values create finer contours. Defaults to 250.
 - `color` (str, list, tuple, or np.ndarray, optional): Color of the contour. Can be a string (e.g., `"white"`), an RGB or RGBA value, or an array of such values (strings, RGB, or RGBA). Defaults to "white".
+- `edge_color` (str, list, tuple, np.ndarray, or None, optional): Color for the contour outlines. When provided, overrides the fill color for the outline. Defaults to None.
 - `linestyle` (str, optional): Line style for the contour. Options include `'solid'`, `'dashed'`, `'dashdot'`, `'dotted'`. Defaults to "solid".
 - `linewidth` (float, optional): Line width for the contour. Defaults to 1.5.
-- `alpha` (float, None, optional): Transparency level of the contour lines. Range: `0.0` (fully transparent) to 1.0`(fully opaque). If provided, it overrides any existing alpha values found in`color`. Defaults to 1.0.
+- `alpha` (float, None, optional): Transparency level of the contour lines. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any existing alpha values found in `color`. Defaults to 1.0.
 - `fill_alpha` (float, None, optional): Transparency level of the contour fill. If provided, it overrides any existing alpha values found in `color`. Defaults to None.
 
 ```python
@@ -397,7 +399,7 @@ Annotate selected nodes or domains with styled text and arrows.
 - `words_to_omit` (list, optional): List of words to omit from the labels. Defaults to None.
 - `overlay_ids` (bool, optional): Whether to overlay domain IDs in the center of the centroids. Defaults to False.
 - `ids_to_keep` (list, tuple, np.ndarray, or None, optional): IDs of domains that must be labeled. To discover domain IDs, you can set `overlay_ids=True`. Defaults to None.
-- `ids_to_labels` (dict, optional): A dictionary mapping domain IDs to custom labels (strings). The labels should be space-separated words. If provided, the custom labels will replace the default domain terms. Defaults to None.
+- `ids_to_labels` (dict, optional): A dictionary mapping domain IDs to custom labels (strings). Labels are wrapped to respect `max_chars_per_line` and `max_label_lines`. To supply exact multi-line formatting, join lines with `"::::"` (e.g., `"RNA splicing::::regulation"`); strings containing `"::::"` are stored verbatim. Defaults to None.
 
 ```python
 plotter.plot_labels(
