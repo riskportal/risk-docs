@@ -29,7 +29,7 @@ Interactive tutorials:
 - [6. Analyzing Results](6_analyzing_results.md)
 - [7. Visualization](7_visualization.md)
 - [8. Figure Gallery](8_figure_gallery.md)
-- [9. Analysis Parameters](8_parameters.md)
+- [9. Analysis Parameters](9_parameters.md)
 
 ## Citation
 
