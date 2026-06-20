@@ -1183,6 +1183,7 @@
 <li><code>bandwidth</code> (float, optional): Bandwidth for KDE, controlling the smoothness of the contour. Defaults to 0.8.</li>
 <li><code>grid_size</code> (int, optional): Resolution of the grid for KDE. Higher values create finer contours. Defaults to 250.</li>
 <li><code>color</code> (str, list, tuple, or np.ndarray, optional): Color of the contours. Can be a string (e.g., <code>"white"</code>), an RGB/RGBA value, or an array of such values. Defaults to "white".</li>
+<li><code>edge_color</code> (str, list, tuple, np.ndarray, or None, optional): Color for the contour outlines. When provided, overrides the fill color for the outline. Defaults to None.</li>
 <li><code>linestyle</code> (str, optional): Line style for the contours. Options include <code>'solid'</code>, <code>'dashed'</code>, <code>'dashdot'</code>, <code>'dotted'</code>. Defaults to "solid".</li>
 <li><code>linewidth</code> (float, optional): Line width for the contours. Defaults to 1.5.</li>
 <li><code>alpha</code> (float, None, optional): Transparency level of the contour lines. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to 1.0.</li>
@@ -1238,9 +1239,10 @@
 <li><code>bandwidth</code> (float, optional): Bandwidth for KDE, controlling the smoothness of the contour. Defaults to 0.8.</li>
 <li><code>grid_size</code> (int, optional): Resolution of the grid for KDE. Higher values create finer contours. Defaults to 250.</li>
 <li><code>color</code> (str, list, tuple, or np.ndarray, optional): Color of the contour. Can be a string (e.g., <code>"white"</code>), an RGB or RGBA value, or an array of such values (strings, RGB, or RGBA). Defaults to "white".</li>
+<li><code>edge_color</code> (str, list, tuple, np.ndarray, or None, optional): Color for the contour outlines. When provided, overrides the fill color for the outline. Defaults to None.</li>
 <li><code>linestyle</code> (str, optional): Line style for the contour. Options include <code>'solid'</code>, <code>'dashed'</code>, <code>'dashdot'</code>, <code>'dotted'</code>. Defaults to "solid".</li>
 <li><code>linewidth</code> (float, optional): Line width for the contour. Defaults to 1.5.</li>
-<li><code>alpha</code> (float, None, optional): Transparency level of the contour lines. Range: <code>0.0</code> (fully transparent) to 1.0<code>(fully opaque). If provided, it overrides any existing alpha values found in</code>color`. Defaults to 1.0.</li>
+<li><code>alpha</code> (float, None, optional): Transparency level of the contour lines. Range: <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to 1.0.</li>
 <li><code>fill_alpha</code> (float, None, optional): Transparency level of the contour fill. If provided, it overrides any existing alpha values found in <code>color</code>. Defaults to None.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">plotter</span><span class="o">.</span><span class="n">plot_subcontour</span><span class="p">(</span>
@@ -1283,7 +1285,7 @@
 <li><code>words_to_omit</code> (list, optional): List of words to omit from the labels. Defaults to None.</li>
 <li><code>overlay_ids</code> (bool, optional): Whether to overlay domain IDs in the center of the centroids. Defaults to False.</li>
 <li><code>ids_to_keep</code> (list, tuple, np.ndarray, or None, optional): IDs of domains that must be labeled. To discover domain IDs, you can set <code>overlay_ids=True</code>. Defaults to None.</li>
-<li><code>ids_to_labels</code> (dict, optional): A dictionary mapping domain IDs to custom labels (strings). The labels should be space-separated words. If provided, the custom labels will replace the default domain terms. Defaults to None.</li>
+<li><code>ids_to_labels</code> (dict, optional): A dictionary mapping domain IDs to custom labels (strings). Labels are wrapped to respect <code>max_chars_per_line</code> and <code>max_label_lines</code>. To supply exact multi-line formatting, join lines with <code>"::::"</code> (e.g., <code>"RNA splicing::::regulation"</code>); strings containing <code>"::::"</code> are stored verbatim. Defaults to None.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">plotter</span><span class="o">.</span><span class="n">plot_labels</span><span class="p">(</span>
     <span class="n">scale</span><span class="o">=</span><span class="mf">1.1</span><span class="p">,</span>
