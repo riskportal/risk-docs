@@ -17,6 +17,7 @@ Begin here for setup and core concepts:
 Interactive tutorials:
 
 - <a href="https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart.ipynb" target="_blank" rel="noopener">Launch Quickstart in Binder</a> (no installation required)
+- <a href="https://mybinder.org/v2/gh/riskportal/risk-docs/HEAD?filepath=notebooks/quickstart_advanced.ipynb" target="_blank" rel="noopener">Launch Quickstart (Advanced) in Binder</a> (no installation required)
 - [Full Tutorial (HTML)](tutorial.html)
 - [Download Tutorial + Data (ZIP)](tutorial.zip)
 
@@ -28,8 +29,8 @@ Interactive tutorials:
 - [5. Statistical Methods](5_statistical_methods.md)
 - [6. Analyzing Results](6_analyzing_results.md)
 - [7. Visualization](7_visualization.md)
-- [8. Figure Gallery](8_figure_gallery.md)
-- [9. Analysis Parameters](9_parameters.md)
+- [Figure Gallery](figure-gallery.md)
+- [8. Analysis Parameters](8_parameters.md)
 
 ## Citation
 

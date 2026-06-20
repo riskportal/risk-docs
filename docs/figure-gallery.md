@@ -67,4 +67,4 @@ Note: Panel generated with RISK from a HuRI-derived brain cerebellum PPI network
 
 ## Next Step
 
-[Overview of `risk.params`](9_parameters.md)
+[Overview of `risk.params`](8_parameters.md)
