@@ -919,7 +919,7 @@
 </ul>
 </li>
 <li><code>pval_cutoff</code> (float, optional): Cutoff value for p-values to determine significance. Range: Any value between 0 and 1. Defaults to 0.01.</li>
-<li><code>fdr_cutoff</code> (float, optional): Cutoff value for FDR-corrected p-values. FDR (Benjamini–Hochberg) is computed per cluster across terms. Range: Any value between 0 and 1. Defaults to 0.9999.</li>
+<li><code>fdr_cutoff</code> (float, optional): Cutoff value for FDR-corrected p-values. FDR (Benjamini–Hochberg) is computed per cluster across terms. Range: Any value between 0 and 1. Defaults to 1.0 (permissive; excludes nothing based on FDR).</li>
 <li><code>display_prune_threshold</code> (float, optional): Display-only pruning based on spatial layout distance that suppresses spatially diffuse or isolated regions in plots. Runs after enrichment and clustering on plotting matrices only, does not use enrichment strength or statistical significance or affect clustering, enrichment, or statistical testing, and defaults to 0.0. Range: Any value between 0 and 1.</li>
 <li><code>linkage_criterion</code> (str, optional): Criterion for clustering. Defaults to <code>'distance'</code>. Options include:<ul>
 <li><code>'distance'</code>: Clusters are formed based on distance.</li>
@@ -949,7 +949,7 @@
     <span class="n">stats_results</span><span class="o">=</span><span class="n">stats_permutation</span><span class="p">,</span>
     <span class="n">tail</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">,</span>
     <span class="n">pval_cutoff</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
-    <span class="n">fdr_cutoff</span><span class="o">=</span><span class="mf">0.9999</span><span class="p">,</span>
+    <span class="n">fdr_cutoff</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
     <span class="n">display_prune_threshold</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
     <span class="n">linkage_criterion</span><span class="o">=</span><span class="s2">&quot;distance&quot;</span><span class="p">,</span>
     <span class="n">linkage_method</span><span class="o">=</span><span class="s2">&quot;average&quot;</span><span class="p">,</span>
