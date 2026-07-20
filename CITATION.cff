@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use the RISK documentation, tutorials, or software, please cite the Bioinformatics paper and the software archive."
+title: "RISK Documentation and Tutorials"
+abstract: "The RISK documentation provides installation guidance, tutorials, examples, and reproducible workflows for using RISK to perform scalable network annotation, community detection, overrepresentation analysis, and contour-overlay visualization."
+authors:
+  - family-names: Horecka
+    given-names: Ira
+    orcid: "https://orcid.org/0009-0001-3087-7087"
+  - family-names: Röst
+    given-names: Hannes
+    orcid: "https://orcid.org/0000-0003-0990-7488"
+type: software
+license: GPL-3.0-or-later
+repository-code: "https://github.com/riskportal/risk-docs"
+url: "https://riskportal.github.io/risk-docs/"
+keywords:
+  - RISK documentation
+  - bioinformatics tutorial
+  - biological network analysis
+  - network annotation
+  - functional annotation
+  - overrepresentation analysis
+  - community detection
+  - Gene Ontology
+  - Cytoscape
+  - NetworkX
+preferred-citation:
+  type: article
+  title: "RISK: a next-generation tool for biological network annotation and visualization"
+  authors:
+    - family-names: Horecka
+      given-names: Ira
+      orcid: "https://orcid.org/0009-0001-3087-7087"
+    - family-names: Röst
+      given-names: Hannes
+      orcid: "https://orcid.org/0000-0003-0990-7488"
+  journal: Bioinformatics
+  year: 2026
+  doi: "10.1093/bioinformatics/btaf669"
