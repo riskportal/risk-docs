@@ -14,7 +14,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":20,
+        "Domain ID":16,
         "Annotation":"mRNA splice site recognition",
         "Matched Members":"CDC40;ISY1;LUC7;NAM8;PRP28;PRP39;PRP42;PRP8;PRP9;SKY1;YHC1",
         "Matched Count":11,
@@ -84,17 +84,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"indole-containing compound catabolic process",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"ARO10;ARO80;BNA1;BNA4;BNA5;PDC1;PDC5;PDC6",
+        "Matched Count":8,
         "Raw Enrichment P-value":0.046,
         "Raw Enrichment Q-value":1.0,
         "Raw Depletion P-value":0.857,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
+        "Domain Enrichment P-value":0.046,
         "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.986,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -168,7 +168,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":54,
+        "Domain ID":46,
         "Annotation":"negative regulation of silent mating-type cassette heterochromatin formation",
         "Matched Members":"CTI6;DEP1;FKH2;PHO23;RPD3;RXT2;SAP30;SDS3;SIN3;WTM1;WTM2",
         "Matched Count":11,
@@ -196,7 +196,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"negative regulation of proteolysis involved in protein catabolic process",
         "Matched Members":"ESS1;MND2;PTH2;SCM3;UBP6",
         "Matched Count":5,
@@ -238,7 +238,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":36,
+        "Domain ID":29,
         "Annotation":"carbon catabolite regulation of transcription from RNA polymerase II promoter",
         "Matched Members":"ADR1;CAT8;CST6;ERT1;GCR1;HAP5;IMP21;MIG1;NRG2;RDS2;SNF5;SNF8;SPT6;SSN2;SSN3;STB3;SWI1;SWI3;TUP1;VPS25;VPS36",
         "Matched Count":21,
@@ -252,7 +252,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"nuclear polyadenylation-dependent rRNA catabolic process",
         "Matched Members":"AIR1;AIR2;CSL4;DIS3;LRP1;MPP6;MTR3;MTR4;PAP2;RAI1;RAT1;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;TRF5",
         "Matched Count":19,
@@ -266,7 +266,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"mitochondrion localization",
         "Matched Members":"ABF2;AIM21;ARC15;ARC18;ARP2;BUL1;CLU1;DNM1;FZO1;GEM1;JSN1;MDM10;MDM20;MDM32;MMR1;MYO2;NAT3;NUM1;OLE1;PHB1;PHB2;PUF3",
         "Matched Count":22,
@@ -280,7 +280,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"positive regulation of nucleocytoplasmic transport",
         "Matched Members":"CLA4;FUS3;POR1;RIO2;SKY1",
         "Matched Count":5,
@@ -364,7 +364,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"vesicle cytoskeletal trafficking",
         "Matched Members":"MYO2;MYO3;MYO4;MYO5;PAC1",
         "Matched Count":5,
@@ -448,17 +448,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"glycosyl compound catabolic process",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"APA1;APA2;EGH1;SAH1;URH1",
+        "Matched Count":5,
         "Raw Enrichment P-value":0.033,
         "Raw Enrichment Q-value":1.0,
         "Raw Depletion P-value":0.908,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
+        "Domain Enrichment P-value":0.033,
         "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.992,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -504,7 +504,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"establishment of protein localization to mitochondrial membrane",
         "Matched Members":"DJP1;MDM10;MDM38;MMM1;MRX15;OXA1;SAM35;SAM37;SAM50;TIM18;TIM54;TOM22;TOM70;TOM71",
         "Matched Count":14,
@@ -532,7 +532,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":59,
+        "Domain ID":51,
         "Annotation":"vesicle coating",
         "Matched Members":"GCS1;GLO3;SAR1;SEC16;SEC23;SEC28;SED4",
         "Matched Count":7,
@@ -574,7 +574,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"amino acid catabolic process via Ehrlich pathway",
         "Matched Members":"ADH2;ADH3;ADH4;ADH5;ARO10;PDC1;PDC5;PDC6;SFA1",
         "Matched Count":9,
@@ -742,7 +742,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":19,
+        "Domain ID":15,
         "Annotation":"phosphate ion transmembrane transport",
         "Matched Members":"MIR1;PHO87;PHO89;PHO90;PHO91;PIC2;SYG1",
         "Matched Count":7,
@@ -770,7 +770,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":18,
+        "Domain ID":14,
         "Annotation":"response to reactive oxygen species",
         "Matched Members":"CCP1;CCS1;CTT1;CUP1-1;CUP1-2;DDR2;DRE2;HSP42;MDL2;MRP1;RSM26;SKN7;SOD1;SOD2;TRR1;TRR2;YAP1;ZWF1",
         "Matched Count":18,
@@ -896,7 +896,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"purine ribonucleotide catabolic process",
         "Matched Members":"CDC19;CIT1;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;SCS3;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":24,
@@ -952,7 +952,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":53,
+        "Domain ID":45,
         "Annotation":"mitophagy",
         "Matched Members":"ATG13;ATG9;CTR9;GET1;GET2;PAF1;PBP1;PEP1;PPG1;WHI2",
         "Matched Count":10,
@@ -1176,7 +1176,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":37,
+        "Domain ID":30,
         "Annotation":"folic acid-containing compound biosynthetic process",
         "Matched Members":"DFR1;FAU1;FOL2;MET7;MIS1;MTD1",
         "Matched Count":6,
@@ -1190,7 +1190,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"negative regulation of glycogen metabolic process",
         "Matched Members":"IGD1;PCL10;PCL8;PHO85;PSK1",
         "Matched Count":5,
@@ -1218,7 +1218,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":61,
+        "Domain ID":53,
         "Annotation":"negative regulation of TORC1 signaling",
         "Matched Members":"HSF1;IML1;NPR2;NPR3;PBP1;PSR1;TIP41;WHI2",
         "Matched Count":8,
@@ -1302,7 +1302,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"protein unfolding",
         "Matched Members":"APJ1;ARB1;GCN20;HSP104;HSP78;PEX1;PEX6;SSC1",
         "Matched Count":8,
@@ -1386,7 +1386,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"protein export from nucleus",
         "Matched Members":"BCP1;CRM1;FUS3;GPA1;MSG5;MSN5;NUP120;NUP159;NUP2;NUP60;NUP82;SAC3;YRB2",
         "Matched Count":13,
@@ -1456,7 +1456,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":56,
+        "Domain ID":48,
         "Annotation":"positive regulation of attachment of spindle microtubules to kinetochore",
         "Matched Members":"ASK1;CDC7;DAD1;DAD2;DAD3;DAM1;DUO1;HSK3;SPC19;SPC34",
         "Matched Count":10,
@@ -1680,7 +1680,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"actin filament-based transport",
         "Matched Members":"AIM21;MYO2;MYO3;MYO4;MYO5",
         "Matched Count":5,
@@ -1764,7 +1764,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"telomere localization",
         "Matched Members":"CTF18;CTF8;DCC1;ESC1;MLP1;MLP2;MPS2;MPS3;NUP100;NUP116;NUP120;NUP133;NUP145;NUP170;NUP49;NUP60;NUP84;SCP160;SIR2;SIR3;SIR4",
         "Matched Count":21,
@@ -1974,7 +1974,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"protein K11-linked ubiquitination",
         "Matched Members":"APC1;APC2;APC4;APC5;DOC1",
         "Matched Count":5,
@@ -1988,7 +1988,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"trehalose metabolic process",
         "Matched Members":"CDC28;HSP104;NTH1;NTH2;PGM1;TPS1;TPS2;TPS3;TSL1;UGP1",
         "Matched Count":10,
@@ -2170,7 +2170,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":20,
+        "Domain ID":16,
         "Annotation":"mRNA 5'-splice site recognition",
         "Matched Members":"PRP28;PRP39;PRP42;PRP8;PRP9;YHC1",
         "Matched Count":6,
@@ -2268,16 +2268,16 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":9,
         "Annotation":"proton motive force-driven ATP synthesis",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"ATP1;ATP14;ATP15;ATP16;ATP17;ATP18;ATP19;ATP2;ATP20;ATP3;ATP4;ATP5;ATP6;ATP7;TIM11;VMA1",
+        "Matched Count":16,
         "Raw Enrichment P-value":0.001,
         "Raw Enrichment Q-value":0.0760588235,
         "Raw Depletion P-value":0.76,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
+        "Domain Enrichment P-value":0.001,
+        "Domain Enrichment Q-value":0.0760588235,
         "Domain Depletion P-value":1.0,
         "Domain Depletion Q-value":1.0
     },
@@ -2296,7 +2296,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":20,
+        "Domain ID":16,
         "Annotation":"spliceosomal complex assembly",
         "Matched Members":"BRR1;CDC40;CLF1;CUS1;EXO84;HSH155;IST3;ISY1;LUC7;MUD2;NAM8;PRP11;PRP28;PRP39;PRP42;PRP8;PRP9;RDS3;RSE1;SAD1;SKY1;SPT5;YHC1",
         "Matched Count":23,
@@ -2352,7 +2352,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"purine-containing compound catabolic process",
         "Matched Members":"AAH1;CDC19;CIT1;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;GUD1;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;SAH1;SCS3;SMN1;TDH1;TDH2;TDH3;TPI1;URH1",
         "Matched Count":29,
@@ -2492,7 +2492,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"mRNA export from nucleus in response to heat stress",
         "Matched Members":"GLE2;NUP100;NUP120;NUP133;NUP188;NUP2;NUP60;NUP84",
         "Matched Count":8,
@@ -2576,7 +2576,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"ribonucleoside triphosphate biosynthetic process",
         "Matched Members":"ATP1;ATP14;ATP15;ATP16;ATP17;ATP18;ATP19;ATP2;ATP20;ATP3;ATP4;ATP5;ATP6;ATP7;CPA2;DAS2;IMD2;IMD3;IMD4;TIM11;URA2;URA7;URK1;VMA1;YNK1",
         "Matched Count":25,
@@ -2618,7 +2618,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":24,
+        "Domain ID":19,
         "Annotation":"nucleosome disassembly",
         "Matched Members":"ARP7;ARP9;ASF1;HTL1;LDB7;NAP1;NPL6;RSC1;RSC2;RSC3;RSC30;RSC4;RSC58;RSC6;RSC8;RSC9;RTT102;SFH1;STH1;YTA7",
         "Matched Count":20,
@@ -2716,7 +2716,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"cristae formation",
         "Matched Members":"ATP14;ATP20;MIC10;MIC19;MIC26;MIC27;MIC60;TIM11",
         "Matched Count":8,
@@ -2800,7 +2800,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"actin nucleation",
         "Matched Members":"ABP1;ARC15;ARC18;ARC19;ARC35;ARC40;ARP2;ARP3;BBC1;BNI1;BUD6;BZZ1;HOF1;LAS17;LSB1;MYO3;MYO5;PAN1;PIN3;SLA1;SLA2;VRP1",
         "Matched Count":22,
@@ -2870,7 +2870,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":14,
+        "Domain ID":11,
         "Annotation":"proteasome assembly",
         "Matched Members":"ADD66;BLM10;ECM29;HSC82;HSM3;HSP82;IRC25;NAS2;NAS6;NOB1;PBA1;PNO1;POC4;PRE2;PRE4;PRE9;RPN10;RPN11;RPN14;RPN2;RPN6;RPN9;RPT1;RPT2;RPT3;RPT4;RPT5;RPT6;SEM1;SLT2;UMP1",
         "Matched Count":31,
@@ -3024,7 +3024,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":36,
+        "Domain ID":29,
         "Annotation":"carbon catabolite activation of transcription from RNA polymerase II promoter",
         "Matched Members":"ADR1;CAT8;CST6;ERT1;HAP5;RDS2;SNF5;SSN2;SSN3;STB3;SWI1;SWI3",
         "Matched Count":12,
@@ -3038,7 +3038,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":52,
+        "Domain ID":44,
         "Annotation":"regulation of vesicle fusion",
         "Matched Members":"HRR25;SEC1;SEC6;SLY1;VPS45",
         "Matched Count":5,
@@ -3262,7 +3262,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":42,
+        "Domain ID":34,
         "Annotation":"intracellular sphingolipid homeostasis",
         "Matched Members":"GNP1;VPS51;VPS52;VPS53;VPS54",
         "Matched Count":5,
@@ -3318,7 +3318,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":45,
+        "Domain ID":37,
         "Annotation":"regulation of G1\/S transition of mitotic cell cycle",
         "Matched Members":"ASH1;BRE1;CCR4;CDC25;CLN1;CYS4;GID8;RAD6;RAD9;RIE1;SDA1;WHI3;WHI5;XRN1",
         "Matched Count":14,
@@ -3370,11 +3370,11 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.996,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.991,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
-        "Domain ID":69,
+        "Domain ID":61,
         "Annotation":"ribonucleoprotein complex localization",
         "Matched Members":"GLE2;NOG2;NUP100;PPH22;REA1",
         "Matched Count":5,
@@ -3584,7 +3584,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"anaphase-promoting complex-dependent catabolic process",
         "Matched Members":"APC1;APC11;APC2;APC4;APC5;CDC16;CDC23;CDC26;CDC27;CDH1;DOC1;MND2",
         "Matched Count":12,
@@ -3710,7 +3710,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":51,
+        "Domain ID":43,
         "Annotation":"vacuolar protein processing",
         "Matched Members":"ATG15;ATG18;ENV11;ENV9;SND2;VPS41",
         "Matched Count":6,
@@ -3752,7 +3752,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"snRNA 3'-end processing",
         "Matched Members":"LRP1;MTR3;MTR4;NAB3;NRD1;PAP2;REX3;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SKI6;TRF5;USB1",
         "Matched Count":17,
@@ -3808,7 +3808,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"positive regulation of cell cycle phase transition",
         "Matched Members":"APC11;APC5;CCR4;CDC16;CDC23;CDC25;CDC55;CDH1;CLN1;CYS4;FIN1;GID8;GLC7;IGO1;IGO2;LTE1;MIH1;MND2;NUD1;PPH3;PSY2;PSY4;RIM15;SDA1;WHI3;WHI5;XRN1;ZDS1;ZDS2",
         "Matched Count":29,
@@ -3864,7 +3864,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"pyrimidine nucleobase biosynthetic process",
         "Matched Members":"CPA1;CPA2;URA1;URA10;URA2;URA4;URA5;URA6;URA7",
         "Matched Count":9,
@@ -3990,7 +3990,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"nuclear polyadenylation-dependent ncRNA catabolic process",
         "Matched Members":"AIR1;AIR2;CSL4;DIS3;LRP1;MPP6;MTR3;MTR4;PAP2;RAI1;RAT1;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SKI6;TRF5",
         "Matched Count":20,
@@ -4004,7 +4004,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"establishment of mitochondrion localization",
         "Matched Members":"AIM21;ARC18;ARP2;JSN1;MDM10",
         "Matched Count":5,
@@ -4046,7 +4046,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"tricarboxylic acid cycle",
         "Matched Members":"ACO1;ACO2;CIT1;CIT2;FUM1;ICL1;IDH1;IDH2;IDP1;KGD1;KGD2;LSC1;LSC2;LYS12;MDH1;MDH2;MDH3;MLS1;SDH1;SDH2;SDH4;SDH5;SDH9",
         "Matched Count":23,
@@ -4312,7 +4312,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"second-messenger-mediated signaling",
         "Matched Members":"CMP2;CNA1;CNB1;CSG2;DPL1;LCB4;LCB5;PDE2;PHO80;PHO85;RCN1;SRV2",
         "Matched Count":12,
@@ -4326,7 +4326,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"mitochondrial respiratory chain complex III assembly",
         "Matched Members":"CBP3;CBP6;COI1;FMP25;MZM1;QCR7;QCR9",
         "Matched Count":7,
@@ -4690,7 +4690,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"purine ribonucleoside monophosphate biosynthetic process",
         "Matched Members":"AAH1;ADE12;ADE13;ADE16;ADE17;ADE2;ADE4;ADE57;ADE6;ADE8;ADO1;AMD1;APT1;APT2;GUA1;HPT1;IMD2;IMD3;IMD4;XPT1",
         "Matched Count":20,
@@ -4718,7 +4718,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"purine ribonucleoside diphosphate metabolic process",
         "Matched Members":"ADK1;ADK2;CDC19;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":24,
@@ -4728,7 +4728,7 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0391818182,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.987,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -4802,7 +4802,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":37,
+        "Domain ID":30,
         "Annotation":"ribophagy",
         "Matched Members":"ATG11;BRE5;CDC48;DOA1;PRO1;UBP3;VAC8",
         "Matched Count":7,
@@ -4886,7 +4886,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"L-serine biosynthetic process",
         "Matched Members":"LPD1;PYP1;SER1;SER2;SER3;SER33",
         "Matched Count":6,
@@ -4942,7 +4942,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"response to arsenic-containing substance",
         "Matched Members":"CUZ1;GET3;MET30;MET4;TIM18",
         "Matched Count":5,
@@ -4956,7 +4956,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"protein localization to nuclear inner membrane",
         "Matched Members":"NUP100;NUP145;NUP157;NUP170;NUP2;NUP57",
         "Matched Count":6,
@@ -5012,7 +5012,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":54,
+        "Domain ID":46,
         "Annotation":"regulation of rDNA heterochromatin formation",
         "Matched Members":"CTI6;DEP1;ESS1;PHO23;RPD3;RXT2;SAP30;SDS3;SIN3",
         "Matched Count":9,
@@ -5064,8 +5064,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.991,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.981,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -5180,7 +5180,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"actin cortical patch assembly",
         "Matched Members":"ABP1;AIM3;AKL1;ARK1;END3;ENT1;ENT2;GID12;LDB17;PAN1;PRK1;SLA1;SLA2;SYP1",
         "Matched Count":14,
@@ -5292,7 +5292,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"protein localization to nuclear envelope",
         "Matched Members":"MLP1;NUP100;NUP145;NUP157;NUP170;NUP2;NUP57",
         "Matched Count":7,
@@ -5316,8 +5316,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.989,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.977,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -5334,7 +5334,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":18,
+        "Domain ID":14,
         "Annotation":"cellular response to reactive oxygen species",
         "Matched Members":"CCS1;CUP1-1;CUP1-2;DDR2;DRE2;MDL2;MRP1;RSM26;SOD1;SOD2;TRR1;TRR2",
         "Matched Count":12,
@@ -5348,7 +5348,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":36,
+        "Domain ID":29,
         "Annotation":"regulation of ribosomal protein gene transcription by RNA polymerase II",
         "Matched Members":"GCN4;GCR1;GCR2;HMO1;HOT1;IFH1;SCH9;SFP1;SRB2",
         "Matched Count":9,
@@ -5446,7 +5446,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":9,
+        "Domain ID":8,
         "Annotation":"protein folding in endoplasmic reticulum",
         "Matched Members":"EMC1;EMC2;EMC3;EMC4;EMC5;EMC6;ERO1;ERV2;HSP104;OSM1;ROT1;SCJ1",
         "Matched Count":12,
@@ -5455,12 +5455,12 @@
         "Raw Depletion P-value":0.802,
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment Q-value":0.2096756757,
+        "Domain Depletion P-value":0.991,
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"disaccharide metabolic process",
         "Matched Members":"CDC28;ELM1;HSP104;NTH1;NTH2;PGM1;TPS1;TPS2;TPS3;TSL1;UGP1",
         "Matched Count":11,
@@ -5474,7 +5474,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"positive regulation of intracellular protein transport",
         "Matched Members":"CLA4;FUS3;POR1;SAR1;SKY1",
         "Matched Count":5,
@@ -5558,7 +5558,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":66,
+        "Domain ID":58,
         "Annotation":"protein localization to chromatin",
         "Matched Members":"CDC28;CSE4;RAP1;SGF73;TFC3",
         "Matched Count":5,
@@ -5614,7 +5614,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"U4 snRNA 3'-end processing",
         "Matched Members":"LRP1;MTR3;MTR4;PAP2;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SKI6;TRF5",
         "Matched Count":13,
@@ -5628,7 +5628,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":27,
+        "Domain ID":21,
         "Annotation":"endonucleolytic cleavage to generate mature 5'-end of SSU-rRNA from (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",
         "Matched Members":"BMS1;BUD21;CDC4;DBP8;DIP2;EMG1;ESF2;FCF1;FCF2;LOC1;MPP10;MRD1;NOC4;NOP14;NOP58;NOP9;PNO1;PWP2;RCL1;ROK1;RRP5;RRP9;SAS10;TOM1;UTP10;UTP11;UTP13;UTP14;UTP18;UTP20;UTP23;UTP6;UTP7",
         "Matched Count":33,
@@ -5656,7 +5656,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"tRNA catabolic process",
         "Matched Members":"AIR1;AIR2;CSL4;DIS3;MET22;MTR3;MTR4;PAP2;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SKI6;TRF5;XRN1",
         "Matched Count":18,
@@ -5684,7 +5684,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"positive regulation of metaphase\/anaphase transition of cell cycle",
         "Matched Members":"APC11;APC5;CDC16;CDC23;CDH1;FIN1;MND2",
         "Matched Count":7,
@@ -5698,7 +5698,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"IMP metabolic process",
         "Matched Members":"ADE12;ADE13;ADE16;ADE17;ADE2;ADE4;ADE57;ADE6;ADE8;AMD1;HPT1;XPT1",
         "Matched Count":12,
@@ -5712,17 +5712,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"RNA import into nucleus",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"RIO2;RNA1;SIS1;SSA2;YDJ1",
+        "Matched Count":5,
         "Raw Enrichment P-value":0.001,
         "Raw Enrichment Q-value":0.0391818182,
         "Raw Depletion P-value":0.913,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.001,
+        "Domain Enrichment Q-value":0.0391818182,
+        "Domain Depletion P-value":0.997,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -5754,7 +5754,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"trehalose biosynthetic process",
         "Matched Members":"PGM1;TPS1;TPS2;TPS3;TSL1;UGP1",
         "Matched Count":6,
@@ -5768,7 +5768,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"positive regulation of phospholipid biosynthetic process",
         "Matched Members":"ARF3;CSR1;PHO85;UPS1;VAC7;YEL1",
         "Matched Count":6,
@@ -5796,7 +5796,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"mitochondrial ATP synthesis coupled electron transport",
         "Matched Members":"COX1;COX13;COX2;COX4;COX5A;COX5B;COX6;COX7;COX8;COX9;CYC1;CYT1;MTC3;NDI1;QCR10;QCR2;QCR6;QCR7;QCR8;QCR9;RIP1;SDH1;SDH4;SDH5;SDH9;TAZ1",
         "Matched Count":26,
@@ -5880,7 +5880,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":15,
+        "Domain ID":12,
         "Annotation":"regulation of nucleotide-excision repair",
         "Matched Members":"CDC73;CTR9;IXR1;LEO1;PAF1;RTF1;SPT4;SPT5",
         "Matched Count":8,
@@ -5922,17 +5922,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":32,
         "Annotation":"mitochondrial transmembrane transport",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"AFG3;FSF1;HEM25;MGE1;MRS4;MTM1;ODC2;PAM17;SSC1;TIM23;TIM44;TIM50;TOM20;TOM22;TOM40;TOM6;TOM70;TOM71;XDJ1;YME1;ZIM17",
+        "Matched Count":21,
         "Raw Enrichment P-value":0.001,
         "Raw Enrichment Q-value":0.4083157895,
         "Raw Depletion P-value":0.656,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.006,
+        "Domain Enrichment Q-value":0.4083157895,
+        "Domain Depletion P-value":0.985,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -5992,7 +5992,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"U5 snRNA 3'-end processing",
         "Matched Members":"LRP1;MTR4;REX3;RRP42;RRP43;RRP45;RRP6;SKI6",
         "Matched Count":8,
@@ -6048,7 +6048,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":19,
+        "Domain ID":15,
         "Annotation":"sodium ion transmembrane transport",
         "Matched Members":"ENA1;NHA1;NHX1;PHO89;VNX1;YVC1",
         "Matched Count":6,
@@ -6118,7 +6118,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"malate metabolic process",
         "Matched Members":"FUM1;MAE1;MDH1;MDH2;MDH3",
         "Matched Count":5,
@@ -6216,7 +6216,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"glutamate biosynthetic process",
         "Matched Members":"GDH1;GDH3;GLT1;IDH1;IDH2;IDP1;MEU1;PUT2",
         "Matched Count":8,
@@ -6282,8 +6282,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.002,
         "Domain Enrichment Q-value":0.0862,
-        "Domain Depletion P-value":0.991,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.99,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -6314,7 +6314,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":51,
+        "Domain ID":43,
         "Annotation":"exocytic process",
         "Matched Members":"BOI1;BOI2;BUD6;CDS1;EXO70;EXO84;MSO1;MYO2;PEP3;PEP5;PEP7;RCY1;SEC1;SEC10;SEC15;SEC2;SEC3;SEC4;SEC5;SEC6;SEC8",
         "Matched Count":21,
@@ -6409,10 +6409,10 @@
         "Domain Enrichment P-value":0.003,
         "Domain Enrichment Q-value":0.1251290323,
         "Domain Depletion P-value":0.989,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion Q-value":0.9995460883
     },
     {
-        "Domain ID":15,
+        "Domain ID":12,
         "Annotation":"regulation of transcription-coupled nucleotide-excision repair",
         "Matched Members":"CDC73;CTR9;LEO1;PAF1;RTF1;SPT4;SPT5",
         "Matched Count":7,
@@ -6440,7 +6440,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":14,
+        "Domain ID":11,
         "Annotation":"proteasome regulatory particle assembly",
         "Matched Members":"HSM3;NAS2;NAS6;RPN14;RPT1;RPT2;RPT3;RPT4;RPT5;RPT6",
         "Matched Count":10,
@@ -6482,7 +6482,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":27,
+        "Domain ID":21,
         "Annotation":"endonucleolytic cleavage in 5'-ETS of tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",
         "Matched Members":"BMS1;CDC4;DBP8;DIP2;EMG1;ESF2;FCF1;FCF2;LCP5;LOC1;MPP10;MRD1;NOC4;NOP14;NOP58;NOP9;PWP2;RCL1;ROK1;RRP5;RRP9;SAS10;TOM1;UTP10;UTP11;UTP13;UTP14;UTP18;UTP20;UTP23;UTP6;UTP7",
         "Matched Count":32,
@@ -6636,7 +6636,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":36,
+        "Domain ID":29,
         "Annotation":"transcription open complex formation at RNA polymerase II promoter",
         "Matched Members":"ROX3;SRB5;SSL2;SUA7;TFA1",
         "Matched Count":5,
@@ -6650,7 +6650,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"ribonucleoside diphosphate metabolic process",
         "Matched Members":"ADK1;ADK2;CDC19;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;TDH1;TDH2;TDH3;TPI1;URA6",
         "Matched Count":25,
@@ -6660,7 +6660,7 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0391818182,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.987,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -6706,7 +6706,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"protein insertion into mitochondrial outer membrane",
         "Matched Members":"DJP1;MDM10;MMM1;SAM35;SAM37;SAM50;TOM22",
         "Matched Count":7,
@@ -6720,7 +6720,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":20,
+        "Domain ID":16,
         "Annotation":"generation of catalytic spliceosome for first transesterification step",
         "Matched Members":"CWC24;IST3;PRP19;PRP2;SNU114;SPP381;SPP382;SYF1;YJU2",
         "Matched Count":9,
@@ -6790,7 +6790,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"cytoskeleton-dependent intracellular transport",
         "Matched Members":"AIM21;BIM1;CIK1;DYN1;DYN2;DYN3;GPA1;KAR3;KAR9;KIP2;MPS3;MYO2;MYO3;MYO4;MYO5;NIP100;NUM1;PAC1;TUB1;TUB3",
         "Matched Count":20,
@@ -6888,7 +6888,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"positive regulation of Arp2\/3 complex-mediated actin nucleation",
         "Matched Members":"ABP1;ARC40;LAS17;MYO3;MYO5;PAN1;VRP1",
         "Matched Count":7,
@@ -6944,7 +6944,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":53,
+        "Domain ID":45,
         "Annotation":"re-entry into mitotic cell cycle after pheromone arrest",
         "Matched Members":"EFG1;FAR10;FAR11;FAR3;FAR7;FAR8;VPS64",
         "Matched Count":7,
@@ -7042,7 +7042,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":45,
+        "Domain ID":37,
         "Annotation":"deadenylation-independent decapping of nuclear-transcribed mRNA",
         "Matched Members":"CDC36;DCP1;DCP2;EDC1;EDC3;MOT2;NOT5;RAI1",
         "Matched Count":8,
@@ -7084,7 +7084,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":18,
+        "Domain ID":14,
         "Annotation":"cellular response to oxygen radical",
         "Matched Members":"CCS1;CUP1-1;CUP1-2;MRP1;RSM26;SOD1;SOD2;TRR1;TRR2",
         "Matched Count":9,
@@ -7168,7 +7168,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":25,
+        "Domain ID":20,
         "Annotation":"maintenance of protein localization in organelle",
         "Matched Members":"EMP24;EPS1;ERD2;ERP1;ERP2;ERP3;ERP4;PTP2;RER1;SDS22;WTM1",
         "Matched Count":11,
@@ -7182,7 +7182,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"positive regulation of mitotic cell cycle",
         "Matched Members":"APC11;APC5;CCR4;CDC16;CDC23;CDC25;CDC28;CDC55;CDH1;CLN1;CYS4;DBF4;FIN1;FKH1;FKH2;GID8;GLC7;IGO1;IGO2;LTE1;MIH1;MND2;NUD1;RIM15;SDA1;WHI3;WHI5;XRN1;ZDS1;ZDS2",
         "Matched Count":30,
@@ -7224,7 +7224,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"positive regulation of phosphorus metabolic process",
         "Matched Members":"ARF3;ASC1;ATG11;CDC11;CDC12;CLB2;CSR1;DBF4;IGO1;IGO2;MOB1;MOB2;PHO2;PHO4;PHO85;RPP1B;STE5;UPS1;VAC14;VAC7;YEL1",
         "Matched Count":21,
@@ -7336,7 +7336,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"ubiquitin-dependent endocytosis",
         "Matched Members":"ALY2;ART10;ART5;BUL1;ECM21;LDB19;ROD1;ROG3",
         "Matched Count":8,
@@ -7364,7 +7364,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":44,
+        "Domain ID":36,
         "Annotation":"mRNA polyadenylation",
         "Matched Members":"CFT1;CFT2;CLP1;FIR1;NAB2;PAP1;PCF11;PFS2;PTA1;SSU72;YSH1",
         "Matched Count":11,
@@ -7462,7 +7462,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"nuclear mRNA surveillance of mRNA 3'-end processing",
         "Matched Members":"AIR1;AIR2;MPP6;MTR4;PAP2",
         "Matched Count":5,
@@ -7560,7 +7560,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"nucleoside diphosphate catabolic process",
         "Matched Members":"CDC19;EMI2;ENO1;ENO2;FBA1;GDA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":23,
@@ -7644,7 +7644,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":49,
+        "Domain ID":41,
         "Annotation":"tRNA 5'-end processing",
         "Matched Members":"GEP5;PET130;POP1;POP4;POP5;POP7;PSP2;RPM2;RRG1;RRG8;THG1",
         "Matched Count":11,
@@ -7700,17 +7700,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"erythrose 4-phosphate\/phosphoenolpyruvate family amino acid catabolic process",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"ARO10;ARO80;PDC1;PDC5;PDC6",
+        "Matched Count":5,
         "Raw Enrichment P-value":0.029,
         "Raw Enrichment Q-value":0.9145609756,
         "Raw Depletion P-value":0.91,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.029,
+        "Domain Enrichment Q-value":0.9145609756,
+        "Domain Depletion P-value":0.993,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -7868,7 +7868,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":53,
+        "Domain ID":45,
         "Annotation":"re-entry into mitotic cell cycle",
         "Matched Members":"EFG1;FAR10;FAR11;FAR3;FAR7;FAR8;VPS64",
         "Matched Count":7,
@@ -7882,7 +7882,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"mitochondrial proton-transporting ATP synthase complex assembly",
         "Matched Members":"ATP10;ATP11;ATP12;ATP14;ATP18;ATP25;FMC1;OXA1",
         "Matched Count":8,
@@ -7952,7 +7952,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":37,
+        "Domain ID":30,
         "Annotation":"folic acid metabolic process",
         "Matched Members":"DFR1;FOL2;MIS1;SHM1;SHM2",
         "Matched Count":5,
@@ -7966,17 +7966,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":32,
         "Annotation":"L-serine metabolic process",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"CHA1;CYS4;ILV1;LPD1;MCY1;PYP1;SER1;SER2;SER3;SER33;SHM1;SHM2",
+        "Matched Count":12,
         "Raw Enrichment P-value":0.004,
         "Raw Enrichment Q-value":0.32325,
         "Raw Depletion P-value":0.782,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.004,
+        "Domain Enrichment Q-value":0.32325,
+        "Domain Depletion P-value":0.993,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -8092,7 +8092,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"amino acid activation",
         "Matched Members":"AIM10;ARC1;CDC60;CRS1;DED81;DIA4;DPS1;FRS1;FRS2;GLN4;GRS1;GRS2;GTF1;GUS1;HER2;HTS1;ILS1;KRS1;MES1;MSD1;MSE1;MSF1;MSK1;MSM1;MST1;MSY1;NAM2;PET112;SES1;SLM5;THS1;TYS1;VAS1;WRS1;YDR341C;YHR020W",
         "Matched Count":36,
@@ -8106,7 +8106,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":37,
+        "Domain ID":30,
         "Annotation":"pteridine-containing compound biosynthetic process",
         "Matched Members":"DFR1;FAU1;FOL2;MCO14;MET7;MIS1;MTD1",
         "Matched Count":7,
@@ -8120,7 +8120,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":15,
+        "Domain ID":12,
         "Annotation":"transcription initiation at RNA polymerase III promoter",
         "Matched Members":"BDP1;BRF1;RPC17;RPC25;RPC31;SPT15;SUB1;TFC1;TFC3",
         "Matched Count":9,
@@ -8246,17 +8246,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"SRP-dependent cotranslational protein targeting to membrane, translocation",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"KAR2;SBH2;SEC61;SIL1;SRP14;SRP54;SSA1;SSA2;SSA3;SSA4;SSH1",
+        "Matched Count":11,
         "Raw Enrichment P-value":0.001,
         "Raw Enrichment Q-value":0.0391818182,
         "Raw Depletion P-value":0.821,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.001,
+        "Domain Enrichment Q-value":0.0391818182,
+        "Domain Depletion P-value":0.988,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -8330,7 +8330,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":51,
+        "Domain ID":43,
         "Annotation":"Golgi to vacuole transport",
         "Matched Members":"APL2;APL4;APL5;APL6;APM1;APM2;APM3;APS1;APS3;GGA2;PEP1;PEP7;TLG2;VPS33;VPS45;VPS52;VPS53;VPS54",
         "Matched Count":18,
@@ -8568,7 +8568,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"GMP biosynthetic process",
         "Matched Members":"GUA1;HPT1;IMD2;IMD3;IMD4;XPT1",
         "Matched Count":6,
@@ -8666,7 +8666,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"reticulophagy",
         "Matched Members":"ATG1;ATG11;ATG2;ATG8;ATG9;END3;LNP1;MYO3;MYO5;OSH2;OSH3;PAN1;SCS2;SEC23;SNF7;SNX4;STP22;VPS13;VPS21;VPS4;YPT1",
         "Matched Count":21,
@@ -8736,7 +8736,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"calcium-mediated signaling",
         "Matched Members":"CMP2;CNA1;CNB1;CSG2;DPL1;LCB4;LCB5;PHO80;PHO85;RCN1",
         "Matched Count":10,
@@ -8764,7 +8764,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":44,
+        "Domain ID":36,
         "Annotation":"termination of RNA polymerase II transcription, exosome-dependent",
         "Matched Members":"NAB3;NRD1;PCF11;PTI1;RAT1;SSU72",
         "Matched Count":6,
@@ -8806,7 +8806,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"negative regulation of cell cycle checkpoint",
         "Matched Members":"CDH1;FIN1;MND2;PPH3;PSY2;PSY4",
         "Matched Count":6,
@@ -8834,7 +8834,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":56,
+        "Domain ID":48,
         "Annotation":"sister chromatid biorientation",
         "Matched Members":"BUB1;CDC28;CDC48;DAM1;MPS1;RTS1;SHP1;SPC105",
         "Matched Count":8,
@@ -8862,7 +8862,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":14,
+        "Domain ID":11,
         "Annotation":"positive regulation of proteolysis",
         "Matched Members":"CDH1;RPT1;RPT2;RPT3;RPT4;RPT5;RPT6",
         "Matched Count":7,
@@ -8932,7 +8932,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"purine nucleobase metabolic process",
         "Matched Members":"AAH1;ADE2;ADE3;ADE4;ADE57;ADE8;ADO1;AMD1;APT1;APT2;GUD1;HPT1;MTD1;PHO2;SER1;XPT1",
         "Matched Count":16,
@@ -8946,7 +8946,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":49,
+        "Domain ID":41,
         "Annotation":"box C\/D RNA metabolic process",
         "Matched Members":"NOP1;POP1;POP3;POP4;POP5;POP6;POP7;POP8;PXR1;RPP1;RPR2;YMR265C",
         "Matched Count":12,
@@ -9030,7 +9030,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"pentose catabolic process",
         "Matched Members":"GCY1;GRE3;RBK1;XKS1;YJR096W;YPR1",
         "Matched Count":6,
@@ -9142,7 +9142,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"vitamin B6 metabolic process",
         "Matched Members":"BUD16;BUD17;PDX3;RKI1;YBL036C",
         "Matched Count":5,
@@ -9170,7 +9170,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"nuclear polyadenylation-dependent tRNA catabolic process",
         "Matched Members":"AIR1;AIR2;CSL4;DIS3;MTR3;MTR4;PAP2;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SKI6;TRF5",
         "Matched Count":16,
@@ -9184,7 +9184,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"amino acid catabolic process to alcohol via Ehrlich pathway",
         "Matched Members":"ADH2;ADH3;ADH4;ADH5;ARO10;PDC1;PDC5;PDC6;SFA1",
         "Matched Count":9,
@@ -9380,7 +9380,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"inner mitochondrial membrane organization",
         "Matched Members":"AIM24;ATP14;ATP20;MDM38;MIC10;MIC19;MIC26;MIC27;MIC60;MRX15;OXA1;PHB1;TAZ1;TIM11;TIM18;TIM54;TOM70;TOM71",
         "Matched Count":18,
@@ -9464,7 +9464,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":15,
+        "Domain ID":12,
         "Annotation":"regulation of nuclear-transcribed mRNA poly(A) tail shortening",
         "Matched Members":"PAB1;PKC1;PKH1;PKH2;RPB7",
         "Matched Count":5,
@@ -9506,7 +9506,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"aspartate family amino acid catabolic process",
         "Matched Members":"ARO10;ASP1;CHA1;GLY1;ILV1;KGD2",
         "Matched Count":6,
@@ -9548,7 +9548,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":37,
+        "Domain ID":30,
         "Annotation":"tetrahydrofolate interconversion",
         "Matched Members":"ADE3;FAU1;MET12;MET13;MIS1;SHM1;SHM2",
         "Matched Count":7,
@@ -9600,8 +9600,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.99,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.973,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -10066,7 +10066,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":37,
+        "Domain ID":30,
         "Annotation":"tetrahydrofolate metabolic process",
         "Matched Members":"ADE3;DFR1;FAU1;FOL2;MET12;MET13;MIS1;SHM1;SHM2",
         "Matched Count":9,
@@ -10104,8 +10104,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.986,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.969,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -10136,7 +10136,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"outer mitochondrial membrane organization",
         "Matched Members":"DJP1;MDM10;MMM1;SAM35;SAM37;SAM50;TOM22;TOM6",
         "Matched Count":8,
@@ -10150,7 +10150,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"negative regulation of translational initiation",
         "Matched Members":"AAT2;GCN2;MPT5;PAT1;SCD6;TIF5",
         "Matched Count":6,
@@ -10206,7 +10206,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"protein maturation by [4Fe-4S] cluster transfer",
         "Matched Members":"BOL1;BOL3;CIA2;GRX5;IBA57;ISA1;ISA2;NFU1;YAE1",
         "Matched Count":9,
@@ -10220,7 +10220,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":24,
+        "Domain ID":19,
         "Annotation":"mismatch repair",
         "Matched Members":"HSM3;MLH1;MLH2;MSH2;MSH3;MSH6;PMS1;POL30;POL31;RAD1;RAD10;RAD4;RFC1;RFC2;RFC3",
         "Matched Count":15,
@@ -10300,8 +10300,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.99,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.973,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -10318,7 +10318,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"ubiquinone biosynthetic process",
         "Matched Members":"CAT5;COQ10;COQ11;COQ3;COQ4;COQ5;COQ6;COQ9;HFD1;PUF3",
         "Matched Count":10,
@@ -10332,7 +10332,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":20,
+        "Domain ID":16,
         "Annotation":"mRNA cis splicing, via spliceosome",
         "Matched Members":"CBC2;CLF1;CWC15;PRP21;PRP28;PRP39;PRP40;PRP42;PRP8;PRP9;SNU66;URN1;YHC1",
         "Matched Count":13,
@@ -10388,7 +10388,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":69,
+        "Domain ID":61,
         "Annotation":"regulation of ribonucleoprotein complex localization",
         "Matched Members":"GLE2;NOG2;NUP100;PPH22;REA1",
         "Matched Count":5,
@@ -10416,7 +10416,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"positive regulation of chromosome organization",
         "Matched Members":"CDH1;ESS1;FIN1;FKH1;HSP82;MND2;RFA1;SBA1;SIR4",
         "Matched Count":9,
@@ -10472,7 +10472,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"tRNA aminoacylation for protein translation",
         "Matched Members":"AIM10;ARC1;CDC60;CRS1;DED81;DIA4;DPS1;FRS1;FRS2;GLN4;GRS1;GRS2;GUS1;HTS1;ILS1;KRS1;MES1;MSD1;MSE1;MSF1;MSK1;MSM1;MST1;MSY1;NAM2;SES1;SLM5;THS1;TYS1;VAS1;WRS1;YDR341C;YHR020W",
         "Matched Count":33,
@@ -10538,8 +10538,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.994,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.991,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -10556,17 +10556,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":20,
         "Annotation":"retrograde vesicle-mediated transport, Golgi to endoplasmic reticulum",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"BET1;BRE5;CEX1;COP1;DSL1;ERV41;ERV46;GCS1;GEA2;GET1;GET2;GET3;GLO3;RER1;RET2;RET3;SEC20;SEC21;SEC22;SEC27;SEC28;SEC39;SLY1;TIP20;TRX1;TRX2;UFE1;USE1;VPS74;YPT1;YPT6",
+        "Matched Count":31,
         "Raw Enrichment P-value":0.001,
         "Raw Enrichment Q-value":0.10775,
         "Raw Depletion P-value":0.561,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.001,
+        "Domain Enrichment Q-value":0.10775,
+        "Domain Depletion P-value":0.968,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -10594,8 +10594,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.986,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.97,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -10612,7 +10612,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":68,
+        "Domain ID":60,
         "Annotation":"cleavage in ITS2 between 5.8S rRNA and LSU-rRNA of tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",
         "Matched Members":"GRC3;LAS1;RAI1;RAT1;RPL17A;RPL17B;RPL37A;RPL37B;TOM1",
         "Matched Count":9,
@@ -10626,17 +10626,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"glycolytic fermentation to ethanol",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"ADH5;NDE1;PDC1;PDC2;PDC5",
+        "Matched Count":5,
         "Raw Enrichment P-value":0.035,
         "Raw Enrichment Q-value":1.0,
         "Raw Depletion P-value":0.918,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
+        "Domain Enrichment P-value":0.035,
         "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.994,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -10724,7 +10724,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":20,
+        "Domain ID":16,
         "Annotation":"spliceosomal conformational changes to generate catalytic conformation",
         "Matched Members":"BRR2;CDC40;CEF1;CWC24;IST3;ISY1;PRP16;PRP18;PRP19;PRP2;PRP22;PRP38;PRP4;PRP45;PRP8;SLU7;SNU114;SPP381;SPP382;SYF1;YJU2",
         "Matched Count":21,
@@ -10780,7 +10780,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"oligosaccharide biosynthetic process",
         "Matched Members":"PGM1;TPS1;TPS2;TPS3;TSL1;UGP1",
         "Matched Count":6,
@@ -10808,7 +10808,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"regulation of translational elongation",
         "Matched Members":"ANB1;ASC1;DHH1;EFT1;EFT2;GCN1;GCN20;HYP2;TRM9",
         "Matched Count":9,
@@ -10920,17 +10920,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"AMP biosynthetic process",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"ADE12;ADE13;ADO1;APT1;APT2",
+        "Matched Count":5,
         "Raw Enrichment P-value":0.038,
         "Raw Enrichment Q-value":1.0,
         "Raw Depletion P-value":0.925,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
+        "Domain Enrichment P-value":0.038,
         "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.995,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -10948,7 +10948,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"mitochondrial electron transport, cytochrome c to oxygen",
         "Matched Members":"COX1;COX13;COX2;COX4;COX5A;COX5B;COX6;COX7;COX8;COX9;CYC1;MTC3",
         "Matched Count":12,
@@ -11032,7 +11032,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":62,
+        "Domain ID":54,
         "Annotation":"early endosome to Golgi transport",
         "Matched Members":"ATG20;ENT3;ENT5;RCY1;SNX4;TCA17;TRS120;TRS130;YPT1;YPT31;YPT32",
         "Matched Count":11,
@@ -11060,7 +11060,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"purine nucleotide catabolic process",
         "Matched Members":"CDC19;CIT1;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;SCS3;SMN1;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":25,
@@ -11088,7 +11088,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"tricarboxylic acid metabolic process",
         "Matched Members":"CIT1;CIT2;IDH1;IDH2;IDP1;LYS12",
         "Matched Count":6,
@@ -11130,7 +11130,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":53,
+        "Domain ID":45,
         "Annotation":"regulation of mitochondrion organization",
         "Matched Members":"ARF1;CDC48;CTR9;GEM1;MHR1;PAF1;PBP1;PPG1;RIM1;SRV2;UBP12;UBP2",
         "Matched Count":12,
@@ -11172,17 +11172,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"mitochondria-associated ubiquitin-dependent protein catabolic process",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"BRO1;CDC48;DOA1;NPL4;SIS1;SSA1;UBC4;UBP6;UBR1;UBX2;UFD1;VMS1",
+        "Matched Count":12,
         "Raw Enrichment P-value":0.006,
         "Raw Enrichment Q-value":0.2096756757,
         "Raw Depletion P-value":0.823,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.006,
+        "Domain Enrichment Q-value":0.2096756757,
+        "Domain Depletion P-value":0.984,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -11284,7 +11284,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"negative regulation of carbohydrate metabolic process",
         "Matched Members":"FYV10;GID7;GID8;IGD1;PCL10;PCL8;PHO85;PSK1;RMD5;UBC8;VID24;VID28;VID30",
         "Matched Count":13,
@@ -11396,7 +11396,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"regulation of phospholipid biosynthetic process",
         "Matched Members":"ARF3;CSR1;GIS1;GTS1;NTE1;OPI1;PHO85;UPS1;VAC7;YEL1",
         "Matched Count":10,
@@ -11424,7 +11424,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"Arp2\/3 complex-mediated actin nucleation",
         "Matched Members":"ABP1;ARC15;ARC18;ARC19;ARC35;ARC40;ARP2;ARP3;BBC1;LAS17;LSB1;MYO3;MYO5;PAN1;PIN3;SLA1;SLA2;VRP1",
         "Matched Count":18,
@@ -11550,7 +11550,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"snRNA metabolic process",
         "Matched Members":"AIR1;AIR2;BDF1;CBF5;GAR1;LRP1;MTR3;MTR4;NAB3;NHP2;NOP10;NRD1;PAP2;PRP16;PUS7;REX3;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SEN1;SKI6;TOR1;TOR2;TRF5;USB1",
         "Matched Count":29,
@@ -11690,7 +11690,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":36,
+        "Domain ID":29,
         "Annotation":"establishment of protein localization to chromosome",
         "Matched Members":"GAL11;HSF1;RAP1;RTS1;SIN4",
         "Matched Count":5,
@@ -11746,7 +11746,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"IMP biosynthetic process",
         "Matched Members":"ADE13;ADE16;ADE17;ADE2;ADE4;ADE57;ADE6;ADE8;AMD1;HPT1;XPT1",
         "Matched Count":11,
@@ -11760,7 +11760,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"nucleotide salvage",
         "Matched Members":"ADO1;AMD1;APT1;APT2;DAS2;FUR1;HPT1;PNC1;URH1;URK1;XPT1",
         "Matched Count":11,
@@ -11914,7 +11914,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"bipolar cellular bud site selection",
         "Matched Members":"BUD2;BUD6;MYO3;MYO5;PAN1;PEA2;RAX2;SPA2;SPH1;VRP1",
         "Matched Count":10,
@@ -11998,21 +11998,21 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"response to hydrogen peroxide",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"CTT1;DDR2;HSP42;MDL2;ZWF1",
+        "Matched Count":5,
         "Raw Enrichment P-value":0.034,
         "Raw Enrichment Q-value":1.0,
         "Raw Depletion P-value":0.91,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
+        "Domain Enrichment P-value":0.034,
         "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.995,
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"tRNA aminoacylation for mitochondrial protein translation",
         "Matched Members":"DIA4;GRS1;GRS2;MSD1;MSE1;MSF1;MSK1;MST1;MSY1;SLM5",
         "Matched Count":10,
@@ -12138,7 +12138,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":51,
+        "Domain ID":43,
         "Annotation":"endosome organization",
         "Matched Members":"ATG15;BLI1;BLS1;BOI1;BOI2;BRO1;CNL1;DID4;DOA4;KXD1;PEP3;PEP5;SNF7;SNN1;VAB2;VPS20;VPS21;VPS24;VPS4;YPT52",
         "Matched Count":20,
@@ -12152,7 +12152,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":15,
+        "Domain ID":12,
         "Annotation":"transcription by RNA polymerase III",
         "Matched Members":"BDP1;BRF1;BUD27;CKA1;CKA2;CKB1;CKB2;DST1;GTR1;HIR1;HIR2;MAF1;NAB2;NCB2;PAF1;PZF1;RET1;RPB10;RPB5;RPB8;RPC10;RPC11;RPC17;RPC19;RPC25;RPC31;RPC34;RPC37;RPC40;RPC53;RPC82;RPO26;RPO31;SCH9;SEN1;SPT15;SUB1;TFC1;TFC3;TFC4;TFC6;TFC7;TFC8",
         "Matched Count":43,
@@ -12180,7 +12180,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":24,
+        "Domain ID":19,
         "Annotation":"DNA replication termination",
         "Matched Members":"CDC48;NPL4;RRM3;TOP2;UFD1",
         "Matched Count":5,
@@ -12260,8 +12260,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.007,
         "Domain Enrichment Q-value":0.2381842105,
-        "Domain Depletion P-value":0.993,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.986,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -12306,7 +12306,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"snRNA processing",
         "Matched Members":"LRP1;MTR3;MTR4;NAB3;NRD1;PAP2;REX3;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SEN1;SKI6;TRF5;USB1",
         "Matched Count":18,
@@ -12334,7 +12334,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"purine nucleotide salvage",
         "Matched Members":"ADO1;AMD1;APT1;APT2;HPT1;XPT1",
         "Matched Count":6,
@@ -12376,7 +12376,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":42,
+        "Domain ID":34,
         "Annotation":"aminophospholipid transport",
         "Matched Members":"CDC50;DNF1;DNF2;DNF3;DRS2;LEM3;MMM1",
         "Matched Count":7,
@@ -12404,7 +12404,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"GMP metabolic process",
         "Matched Members":"GUA1;HPT1;IMD2;IMD3;IMD4;XPT1",
         "Matched Count":6,
@@ -12418,7 +12418,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":24,
+        "Domain ID":19,
         "Annotation":"copper ion homeostasis",
         "Matched Members":"CCC2;CUP2;EMP70;GEF1;HAA1;HHT1;HHT2;MAC1;PIC2;SMF1;SOD1;TMN2;TMN3;VMA3",
         "Matched Count":14,
@@ -12474,7 +12474,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":37,
+        "Domain ID":30,
         "Annotation":"protein deubiquitination",
         "Matched Members":"BRE5;BRO1;MIY2;OTU1;RPN11;RUP1;SUS1;UBP1;UBP12;UBP15;UBP16;UBP2;UBP3;UBP6;UBP7;UBP9",
         "Matched Count":16,
@@ -12488,7 +12488,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":19,
+        "Domain ID":15,
         "Annotation":"polyphosphate metabolic process",
         "Matched Members":"PHO84;PHO87;PHO90;PHO91;PPN1;PPN2;PPX1;VPH1;VTC1;VTC2;VTC3;VTC4;VTC5",
         "Matched Count":13,
@@ -12572,7 +12572,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"'de novo' pyrimidine nucleobase biosynthetic process",
         "Matched Members":"CPA1;CPA2;URA1;URA10;URA2;URA4;URA5;URA6",
         "Matched Count":8,
@@ -12712,7 +12712,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"response to organic cyclic compound",
         "Matched Members":"GLE2;LOG1;NUP100;NUP120;NUP133;NUP188;NUP2;NUP60;NUP84;PDR5;RPL42A;RPL42B;YGL039W;YNL134C",
         "Matched Count":14,
@@ -12726,7 +12726,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"respiratory electron transport chain",
         "Matched Members":"CIR2;COX1;COX13;COX2;COX4;COX5A;COX5B;COX6;COX7;COX8;COX9;CYC1;CYT1;MTC3;NDI1;ODC2;QCR10;QCR2;QCR6;QCR7;QCR8;QCR9;RIP1;SDH1;SDH2;SDH4;SDH5;SDH9;TAZ1",
         "Matched Count":29,
@@ -12740,7 +12740,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":19,
+        "Domain ID":15,
         "Annotation":"potassium ion transport",
         "Matched Members":"ENA1;KHA1;MDM38;NHA1;NHX1;QDR2;SAP155;SAP185;TRK1;VCX1;VHC1;VNX1;YVC1",
         "Matched Count":13,
@@ -12810,7 +12810,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"oxidative phosphorylation",
         "Matched Members":"ATP15;ATP2;ATP5;COX1;COX12;COX13;COX2;COX4;COX5A;COX5B;COX6;COX7;COX8;COX9;CYC1;CYT1;MTC3;NDI1;QCR10;QCR2;QCR6;QCR7;QCR8;QCR9;RIP1;SDH1;SDH4;SDH5;SDH9;TAZ1",
         "Matched Count":30,
@@ -12824,7 +12824,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"ADP metabolic process",
         "Matched Members":"ADK1;ADK2;CDC19;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":24,
@@ -12834,7 +12834,7 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0391818182,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.987,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -12852,7 +12852,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":50,
+        "Domain ID":42,
         "Annotation":"mitotic DNA replication",
         "Matched Members":"CDC45;CDC7;CDC9;DBF4;FKH1;FKH2;MCM2;MCM3;MCM4;MCM6;POL1;PSF1;PSF3;RAD51;RIF1",
         "Matched Count":15,
@@ -13020,7 +13020,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":45,
+        "Domain ID":37,
         "Annotation":"positive regulation of G1\/S transition of mitotic cell cycle",
         "Matched Members":"CCR4;CDC25;CLN1;CYS4;GID8;SDA1;WHI3;WHI5;XRN1",
         "Matched Count":9,
@@ -13230,7 +13230,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":25,
+        "Domain ID":20,
         "Annotation":"maintenance of protein localization in endoplasmic reticulum",
         "Matched Members":"EMP24;EPS1;ERD2;ERP1;ERP2;ERP3;ERP4;RER1",
         "Matched Count":8,
@@ -13356,7 +13356,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"purine ribonucleoside triphosphate biosynthetic process",
         "Matched Members":"ATP1;ATP14;ATP15;ATP16;ATP17;ATP18;ATP19;ATP2;ATP20;ATP3;ATP4;ATP5;ATP6;ATP7;IMD2;IMD3;IMD4;TIM11;VMA1;YNK1",
         "Matched Count":20,
@@ -13510,7 +13510,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":14,
+        "Domain ID":11,
         "Annotation":"positive regulation of protein catabolic process",
         "Matched Members":"CDH1;MAC1;RPT1;RPT2;RPT3;RPT4;RPT5;RPT6",
         "Matched Count":8,
@@ -13552,7 +13552,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"ribonucleoside monophosphate biosynthetic process",
         "Matched Members":"AAH1;ADE12;ADE13;ADE16;ADE17;ADE2;ADE4;ADE57;ADE6;ADE8;ADO1;AMD1;APT1;APT2;DAS2;FMN1;FUR1;GUA1;HPT1;IMD2;IMD3;IMD4;PRS1;PRS2;PRS3;PRS4;PRS5;URA1;URA10;URA2;URA4;URA5;URK1;XPT1",
         "Matched Count":34,
@@ -13566,7 +13566,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":45,
+        "Domain ID":37,
         "Annotation":"nuclear-transcribed mRNA poly(A) tail shortening",
         "Matched Members":"CCR4;CDC36;CDC39;NOT3;NOT5;PAB1;PAN2;PAN3;PKC1;PKH1;PKH2;POP2;RPB7;VTS1",
         "Matched Count":14,
@@ -13678,7 +13678,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":55,
+        "Domain ID":47,
         "Annotation":"export across plasma membrane",
         "Matched Members":"NHA1;PDR15;PDR5;PMA1;PMA2;QDR2;QDR3;SAP155;SAP185;SNQ2",
         "Matched Count":10,
@@ -13734,7 +13734,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"nuclear pore localization",
         "Matched Members":"GLE2;NUP120;NUP133;NUP145;NUP159;NUP84;NUP85;SEC13;SYH1",
         "Matched Count":9,
@@ -13748,7 +13748,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"mitochondrial protein processing",
         "Matched Members":"AFG3;COR1;CYM1;MAS1;MAS2;OCT1;OMA1;UBX2;YTA12",
         "Matched Count":9,
@@ -13790,7 +13790,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"positive regulation of actin nucleation",
         "Matched Members":"ABP1;ARC40;BUD6;LAS17;MYO3;MYO5;PAN1;VRP1",
         "Matched Count":8,
@@ -13846,7 +13846,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":54,
+        "Domain ID":46,
         "Annotation":"negative regulation of rDNA heterochromatin formation",
         "Matched Members":"CTI6;DEP1;PHO23;RPD3;RXT2;SAP30;SDS3;SIN3",
         "Matched Count":8,
@@ -13930,17 +13930,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"alcohol catabolic process",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"ALD5;ALD6;DAK1;GUT1;GUT2;THI20;TPI1",
+        "Matched Count":7,
         "Raw Enrichment P-value":0.002,
         "Raw Enrichment Q-value":0.7388571429,
         "Raw Depletion P-value":0.889,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.002,
+        "Domain Enrichment Q-value":0.7388571429,
+        "Domain Depletion P-value":0.99,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -13958,7 +13958,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"nuclear RNA surveillance",
         "Matched Members":"AIR1;AIR2;CSL4;DIS3;EFG1;GBP2;HRB1;LRP1;MLP1;MPP6;MTR3;MTR4;NAB3;NRD1;PAP2;PRP18;RAI1;RAT1;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SAC3;SKI6;SUS1;THP1;TRF5",
         "Matched Count":30,
@@ -13986,7 +13986,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"exonucleolytic trimming to generate mature 3'-end of 5.8S rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",
         "Matched Members":"CSL4;DIS3;GSP1;LRP1;MPP6;MTR3;MTR4;REX3;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SKI6",
         "Matched Count":16,
@@ -14028,7 +14028,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"polyadenylation-dependent snoRNA 3'-end processing",
         "Matched Members":"LRP1;MTR3;MTR4;PAP2;RRP4;RRP40;RRP46;RRP6;SKI6;TRF5",
         "Matched Count":10,
@@ -14112,7 +14112,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":50,
+        "Domain ID":42,
         "Annotation":"nuclear cell cycle DNA replication initiation",
         "Matched Members":"DBF4;FKH1;FKH2;MCM2;MCM3;MCM4;POL1;PSF3;RIF1",
         "Matched Count":9,
@@ -14238,7 +14238,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"aminoacyl-tRNA metabolism involved in translational fidelity",
         "Matched Members":"CDC60;FRS2;ILS1;NAM2;VAS1;YHR020W",
         "Matched Count":6,
@@ -14294,7 +14294,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"polyadenylation-dependent RNA catabolic process",
         "Matched Members":"AIR1;AIR2;CSL4;DIS3;LRP1;MPP6;MTR3;MTR4;PAP2;RAI1;RAT1;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SKI6;TRF5",
         "Matched Count":20,
@@ -14308,17 +14308,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":27,
         "Annotation":"nuclear protein quality control by the ubiquitin-proteasome system",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"CDC48;SAN1;SIS1;SMY2;STS1;VMS1",
+        "Matched Count":6,
         "Raw Enrichment P-value":0.039,
         "Raw Enrichment Q-value":1.0,
         "Raw Depletion P-value":0.894,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
+        "Domain Enrichment P-value":0.039,
         "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.992,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -14336,7 +14336,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"pyridine nucleotide catabolic process",
         "Matched Members":"CDC19;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;SMN1;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":23,
@@ -14364,7 +14364,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":40,
+        "Domain ID":32,
         "Annotation":"GTP metabolic process",
         "Matched Members":"ADK2;IMD2;IMD3;IMD4;YNK1",
         "Matched Count":5,
@@ -14504,7 +14504,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":60,
+        "Domain ID":52,
         "Annotation":"protein import into peroxisome matrix, receptor recycling",
         "Matched Members":"PEX1;PEX10;PEX12;PEX2;PEX6",
         "Matched Count":5,
@@ -14584,8 +14584,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.988,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.97,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -14700,7 +14700,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"purine ribonucleotide salvage",
         "Matched Members":"ADO1;AMD1;APT1;APT2;HPT1;XPT1",
         "Matched Count":6,
@@ -14742,7 +14742,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"regulation of ATP-dependent activity",
         "Matched Members":"HSP30;INH1;PMP1;PMP2;RFA1",
         "Matched Count":5,
@@ -14756,7 +14756,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"purine ribonucleoside diphosphate catabolic process",
         "Matched Members":"CDC19;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":22,
@@ -14854,7 +14854,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"translational frameshifting",
         "Matched Members":"ANB1;ASC1;HYP2;SSB1;SSB2;SSZ1;ZUO1",
         "Matched Count":7,
@@ -14924,7 +14924,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":15,
+        "Domain ID":12,
         "Annotation":"tRNA transcription by RNA polymerase III",
         "Matched Members":"BUD27;DST1;RET1;RPB10;RPB5;RPB8;RPC10;RPC11;RPC17;RPC19;RPC25;RPC31;RPC34;RPC37;RPC40;RPC53;RPC82;RPO26;RPO31",
         "Matched Count":19,
@@ -14966,7 +14966,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":63,
+        "Domain ID":55,
         "Annotation":"trehalose metabolism in response to stress",
         "Matched Members":"HSP104;TPS1;TPS2;TPS3;TSL1",
         "Matched Count":5,
@@ -14994,7 +14994,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"mitochondrial electron transport, ubiquinol to cytochrome c",
         "Matched Members":"CYC1;CYT1;QCR10;QCR2;QCR6;QCR7;QCR8;QCR9;RIP1",
         "Matched Count":9,
@@ -15022,7 +15022,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"U1 snRNA 3'-end processing",
         "Matched Members":"RRP42;RRP43;RRP45;RRP6;SKI6",
         "Matched Count":5,
@@ -15036,7 +15036,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":52,
+        "Domain ID":44,
         "Annotation":"endoplasmic reticulum inheritance",
         "Matched Members":"MYO4;RTN1;RTN2;SCS2;SEC3;SEC5;SEC8;SHE3;SWA2;YOP1",
         "Matched Count":10,
@@ -15092,18 +15092,18 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":8,
         "Annotation":"nuclear pore organization",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"DYN2;KAP95;NDC1;NIC96;NUP116;NUP157;NUP170;NUP188;NUP192;NUP53;NUP57;POM152;POM34;RTN1;SNL1;YOP1",
+        "Matched Count":16,
         "Raw Enrichment P-value":0.001,
         "Raw Enrichment Q-value":0.0718333333,
         "Raw Depletion P-value":0.737,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
-        "Domain Depletion Q-value":1.0
+        "Domain Enrichment P-value":0.014,
+        "Domain Enrichment Q-value":0.4022666667,
+        "Domain Depletion P-value":0.977,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -15204,7 +15204,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":45,
+        "Domain ID":37,
         "Annotation":"nuclear-transcribed mRNA catabolic process, deadenylation-independent decay",
         "Matched Members":"CDC36;DCP1;DCP2;DCS1;EDC1;EDC3;MOT2;NOT5;RAI1;XRN1",
         "Matched Count":10,
@@ -15232,7 +15232,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"positive regulation of intracellular transport",
         "Matched Members":"CLA4;FUS3;POR1;RIO2;SAR1;SKY1",
         "Matched Count":6,
@@ -15260,7 +15260,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"regulation of cell cycle checkpoint",
         "Matched Members":"CDC28;CDC55;CDH1;CMR1;FIN1;ISC1;MAD1;MND2;PPH3;PSY2;PSY4;RTT107;SLX4",
         "Matched Count":13,
@@ -15302,7 +15302,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"regulation of glycogen biosynthetic process",
         "Matched Members":"GAC1;GIP2;PCL10;PCL6;PCL7;PCL8;PHO85;PIG2;PSK1;SAK1",
         "Matched Count":10,
@@ -15330,7 +15330,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":50,
+        "Domain ID":42,
         "Annotation":"mitotic DNA replication initiation",
         "Matched Members":"DBF4;FKH1;FKH2;MCM2;MCM3;MCM4;POL1;PSF3;RIF1",
         "Matched Count":9,
@@ -15400,7 +15400,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"peptidyl-lysine methylation",
         "Matched Members":"EFM3;EFM5;RKM1;RKM3;RKM4",
         "Matched Count":5,
@@ -15540,7 +15540,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"regulation of mitotic cell cycle spindle assembly checkpoint",
         "Matched Members":"CDC55;CDH1;FIN1;ISC1;MAD1;MND2",
         "Matched Count":6,
@@ -15568,7 +15568,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":11,
+        "Domain ID":9,
         "Annotation":"aerobic electron transport chain",
         "Matched Members":"COX1;COX13;COX2;COX4;COX5A;COX5B;COX6;COX7;COX8;COX9;CYC1;CYT1;MTC3;NDI1;QCR10;QCR2;QCR6;QCR7;QCR8;QCR9;RIP1;SDH1;SDH4;SDH5;SDH9",
         "Matched Count":25,
@@ -15652,7 +15652,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"nuclear mRNA surveillance",
         "Matched Members":"AIR1;AIR2;DIS3;GBP2;HRB1;LRP1;MLP1;MPP6;MTR3;MTR4;NAB3;NRD1;PAP2;PRP18;RAT1;RRP4;RRP42;RRP43;RRP45;RRP46;RRP6;SAC3;SKI6;SUS1;THP1",
         "Matched Count":25,
@@ -15750,7 +15750,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"positive regulation of protein localization to nucleus",
         "Matched Members":"CDC48;CDC55;CET1;CLA4;NET1;NPL4;POR1;SKY1;UFD1",
         "Matched Count":9,
@@ -15816,8 +15816,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.981,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.959,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -15858,8 +15858,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0445862069,
-        "Domain Depletion P-value":0.994,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.989,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -15890,7 +15890,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":29,
+        "Domain ID":23,
         "Annotation":"RNA surveillance",
         "Matched Members":"AIR1;AIR2;CSL4;DIS3;DOM34;EFG1;GBP2;HRB1;LRP1;MLP1;MPP6;MTR3;MTR4;NAB3;NRD1;PAP2;PRP18;RAI1;RAT1;RRP4;RRP40;RRP42;RRP43;RRP45;RRP46;RRP6;SAC3;SKI6;SUS1;THP1;TRF5",
         "Matched Count":31,
@@ -15974,7 +15974,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"regulation of protein import into nucleus",
         "Matched Members":"CLA4;POR1;SCS2;SKY1;SLT2",
         "Matched Count":5,
@@ -15988,7 +15988,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":24,
+        "Domain ID":19,
         "Annotation":"intracellular copper ion homeostasis",
         "Matched Members":"CUP2;EMP70;GEF1;HAA1;HHT1;HHT2;MAC1;PIC2;SMF1;SOD1;TMN2;TMN3;VMA3",
         "Matched Count":13,
@@ -16058,7 +16058,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"pentose metabolic process",
         "Matched Members":"GCY1;GRE3;RBK1;RKI1;XKS1;YJR096W;YPR1",
         "Matched Count":7,
@@ -16128,7 +16128,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"mannose metabolic process",
         "Matched Members":"AMS1;GLK1;HXK1;HXK2;SEC53",
         "Matched Count":5,
@@ -16142,7 +16142,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"positive regulation of establishment of protein localization",
         "Matched Members":"ALY2;CLA4;FUS3;POR1;SAR1;SKY1",
         "Matched Count":6,
@@ -16226,7 +16226,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":19,
+        "Domain ID":15,
         "Annotation":"potassium ion transmembrane transport",
         "Matched Members":"ENA1;KHA1;NHA1;NHX1;QDR2;SAP155;SAP185;TRK1;VCX1;VHC1;VNX1;YVC1",
         "Matched Count":12,
@@ -16240,7 +16240,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"nucleoside monophosphate biosynthetic process",
         "Matched Members":"AAH1;ADE12;ADE13;ADE16;ADE17;ADE2;ADE4;ADE57;ADE6;ADE8;ADO1;AMD1;APT1;APT2;CDC21;DAS2;DCD1;FMN1;FUR1;GUA1;HPT1;IMD2;IMD3;IMD4;PRS1;PRS2;PRS3;PRS4;PRS5;URA1;URA10;URA2;URA4;URA5;URK1;XPT1",
         "Matched Count":36,
@@ -16254,7 +16254,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"protein insertion into mitochondrial membrane",
         "Matched Members":"DJP1;MDM10;MMM1;OXA1;SAM35;SAM37;SAM50;TIM18;TIM54;TOM22;TOM70;TOM71",
         "Matched Count":12,
@@ -16268,7 +16268,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"cysteine metabolic process",
         "Matched Members":"CYS3;CYS4;MCY1;MET14;MET30;MET4;SCH9;STR3;YHR112C;YML082W",
         "Matched Count":10,
@@ -16310,7 +16310,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":56,
+        "Domain ID":48,
         "Annotation":"regulation of attachment of spindle microtubules to kinetochore",
         "Matched Members":"ASK1;CDC7;DAD1;DAD2;DAD3;DAM1;DUO1;HSK3;MPS1;SPC19;SPC34",
         "Matched Count":11,
@@ -16324,7 +16324,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"glycogen biosynthetic process",
         "Matched Members":"GAC1;GDB1;GIP2;GLC3;GLC8;GLG1;GLG2;GSY1;GSY2;IGD1;PCL10;PCL6;PCL7;PCL8;PGM1;PHO85;PIG2;PSK1;SAK1;UGP1",
         "Matched Count":20,
@@ -16380,7 +16380,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":55,
+        "Domain ID":47,
         "Annotation":"fungal-type cell wall beta-glucan biosynthetic process",
         "Matched Members":"GAS1;GAS3;GAS5;KAR2;KRE5;ROT2;SMI1",
         "Matched Count":7,
@@ -16408,7 +16408,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"pyruvate metabolic process",
         "Matched Members":"ACS2;ALD4;CDC19;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;LAT1;LPD1;MAE1;PDA1;PDB1;PDC1;PDC5;PDX1;PFK1;PFK2;PFK27;PGI1;PGK1;PYC1;PYC2;PYK2;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":32,
@@ -16506,7 +16506,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"positive regulation of mitotic cell cycle phase transition",
         "Matched Members":"APC11;APC5;CCR4;CDC16;CDC23;CDC25;CDC55;CDH1;CLN1;CYS4;FIN1;GID8;GLC7;IGO1;IGO2;LTE1;MIH1;MND2;NUD1;RIM15;SDA1;WHI3;WHI5;XRN1;ZDS1;ZDS2",
         "Matched Count":26,
@@ -16604,7 +16604,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":54,
+        "Domain ID":46,
         "Annotation":"regulation of silent mating-type cassette heterochromatin formation",
         "Matched Members":"BDF1;CTI6;DEP1;FKH1;FKH2;PHO23;RPD3;RXT2;SAP30;SDS3;SIN3;WTM1;WTM2",
         "Matched Count":13,
@@ -16618,7 +16618,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":57,
+        "Domain ID":49,
         "Annotation":"purine-containing compound salvage",
         "Matched Members":"AAH1;ADO1;AMD1;APT1;APT2;HPT1;MEU1;XPT1",
         "Matched Count":8,
@@ -16674,7 +16674,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"regulation of Arp2\/3 complex-mediated actin nucleation",
         "Matched Members":"ABP1;ARC40;BBC1;LAS17;LSB1;MYO3;MYO5;PAN1;PIN3;SLA1;SLA2;VRP1",
         "Matched Count":12,
@@ -16716,7 +16716,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":25,
+        "Domain ID":20,
         "Annotation":"N-glycan processing",
         "Matched Members":"GTB1;KRE2;KTR3;MNN1;ROT2",
         "Matched Count":5,
@@ -16744,7 +16744,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":24,
+        "Domain ID":19,
         "Annotation":"protein-DNA complex disassembly",
         "Matched Members":"ARP7;ARP9;ASF1;HTL1;LDB7;NAP1;NPL6;RSC1;RSC2;RSC3;RSC30;RSC4;RSC58;RSC6;RSC8;RSC9;RTT102;SFH1;STH1;YTA7",
         "Matched Count":20,
@@ -16800,7 +16800,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":18,
+        "Domain ID":14,
         "Annotation":"mitochondrial translational initiation",
         "Matched Members":"AEP2;AEP3;AIM23;IFM1;MRP21;MRP51;MSC6;RSM28",
         "Matched Count":8,
@@ -16842,7 +16842,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":53,
+        "Domain ID":45,
         "Annotation":"adaptation of signaling pathway by response to pheromone involved in conjugation with cellular fusion",
         "Matched Members":"CSN9;EFG1;FAR10;FAR11;FAR3;FAR7;FAR8;MSG5;VPS64",
         "Matched Count":9,
@@ -16884,7 +16884,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"telomere tethering at nuclear periphery",
         "Matched Members":"CTF18;CTF8;DCC1;ESC1;MLP1;MLP2;MPS2;MPS3;NUP100;NUP116;NUP120;NUP133;NUP145;NUP170;NUP49;NUP60;NUP84;SIR2;SIR3;SIR4",
         "Matched Count":20,
@@ -16968,7 +16968,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"glucose 6-phosphate metabolic process",
         "Matched Members":"EMI2;GLK1;GND1;GND2;HXK1;HXK2;NQM1;PGI1;PGM1;RKI1;SOL1;SOL2;SOL3;SOL4;TAL1;TKL1;TKL2;ZWF1",
         "Matched Count":18,
@@ -16978,7 +16978,7 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.001,
         "Domain Enrichment Q-value":0.0391818182,
-        "Domain Depletion P-value":1.0,
+        "Domain Depletion P-value":0.993,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -17052,7 +17052,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"ribonucleotide catabolic process",
         "Matched Members":"CDC19;CIT1;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;SCS3;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":24,
@@ -17108,7 +17108,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":42,
+        "Domain ID":34,
         "Annotation":"iron import into cell",
         "Matched Members":"AIM14;ARN2;ENB1;FET3;FET5;SIT1",
         "Matched Count":6,
@@ -17122,7 +17122,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":48,
+        "Domain ID":40,
         "Annotation":"regulation of ubiquitin-dependent protein catabolic process",
         "Matched Members":"CDH1;ESS1;MND2;PTH2;SCM3",
         "Matched Count":5,
@@ -17262,7 +17262,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"nuclear pore complex assembly",
         "Matched Members":"DYN2;KAP95;NUP157;NUP170;RTN1;YOP1",
         "Matched Count":6,
@@ -17444,7 +17444,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":69,
+        "Domain ID":61,
         "Annotation":"assembly of large subunit precursor of preribosome",
         "Matched Members":"DBP10;NIP7;NOG1;NOP2;RLP24;RPF2;SPB4;TIF6",
         "Matched Count":8,
@@ -17458,7 +17458,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":46,
+        "Domain ID":38,
         "Annotation":"post-transcriptional tethering of RNA polymerase II gene DNA at nuclear periphery",
         "Matched Members":"GLE2;LRP1;MLP2;NUP100;NUP116;NUP120;NUP133;NUP145;NUP157;NUP2;NUP49;NUP60;NUP84;RRP6;SAC3;SUS1;THP1",
         "Matched Count":17,
@@ -17486,7 +17486,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"ribonucleoside diphosphate catabolic process",
         "Matched Members":"CDC19;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":22,
@@ -17514,7 +17514,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":54,
+        "Domain ID":46,
         "Annotation":"positive regulation of invasive growth in response to glucose limitation",
         "Matched Members":"GAL11;PHO23;RXT2;SAP30;SNF2;SNF5;YTA7",
         "Matched Count":7,
@@ -17570,7 +17570,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":47,
+        "Domain ID":39,
         "Annotation":"cellular response to decreased oxygen levels",
         "Matched Members":"FRD1;FSF1;IXR1;RIM101;UPC2",
         "Matched Count":5,
@@ -17696,7 +17696,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":34,
+        "Domain ID":27,
         "Annotation":"pyridine-containing compound catabolic process",
         "Matched Members":"CDC19;EMI2;ENO1;ENO2;FBA1;GLK1;GPM1;GPM2;HXK1;HXK2;PDA1;PDB1;PFK1;PFK2;PFK27;PGI1;PGK1;PYK2;SMN1;TDH1;TDH2;TDH3;TPI1",
         "Matched Count":23,
@@ -17752,17 +17752,17 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":-1,
+        "Domain ID":32,
         "Annotation":"protein import into mitochondrial matrix",
-        "Matched Members":"",
-        "Matched Count":0,
+        "Matched Members":"AFG3;MGE1;PAM17;SSC1;TIM23;TIM44;TIM50;TOM20;TOM22;TOM40;TOM6;TOM70;TOM71;XDJ1;YME1;ZIM17",
+        "Matched Count":16,
         "Raw Enrichment P-value":0.001,
         "Raw Enrichment Q-value":0.1847142857,
         "Raw Depletion P-value":0.717,
         "Raw Depletion Q-value":0.9583052714,
-        "Domain Enrichment P-value":1.0,
-        "Domain Enrichment Q-value":1.0,
-        "Domain Depletion P-value":1.0,
+        "Domain Enrichment P-value":0.002,
+        "Domain Enrichment Q-value":0.1847142857,
+        "Domain Depletion P-value":0.988,
         "Domain Depletion Q-value":1.0
     },
     {
@@ -17822,7 +17822,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":14,
+        "Domain ID":11,
         "Annotation":"positive regulation of proteolysis involved in protein catabolic process",
         "Matched Members":"CDH1;RPT1;RPT2;RPT3;RPT4;RPT5;RPT6",
         "Matched Count":7,
@@ -17934,7 +17934,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":64,
+        "Domain ID":56,
         "Annotation":"protein insertion into mitochondrial inner membrane",
         "Matched Members":"OXA1;TIM18;TIM54;TOM70;TOM71",
         "Matched Count":5,
@@ -17962,7 +17962,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":43,
+        "Domain ID":35,
         "Annotation":"actin cortical patch localization",
         "Matched Members":"ARF3;BSP1;CDC50;LAS17;LDB17;LSB3;MYO3;MYO5;RVS161;RVS167;VRP1;YEL1;YSC84",
         "Matched Count":13,
@@ -17990,7 +17990,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":36,
+        "Domain ID":29,
         "Annotation":"gene conversion",
         "Matched Members":"MSH2;POL2;RAD27;SAE2;SOH1",
         "Matched Count":5,
@@ -18042,8 +18042,8 @@
         "Raw Depletion Q-value":0.9583052714,
         "Domain Enrichment P-value":0.005,
         "Domain Enrichment Q-value":0.1847142857,
-        "Domain Depletion P-value":0.993,
-        "Domain Depletion Q-value":1.0
+        "Domain Depletion P-value":0.987,
+        "Domain Depletion Q-value":0.9995460883
     },
     {
         "Domain ID":-1,
@@ -18074,7 +18074,7 @@
         "Domain Depletion Q-value":1.0
     },
     {
-        "Domain ID":42,
+        "Domain ID":34,
         "Annotation":"ceramide transport",
         "Matched Members":"DNF1;DNF2;NVJ2;OSH2;OSH3;TCB1;TCB2;TCB3",
         "Matched Count":8,
