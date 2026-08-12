@@ -9305,8 +9305,8 @@ Null distribution: 'network'
 </li>
 </ul>
 </li>
-<li><strong><code>linkage_threshold</code> (str or float, optional)</strong>: The cutoff distance for forming flat clusters in hierarchical clustering. Accepts either a numeric threshold or <code>'auto'</code> to enable automatic threshold optimization using the silhouette score. Defaults to <code>0.2</code>.<ul>
-<li><strong>Range</strong>: Any value between 0 and 1.</li>
+<li><strong><code>linkage_threshold</code> (str or float, optional)</strong>: Cutoff for forming flat clusters, expressed as a fraction of the maximum linkage distance. Accepts a numeric threshold in <code>(0, 1]</code> or <code>'auto'</code>, which selects the best observed dendrogram cut using the silhouette score. Defaults to <code>0.2</code>.<ul>
+<li><strong>Range</strong>: Numeric thresholds must be in <code>(0, 1]</code>.</li>
 </ul>
 </li>
 <li><strong><code>min_cluster_size</code> (int, optional)</strong>: Minimum size of clusters to be formed. Defaults to <code>5</code>.</li>
