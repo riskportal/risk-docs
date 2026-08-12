@@ -936,7 +936,7 @@
 <li>Other options: <code>'braycurtis'</code>, <code>'canberra'</code>, <code>'chebyshev'</code>, <code>'cityblock'</code>, <code>'correlation'</code>, <code>'cosine'</code>, <code>'dice'</code>, <code>'euclidean'</code>, <code>'hamming'</code>, <code>'jaccard'</code>, <code>'jensenshannon'</code>, <code>'kulczynski1'</code>, <code>'mahalanobis'</code>, <code>'matching'</code>, <code>'minkowski'</code>, <code>'rogerstanimoto'</code>, <code>'russellrao'</code>, <code>'seuclidean'</code>, <code>'sokalmichener'</code>, <code>'sokalsneath'</code>, <code>'sqeuclidean'</code>, <code>'yule'</code>.</li>
 </ul>
 </li>
-<li><code>linkage_threshold</code> (str or float, optional): The cutoff distance for forming flat clusters in hierarchical clustering. Accepts either a numeric threshold or <code>'auto'</code> to enable automatic threshold optimization using the silhouette score. Range depends on metric. Defaults to 0.2.</li>
+<li><code>linkage_threshold</code> (str or float, optional): Cutoff for forming flat clusters, expressed as a fraction of the maximum linkage distance. Accepts a numeric threshold in (0, 1] or <code>'auto'</code>, which selects the best observed dendrogram cut using the silhouette score. Defaults to 0.2.</li>
 <li><code>min_cluster_size</code> (int, optional): Minimum size of clusters to be formed. Defaults to 5.</li>
 <li><code>max_cluster_size</code> (int, optional): Maximum size of clusters to be formed. Defaults to 1000.</li>
 </ul>
