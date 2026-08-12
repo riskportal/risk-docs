@@ -29,7 +29,7 @@ Interactive tutorials:
 - [5. Statistical Methods](5_statistical_methods.md)
 - [6. Analyzing Results](6_analyzing_results.md)
 - [7. Visualization](7_visualization.md)
-- [Figure Gallery](figure-gallery.md)
+    - [Figure Gallery](figure-gallery.md)
 - [8. Analysis Parameters](8_parameters.md)
 
 ## Citation
