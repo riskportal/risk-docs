@@ -27,7 +27,7 @@ The `Graph` object integrates network data, annotations, and overrepresentation 
 - `linkage_metric` (str, optional): Distance metric used for clustering. Defaults to `'yule'`. Options include:
     - `'auto'`: Automatically determines the optimal metric using the silhouette score.
     - Other options: `'braycurtis'`, `'canberra'`, `'chebyshev'`, `'cityblock'`, `'correlation'`, `'cosine'`, `'dice'`, `'euclidean'`, `'hamming'`, `'jaccard'`, `'jensenshannon'`, `'kulczynski1'`, `'mahalanobis'`, `'matching'`, `'minkowski'`, `'rogerstanimoto'`, `'russellrao'`, `'seuclidean'`, `'sokalmichener'`, `'sokalsneath'`, `'sqeuclidean'`, `'yule'`.
-- `linkage_threshold` (str or float, optional): The cutoff distance for forming flat clusters in hierarchical clustering. Accepts either a numeric threshold or `'auto'` to enable automatic threshold optimization using the silhouette score. Range depends on metric. Defaults to 0.2.
+- `linkage_threshold` (str or float, optional): Cutoff for forming flat clusters, expressed as a fraction of the maximum linkage distance. Accepts a numeric threshold in (0, 1] or `'auto'`, which selects the best observed dendrogram cut using the silhouette score. Defaults to 0.2.
 - `min_cluster_size` (int, optional): Minimum size of clusters to be formed. Defaults to 5.
 - `max_cluster_size` (int, optional): Maximum size of clusters to be formed. Defaults to 1000.
 
