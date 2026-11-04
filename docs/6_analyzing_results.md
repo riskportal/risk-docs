@@ -27,7 +27,7 @@ The `Graph` object integrates network data, annotations, and overrepresentation 
 - `linkage_metric` (str, optional): Distance metric used for clustering. Defaults to `'yule'`. Options include:
     - `'auto'`: Automatically determines the optimal metric using the silhouette score.
     - Other options: `'braycurtis'`, `'canberra'`, `'chebyshev'`, `'cityblock'`, `'correlation'`, `'cosine'`, `'dice'`, `'euclidean'`, `'hamming'`, `'jaccard'`, `'jensenshannon'`, `'kulczynski1'`, `'mahalanobis'`, `'matching'`, `'minkowski'`, `'rogerstanimoto'`, `'russellrao'`, `'seuclidean'`, `'sokalmichener'`, `'sokalsneath'`, `'sqeuclidean'`, `'yule'`.
-- `linkage_threshold` (str or float, optional): Cutoff for forming flat clusters, expressed as a fraction of the maximum linkage distance. Accepts a numeric threshold in (0, 1] or `'auto'`, which selects the best observed dendrogram cut using the silhouette score. Defaults to 0.2.
+- `linkage_threshold` (str or float, optional): Cutoff for forming flat clusters, expressed as a fraction of the maximum linkage distance. Accepts a numeric threshold in (0, 1] or `'auto'`, which selects the best observed dendrogram cut using the silhouette score. Defaults to 0.2. If all significant terms merge into a single domain, RISK logs a warning; lower the threshold to split them.
 - `min_cluster_size` (int, optional): Minimum size of clusters to be formed. Defaults to 5.
 - `max_cluster_size` (int, optional): Maximum size of clusters to be formed. Defaults to 1000.
 
@@ -123,8 +123,8 @@ The `Graph` object exposes several mappings for cluster and node information:
 
 - `domain_id_to_node_ids_map`: Maps each domain ID to the list of node IDs belonging to that domain.
 - `domain_id_to_node_labels_map`: Maps each domain ID to the list of node labels in that domain for readable visualization.
-- `domain_id_to_enriched_node_labels_map`: Maps each domain ID to node labels with non-zero domain signal (enrichment or depletion) for that domain.
-    - Unlike `domain_id_to_node_labels_map`, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute underlies blended node coloring and pleiotropic interpretation.
+- `domain_id_to_significant_node_labels_map`: Maps each domain ID to node labels with non-zero domain signal (enrichment or depletion) for that domain.
+    - Unlike `domain_id_to_node_labels_map`, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute supports pleiotropic interpretation.
 - `domain_id_to_domain_terms_map`: Maps each domain ID to the list of overrepresented/significant terms associated with that domain.
 - `domain_id_to_domain_info_map`: Maps each domain ID to a metadata record (e.g., size, p-value, FDR, summary) about the domain.
 
@@ -132,6 +132,8 @@ The `Graph` object exposes several mappings for cluster and node information:
 
 - `node_id_to_node_label_map`: Maps each internal node ID to its display label.
 - `node_label_to_node_id_map`: Maps each display label back to its internal node ID.
+- `node_id_to_domain_ids_and_significance_map`: Maps each node ID to a record of its domains with per-domain significance, contributing terms, p-values, and FDRs.
+- `node_id_to_primary_domain_id_map`: Maps each node ID to its primary domain ID, the domain with the largest absolute significance for that node. Nodes without a primary domain are omitted.
 - `node_label_to_significance_map`: Maps each node label to its significance score from the analysis.
 - `node_significance_sums`: Array of aggregate significance values per node, used for sizing, coloring, or ranking.
 
