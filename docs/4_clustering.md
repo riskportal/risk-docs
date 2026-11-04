@@ -1,6 +1,6 @@
 # Clustering Algorithms
 
-Clustering algorithms detect structured regions of varying size and compactness. The choice of algorithm depends on network scale, density, and biological context, influencing the resolution and stability of the resulting modules. Every clustering function in RISK accepts a `fraction_shortest_edges` argument—a rank-based fraction (0, 1] of the shortest edges retained before the algorithm runs—and returns a sparse cluster-assignment matrix (`csr_matrix`) that can be reused across multiple statistical tests.
+Clustering algorithms detect structured regions of varying size and compactness. The choice of algorithm depends on network scale, density, and biological context, influencing the resolution and stability of the resulting modules. Every clustering function in RISK accepts a `fraction_shortest_edges` argument—a rank-based fraction (0, 1] of the shortest edges retained before the algorithm runs—and returns a sparse cluster-assignment matrix (`csr_matrix`) that can be reused across multiple statistical tests. Nodes left with no edges after filtering are excluded from clustering, and RISK logs how many.
 
 
 ---
