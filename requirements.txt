@@ -4,4 +4,4 @@ mkdocs-redirects
 networkx
 pandas
 # Pin Binder/docs builds to the documented RISK release.
-risk-network==0.1.6
+risk-network==0.1.7
