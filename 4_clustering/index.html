@@ -889,7 +889,7 @@
 
 
 <h1 id="clustering-algorithms">Clustering Algorithms<a class="headerlink" href="#clustering-algorithms" title="Permanent link">&para;</a></h1>
-<p>Clustering algorithms detect structured regions of varying size and compactness. The choice of algorithm depends on network scale, density, and biological context, influencing the resolution and stability of the resulting modules. Every clustering function in RISK accepts a <code>fraction_shortest_edges</code> argument—a rank-based fraction (0, 1] of the shortest edges retained before the algorithm runs—and returns a sparse cluster-assignment matrix (<code>csr_matrix</code>) that can be reused across multiple statistical tests.</p>
+<p>Clustering algorithms detect structured regions of varying size and compactness. The choice of algorithm depends on network scale, density, and biological context, influencing the resolution and stability of the resulting modules. Every clustering function in RISK accepts a <code>fraction_shortest_edges</code> argument—a rank-based fraction (0, 1] of the shortest edges retained before the algorithm runs—and returns a sparse cluster-assignment matrix (<code>csr_matrix</code>) that can be reused across multiple statistical tests. Nodes left with no edges after filtering are excluded from clustering, and RISK logs how many.</p>
 <hr />
 <h2 id="algorithm-overview">Algorithm Overview<a class="headerlink" href="#algorithm-overview" title="Permanent link">&para;</a></h2>
 <table>

@@ -936,7 +936,7 @@
 <li>Other options: <code>'braycurtis'</code>, <code>'canberra'</code>, <code>'chebyshev'</code>, <code>'cityblock'</code>, <code>'correlation'</code>, <code>'cosine'</code>, <code>'dice'</code>, <code>'euclidean'</code>, <code>'hamming'</code>, <code>'jaccard'</code>, <code>'jensenshannon'</code>, <code>'kulczynski1'</code>, <code>'mahalanobis'</code>, <code>'matching'</code>, <code>'minkowski'</code>, <code>'rogerstanimoto'</code>, <code>'russellrao'</code>, <code>'seuclidean'</code>, <code>'sokalmichener'</code>, <code>'sokalsneath'</code>, <code>'sqeuclidean'</code>, <code>'yule'</code>.</li>
 </ul>
 </li>
-<li><code>linkage_threshold</code> (str or float, optional): Cutoff for forming flat clusters, expressed as a fraction of the maximum linkage distance. Accepts a numeric threshold in (0, 1] or <code>'auto'</code>, which selects the best observed dendrogram cut using the silhouette score. Defaults to 0.2.</li>
+<li><code>linkage_threshold</code> (str or float, optional): Cutoff for forming flat clusters, expressed as a fraction of the maximum linkage distance. Accepts a numeric threshold in (0, 1] or <code>'auto'</code>, which selects the best observed dendrogram cut using the silhouette score. Defaults to 0.2. If all significant terms merge into a single domain, RISK logs a warning; lower the threshold to split them.</li>
 <li><code>min_cluster_size</code> (int, optional): Minimum size of clusters to be formed. Defaults to 5.</li>
 <li><code>max_cluster_size</code> (int, optional): Maximum size of clusters to be formed. Defaults to 1000.</li>
 </ul>
@@ -1052,8 +1052,8 @@
 <ul>
 <li><code>domain_id_to_node_ids_map</code>: Maps each domain ID to the list of node IDs belonging to that domain.</li>
 <li><code>domain_id_to_node_labels_map</code>: Maps each domain ID to the list of node labels in that domain for readable visualization.</li>
-<li><code>domain_id_to_enriched_node_labels_map</code>: Maps each domain ID to node labels with non-zero domain signal (enrichment or depletion) for that domain.<ul>
-<li>Unlike <code>domain_id_to_node_labels_map</code>, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute underlies blended node coloring and pleiotropic interpretation.</li>
+<li><code>domain_id_to_significant_node_labels_map</code>: Maps each domain ID to node labels with non-zero domain signal (enrichment or depletion) for that domain.<ul>
+<li>Unlike <code>domain_id_to_node_labels_map</code>, nodes may appear in multiple domains in this mapping, reflecting functional association rather than primary (layout) domain assignment. This attribute supports pleiotropic interpretation.</li>
 </ul>
 </li>
 <li><code>domain_id_to_domain_terms_map</code>: Maps each domain ID to the list of overrepresented/significant terms associated with that domain.</li>
@@ -1063,6 +1063,8 @@
 <ul>
 <li><code>node_id_to_node_label_map</code>: Maps each internal node ID to its display label.</li>
 <li><code>node_label_to_node_id_map</code>: Maps each display label back to its internal node ID.</li>
+<li><code>node_id_to_domain_ids_and_significance_map</code>: Maps each node ID to a record of its domains with per-domain significance, contributing terms, p-values, and FDRs.</li>
+<li><code>node_id_to_primary_domain_id_map</code>: Maps each node ID to its primary domain ID, the domain with the largest absolute significance for that node. Nodes without a primary domain are omitted.</li>
 <li><code>node_label_to_significance_map</code>: Maps each node label to its significance score from the analysis.</li>
 <li><code>node_significance_sums</code>: Array of aggregate significance values per node, used for sizing, coloring, or ranking.</li>
 </ul>

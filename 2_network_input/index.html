@@ -970,7 +970,7 @@
 <h3 id="node-attributes">Node Attributes<a class="headerlink" href="#node-attributes" title="Permanent link">&para;</a></h3>
 <p>RISK expects basic spatial and labeling information to be present on each node.</p>
 <ul>
-<li><strong>Node position</strong> must be provided either as separate numeric attributes <code>x</code> and <code>y</code>, or as a single <code>pos = (x, y)</code> tuple. These are used for layout initialization and visualization.</li>
+<li><strong>Node position</strong> must be provided either as separate numeric attributes <code>x</code> and <code>y</code>, or as a single <code>pos = (x, y)</code> tuple. These are used for layout initialization and visualization. They also define the edge lengths used by <code>fraction_shortest_edges</code> in clustering, so they should come from a layout of the network itself.</li>
 <li><strong>Node labels</strong> used for annotation mapping, enrichment, and reporting are taken from the node attribute <code>label</code> if present. If <code>label</code> is not provided, the node identifier itself is used as the label.</li>
 </ul>
 <p><strong>Parameters:</strong></p>
