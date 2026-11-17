@@ -113,6 +113,12 @@ RISK expects basic spatial and labeling information to be present on each node.
 - **Node position** must be provided either as separate numeric attributes `x` and `y`, or as a single `pos = (x, y)` tuple. These are used for layout initialization and visualization. They also define the edge lengths used by `fraction_shortest_edges` in clustering, so they should come from a layout of the network itself.
 - **Node labels** used for annotation mapping, enrichment, and reporting are taken from the node attribute `label` if present. If `label` is not provided, the node identifier itself is used as the label.
 
+If your network has no layout yet, compute one with NetworkX and store it as `pos` before loading. Fix the `seed` so the layout is reproducible, since positions also shape the clustering.
+
+```python
+nx.set_node_attributes(network, nx.spring_layout(network, seed=888), "pos")
+```
+
 **Parameters:**
 
 - `network` (nx.Graph): A NetworkX graph object.
