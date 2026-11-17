@@ -391,15 +391,16 @@ Annotate selected nodes or domains with styled text and arrows.
 - `arrow_alpha` (float, None, optional): Transparency level for the arrow color. Range: `0.0` (fully transparent) to `1.0` (fully opaque). If provided, it overrides any existing alpha values found in `arrow_color`. Defaults to 1.0.
 - `arrow_base_shrink` (float, optional): Distance between the text and the base of the arrow. Defaults to 0.0.
 - `arrow_tip_shrink` (float, optional): Distance between the arrow tip and the centroid. Defaults to 0.0.
-- `max_labels` (int, optional): Maximum number of labels to plot. Defaults to None` (no limit.
+- `max_labels` (int, optional): Maximum number of labels to plot. Defaults to None (no limit).
 - `min_label_lines` (int, optional): Minimum number of lines in a label. Defaults to 1.
-- `max_label_lines` (int, optional): Maximum number of lines in a label. Defaults to None` (no limit.
+- `max_label_lines` (int, optional): Maximum number of lines in a label. Defaults to None (no limit).
 - `min_chars_per_line` (int, optional): Minimum number of characters in a line to display. Defaults to 1.
 - `max_chars_per_line` (int, optional): Maximum number of characters in a line to display. Defaults to None (no limit).
 - `words_to_omit` (list, optional): List of words to omit from the labels. Defaults to None.
 - `overlay_ids` (bool, optional): Whether to overlay domain IDs in the center of the centroids. Defaults to False.
 - `ids_to_keep` (list, tuple, np.ndarray, or None, optional): IDs of domains that must be labeled. To discover domain IDs, you can set `overlay_ids=True`. Defaults to None.
 - `ids_to_labels` (dict, optional): A dictionary mapping domain IDs to custom labels (strings). Labels are wrapped to respect `max_chars_per_line` and `max_label_lines`. To supply exact multi-line formatting, join lines with `"::::"` (e.g., `"RNA splicing::::regulation"`); strings containing `"::::"` are stored verbatim. Defaults to None.
+- `label_mode` (str, optional): How domain labels are generated. Choose `"compressed"` for a weighted summary of the words across a domain's terms, or `"top_term"` for the domain's highest-scoring annotation term, kept verbatim. In `"top_term"` mode, `words_to_omit`, `min_chars_per_line`, and `min_label_lines` do not apply, as with `ids_to_labels`, which takes precedence in either mode. Terms tied for the top score, which is common when several terms reach the minimum permutation p-value, are chosen by annotation order. Defaults to "compressed".
 
 ```python
 plotter.plot_labels(
@@ -425,6 +426,7 @@ plotter.plot_labels(
     overlay_ids=False,
     ids_to_keep=None,
     ids_to_labels=None,
+    label_mode="compressed",
 )
 ```
 

@@ -17,7 +17,7 @@ The `Graph` object integrates network data, annotations, and overrepresentation 
     - `'both'`: For two-tailed analysis.
 - `pval_cutoff` (float, optional): Cutoff value for p-values to determine significance. Range: Any value between 0 and 1. Defaults to 0.01.
 - `fdr_cutoff` (float, optional): Cutoff value for FDR-corrected p-values. FDR (Benjamini–Hochberg) is computed per cluster across terms. Range: Any value between 0 and 1. Defaults to 1.0 (permissive; excludes nothing based on FDR).
-- `display_prune_threshold` (float, optional): Display-only pruning based on spatial layout distance that suppresses spatially diffuse or isolated regions in plots. Runs after enrichment and clustering on plotting matrices only, does not use enrichment strength or statistical significance or affect clustering, enrichment, or statistical testing, and defaults to 0.0. Range: Any value between 0 and 1.
+- `display_prune_threshold` (float, optional): Prunes spatially diffuse or isolated nodes based on layout distance, using neither enrichment strength nor statistical significance. Runs after enrichment, so clustering, enrichment, and statistical testing are unaffected, but pruned nodes drop out of their domains, which changes domain grouping, labels, and node sizes. Defaults to 0.0. Range: Any value between 0 and 1.
 - `linkage_criterion` (str, optional): Criterion for clustering. Defaults to `'distance'`. Options include:
     - `'distance'`: Clusters are formed based on distance.
     - `'off'`: Disables clustering; terms remain separate.
@@ -26,7 +26,7 @@ The `Graph` object integrates network data, annotations, and overrepresentation 
     - Other options: `'single'`, `'complete'`, `'average'`, `'weighted'`, `'centroid'`, `'median'`, `'ward'`.
 - `linkage_metric` (str, optional): Distance metric used for clustering. Defaults to `'yule'`. Options include:
     - `'auto'`: Automatically determines the optimal metric using the silhouette score.
-    - Other options: `'braycurtis'`, `'canberra'`, `'chebyshev'`, `'cityblock'`, `'correlation'`, `'cosine'`, `'dice'`, `'euclidean'`, `'hamming'`, `'jaccard'`, `'jensenshannon'`, `'kulczynski1'`, `'mahalanobis'`, `'matching'`, `'minkowski'`, `'rogerstanimoto'`, `'russellrao'`, `'seuclidean'`, `'sokalmichener'`, `'sokalsneath'`, `'sqeuclidean'`, `'yule'`.
+    - Other options: `'braycurtis'`, `'canberra'`, `'chebyshev'`, `'cityblock'`, `'correlation'`, `'cosine'`, `'dice'`, `'euclidean'`, `'hamming'`, `'jaccard'`, `'jensenshannon'`, `'mahalanobis'`, `'matching'`, `'minkowski'`, `'rogerstanimoto'`, `'russellrao'`, `'seuclidean'`, `'sokalsneath'`, `'sqeuclidean'`, `'yule'`.
 - `linkage_threshold` (str or float, optional): Cutoff for forming flat clusters, expressed as a fraction of the maximum linkage distance. Accepts a numeric threshold in (0, 1] or `'auto'`, which selects the best observed dendrogram cut using the silhouette score. Defaults to 0.2. If all significant terms merge into a single domain, RISK logs a warning; lower the threshold to split them.
 - `min_cluster_size` (int, optional): Minimum size of clusters to be formed. Defaults to 5.
 - `max_cluster_size` (int, optional): Maximum size of clusters to be formed. Defaults to 1000.
