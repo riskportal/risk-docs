@@ -17,7 +17,7 @@ The `Graph` object integrates network data, annotations, and overrepresentation 
     - `'both'`: For two-tailed analysis.
 - `pval_cutoff` (float, optional): Cutoff value for p-values to determine significance. Range: Any value between 0 and 1. Defaults to 0.01.
 - `fdr_cutoff` (float, optional): Cutoff value for FDR-corrected p-values. FDR (Benjamini–Hochberg) is computed per cluster across terms. Range: Any value between 0 and 1. Defaults to 1.0 (permissive; excludes nothing based on FDR).
-- `display_prune_threshold` (float, optional): Prunes spatially diffuse or isolated nodes based on layout distance, using neither enrichment strength nor statistical significance. Runs after enrichment, so clustering, enrichment, and statistical testing are unaffected, but pruned nodes drop out of their domains, which changes domain grouping, labels, and node sizes. Defaults to 0.0. Range: Any value between 0 and 1.
+- `display_prune_threshold` (float, optional): Hides spatially diffuse or isolated nodes based on layout distance, using neither enrichment strength nor statistical significance. Display only: domains, terms, labels, and the summary are defined from all nodes, so clustering, enrichment, and statistical testing are unaffected. Defaults to 0.0. Range: Any value between 0 and 1.
 - `linkage_criterion` (str, optional): Criterion for clustering. Defaults to `'distance'`. Options include:
     - `'distance'`: Clusters are formed based on distance.
     - `'off'`: Disables clustering; terms remain separate.
