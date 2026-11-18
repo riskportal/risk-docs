@@ -30,7 +30,7 @@ Builds an empirical null by permuting either the network structure or annotation
 - Most rigorous option when assumptions about the data distribution are unclear.
 - Generates an empirical null distribution by repeatedly permuting the network or annotations.
 - Computationally intensive but unbiased.
-- P-values are the fraction of permutations at least as extreme as the observed score, floored at `1 / num_permutations`, so `num_permutations` sets the smallest p-value you can obtain.
+- P-values count the observed score as one permutation, `(extreme + 1) / (num_permutations + 1)`, so `num_permutations` sets the smallest p-value you can obtain, `1 / (num_permutations + 1)`.
 
 **Parameters:**
 
